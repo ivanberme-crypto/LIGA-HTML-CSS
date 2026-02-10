@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutDraft - Formaciones</title>
+    <title>FutDraft 2026 - Formaciones</title>
     <link rel="stylesheet" href="Principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="Jugadores.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Orbitron:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
             <img class="header__img" src="Imagenes/logo.png" alt="Logo FutDraft">
-            <h1 class="header__title">FutDraft</h1>
+            <h1 class="header__title">FutDraft 2026</h1>
         </div>
         <nav class="header__nav">
             <ul class="header__list">
@@ -33,23 +32,25 @@
     </header>
 
     <main class="main-futdraft">
+        <!-- Vista de selección de formaciones -->
         <section class="formation-selector" id="formationSelector">
             <h2 class="section-title">Elige tu Formación</h2>
+            
             <div class="formations-grid-futdraft">
                 <div class="formation-option" onclick="selectFormation('4-3-3')">
-                    <img src="Imagenes/433.png" alt="4-3-3">
+                    <img src="Imagenes/4-3-3.png" alt="4-3-3">
                     <span>4-3-3</span>
                 </div>
                 <div class="formation-option" onclick="selectFormation('4-4-2')">
-                    <img src="Imagenes/442.png" alt="4-4-2">
+                    <img src="Imagenes/4-4-2.png" alt="4-4-2">
                     <span>4-4-2</span>
                 </div>
                 <div class="formation-option" onclick="selectFormation('5-3-2')">
-                    <img src="Imagenes/532.png" alt="5-3-2">
+                    <img src="Imagenes/5-3-2.png" alt="5-3-2">
                     <span>5-3-2</span>
                 </div>
                 <div class="formation-option" onclick="selectFormation('5-4-1')">
-                    <img src="Imagenes/541.png" alt="5-4-1">
+                    <img src="Imagenes/5-4-1.png" alt="5-4-1">
                     <span>5-4-1</span>
                 </div>
             </div>
@@ -58,24 +59,26 @@
         <!-- Vista del campo con posiciones interactivas -->
         <section class="field-view" id="fieldView" style="display: none;">
             <div class="field-header">
-                <button class="back-btn-futdraft" onclick="goBackToFormations()">← Cambiar Formación</button>
+                <button class="back-btn-futdraft" onclick="goBackToFormations()">
+                    ← Cambiar
+                </button>
                 <h2 class="formation-name-display" id="formationNameDisplay"></h2>
             </div>
             
             <!-- Campo de fútbol interactivo -->
             <div class="field-container">
                 <div class="field">
-                    <!-- Área de portería -->
+                    <!-- Áreas de penalty -->
                     <div class="penalty-area-top"></div>
                     <div class="penalty-area-bottom"></div>
                     
-                    <!-- Círculo central -->
+                    <!-- Círculo central y línea -->
                     <div class="center-circle"></div>
                     <div class="center-line"></div>
                     
-                    <!-- Posiciones de jugadores - Se generarán dinámicamente -->
+                    <!-- Posiciones de jugadores -->
                     <div class="positions-container" id="positionsContainer">
-                        <!-- Las posiciones se insertarán aquí con JavaScript -->
+                        <!-- Las posiciones se insertarán dinámicamente -->
                     </div>
                 </div>
             </div>
@@ -86,7 +89,7 @@
                 <div class="player-list" id="playerList">
                     <!-- Jugadores se cargarán aquí -->
                 </div>
-                <button class="close-panel-btn" onclick="closePlayerPanel()">Cerrar</button>
+                <button class="close-panel-btn" onclick="closePlayerPanel()">Cancelar</button>
             </div>
         </section>
     </main>
@@ -116,5 +119,6 @@
             </div>
         </div>
     </footer>
+    <script src="Jugadores.js"></script>
 </body>
 </html>

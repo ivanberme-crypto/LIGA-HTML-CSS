@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutDraft 2026 - Formaciones</title>
     <link rel="stylesheet" href="Principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Orbitron:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <img class="header__img" src="Imagenes/logo.png" alt="Logo FutDraft">
-            <h1 class="header__title">FutDraft 2026</h1>
+            <img class="header__img" src="Imagenes/logo.png" alt="">
+            <h1 class="header__title">FutDraft</h1>
         </div>
         <nav class="header__nav">
             <ul class="header__list">
@@ -21,7 +21,7 @@
                 <li class="desplegable">
                     <a href="#" class="desplegable__btn">Juego</a>
                     <div class="desplegable__content">
-                        <a href="#">Jugadores</a>
+                        <a href="Jugadores.html">Jugadores</a>
                         <a href="#">Equipos</a>
                         <a href="#">Ligas</a>
                         <a href="#">Actualizaciones</a>
@@ -30,9 +30,7 @@
             </ul>
         </nav>
     </header>
-
     <main class="main-futdraft">
-        <!-- Vista de selección de formaciones -->
         <section class="formation-selector" id="formationSelector">
             <h2 class="section-title">Elige tu Formación</h2>
             
@@ -56,7 +54,6 @@
             </div>
         </section>
 
-        <!-- Vista del campo con posiciones interactivas -->
         <section class="field-view" id="fieldView" style="display: none;">
             <div class="field-header">
                 <button class="back-btn-futdraft" onclick="goBackToFormations()">
@@ -65,29 +62,22 @@
                 <h2 class="formation-name-display" id="formationNameDisplay"></h2>
             </div>
             
-            <!-- Campo de fútbol interactivo -->
             <div class="field-container">
                 <div class="field">
-                    <!-- Áreas de penalty -->
                     <div class="penalty-area-top"></div>
                     <div class="penalty-area-bottom"></div>
                     
-                    <!-- Círculo central y línea -->
                     <div class="center-circle"></div>
                     <div class="center-line"></div>
                     
-                    <!-- Posiciones de jugadores -->
                     <div class="positions-container" id="positionsContainer">
-                        <!-- Las posiciones se insertarán dinámicamente -->
                     </div>
                 </div>
             </div>
 
-            <!-- Panel de selección de jugador -->
             <div class="player-selector-panel" id="playerSelectorPanel" style="display: none;">
                 <h3>Seleccionar Jugador</h3>
                 <div class="player-list" id="playerList">
-                    <!-- Jugadores se cargarán aquí -->
                 </div>
                 <button class="close-panel-btn" onclick="closePlayerPanel()">Cancelar</button>
             </div>

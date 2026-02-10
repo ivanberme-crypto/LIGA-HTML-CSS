@@ -402,25 +402,6 @@ main {
     opacity: 1;
 }
 
-.box__description {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    color: var(--color-texto);
-    font-size: 0.9rem;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: all 0.3s ease;
-    text-shadow: 2px 2px 4px var(--color-sombra);
-}
-
-.box__content:hover .box__description {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* FEATURES SECTION */
 
 .section__features {
@@ -530,30 +511,6 @@ main {
     padding: 20px;
     background: linear-gradient(180deg, #0a0a12 0%, #1a1a2e 50%, #0a0a12 100%);
     min-height: calc(100vh - 150px);
-}
-
-/* FUTDRAFT 2026 Header Style */
-
-.futdraft-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    margin-bottom: 30px;
-    max-width: 1200px;
-    margin: 0 auto 30px auto;
-}
-
-.futdraft-header h2 {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 /* Formation Selector */
@@ -819,8 +776,8 @@ main {
 .position {
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 65px;
-    height: 85px;
+    width: 100px;
+    height: 127px;
     background-image: url('Imagenes/carta.png');
     background-size: cover;
     background-position: center;
@@ -836,17 +793,6 @@ main {
     overflow: hidden;
 }
 
-.position::before {
-    content: '';
-    position: absolute;
-    width: 75px;
-    height: 95px;
-    border: 2px dashed rgba(233, 69, 96, 0.3);
-    border-radius: 10px;
-    animation: pulse 2s infinite;
-    pointer-events: none;
-}
-
 @keyframes pulse {
     0%, 100% { transform: scale(1); opacity: 1; }
     50% { transform: scale(1.05); opacity: 0.5; }
@@ -857,7 +803,7 @@ main {
 }
 
 .pos-label {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 800;
     color: #fff;
     text-shadow: 0 2px 4px rgba(0,0,0,0.8);
@@ -866,9 +812,22 @@ main {
     z-index: 2;
 }
 
-.player-card-field {
-    width: 60px;
-    height: 80px;
+.position.__occupied {
+    background-image: none;
+    background-color: transparent;
+}
+
+.position.__occupied::before {
+    display: none;
+}
+
+.position.__occupied .pos-label {
+    display: none;
+}
+
+.player__card-field {
+    width: 100px;
+    height: 127px;
     pointer-events: none;
 }
 
@@ -982,20 +941,5 @@ main {
     
     .pos-label {
         font-size: 0.6rem;
-    }
-    
-    .player-name {
-        font-size: 0.5rem;
-    }
-    
-    .futdraft-header {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    
-    .field-header {
-        flex-direction: column;
-        gap: 15px;
     }
 }

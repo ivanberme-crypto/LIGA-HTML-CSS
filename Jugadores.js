@@ -133,10 +133,8 @@ function selectFormation(formationKey) {
 
 function renderPositions(formation) {
     const container = document.getElementById('positionsContainer');
-    if (!container) return;
-    
-    container.innerHTML = '';
-    
+    if (!container) return;    
+    container.innerHTML = '';   
     formation.positions.forEach(pos => {
         const positionDiv = document.createElement('div');
         positionDiv.className = 'position';
@@ -148,14 +146,13 @@ function renderPositions(formation) {
         positionDiv.onclick = () => openPlayerSelector(pos);
         if (assignedPlayers[pos.id]) {
             const player = assignedPlayers[pos.id];
-            positionDiv.classList.add('occupied');
+            positionDiv.classList.add('__occupied');
             positionDiv.innerHTML = `
-            <img src="${player.img}" class="player-card-field">
+            <img src="${player.image}" class="player__card-field">
             `;
         } else {
             positionDiv.innerHTML = '<span class="pos-label">' + pos.name + '</span>';
         }
-        
         container.appendChild(positionDiv);
     });
 }
@@ -223,8 +220,6 @@ function goBackToFormations() {
     currentFormation = null;
     selectedPosition = null;
 }
-
-// FUNCIONES DE QUÍMICA
 
 function getSimilarPositions(position) {
     const similar = {

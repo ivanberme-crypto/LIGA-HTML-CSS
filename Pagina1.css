@@ -1,1 +1,389 @@
+:root {
+    --uefa-color-principal: #111827;
+    --uefa-color-secundario: #1f2a6b;
+    --uefa-color-terciario: #374151;
+    --uefa-color-acento: #e11d48;
+    --uefa-color-texto: #ffffff;
+    --uefa-color-texto-oscuro: #0b1220;
+    --uefa-color-acento: #ff0000;
+    --uefa-color-sombra: rgba(0, 0, 0, 0.30);
 
+    --uefa-bg: var(--uefa-color-principal);
+    --uefa-text: var(--uefa-color-texto);
+    --uefa-muted: rgba(255, 255, 255, 0.85);
+
+    --uefa-card: var(--uefa-color-secundario);
+
+    --uefa-radius: 16px;
+    --uefa-shadow: 0 12px 30px var(--uefa-color-sombra);
+    --uefa-container: 1140px;
+    --uefa-gap: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.uefa-page {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--uefa-bg);
+    color: var(--uefa-text);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.uefa-container {
+    width: min(var(--uefa-container), calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.uefa-text--muted {
+    color: var(--uefa-muted);
+}
+
+.uefa-link {
+    color: var(--uefa-color-acento);
+    font-weight: 800;
+}
+
+.uefa-link:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.uefa-header {
+    background: var(--uefa-color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 6px 18px var(--uefa-color-sombra);
+}
+
+.uefa-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--uefa-gap);
+    padding: 14px 0;
+}
+
+.uefa-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+}
+
+.uefa-brand__icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+/* Nav */
+.uefa-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.uefa-nav__link {
+    padding: 9px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.uefa-nav__link:hover {
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+}
+
+/* Buttons */
+.uefa-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    border-radius: 999px;
+    font-weight: 900;
+    border: 1px solid var(--uefa-color-terciario);
+}
+
+.uefa-button--outline {
+    background: transparent;
+}
+
+.uefa-button--outline:hover {
+    background: var(--uefa-color-terciario);
+}
+
+.uefa-button--ghost {
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--uefa-color-acento);
+    font-weight: 900;
+}
+
+.uefa-button--ghost:hover {
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+}
+
+/* Hero */
+.uefa-hero {
+    padding: 18px 0 0;
+    margin-bottom: 30px;
+}
+
+.uefa-hero__card {
+    background: var(--uefa-card);
+    border-radius: calc(var(--uefa-radius) + 6px);
+    padding: 22px;
+    box-shadow: var(--uefa-shadow);
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 22px;
+}
+
+.uefa-hero__media {
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    background: var(--uefa-color-terciario);
+    min-height: 280px;
+}
+
+.uefa-hero__image {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+.uefa-hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.uefa-hero__meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.uefa-pill {
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.uefa-hero__separator,
+.uefa-hero__date {
+    font-weight: 800;
+    font-size: 12px;
+    opacity: 0.95;
+}
+
+.uefa-hero__title {
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.05;
+}
+
+.uefa-hero__actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+/* Sections */
+.uefa-section {
+    padding: 34px 0;
+}
+
+.uefa-section--alt {
+    padding: 34px 0;
+}
+
+.uefa-section__head .uefa-section__title {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.uefa-section__head p {
+    margin: 0;
+}
+
+/* News */
+.uefa-newsGrid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
+}
+
+.uefa-newsCard {
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
+}
+
+.uefa-newsCard__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.uefa-newsCard__body {
+    padding: 14px;
+}
+
+.uefa-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.uefa-newsCard__title {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.uefa-newsCard__link:hover {
+    text-decoration: underline;
+}
+
+/* Champions */
+.uefa-championsGrid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+    gap: var(--uefa-gap);
+}
+
+.uefa-panel {
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    padding: 16px;
+    box-shadow: var(--uefa-shadow);
+}
+
+.uefa-panel__title {
+    margin: 0 0 8px;
+}
+
+.uefa-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.uefa-list__item {
+    margin: 8px 0;
+}
+
+/* League */
+.uefa-league {
+    margin-top: 26px;
+}
+
+.uefa-leagueGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
+}
+
+.uefa-leagueCard {
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
+}
+
+.uefa-leagueCard__image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.uefa-leagueCard__title {
+    margin: 12px 12px 6px;
+    font-size: 15px;
+}
+
+.uefa-leagueCard__text {
+    margin: 0 12px 12px;
+}
+
+/* Footer */
+.uefa-footer {
+    background: var(--uefa-color-secundario);
+    padding: 18px 0 28px;
+    box-shadow: 0 -6px 18px var(--uefa-color-sombra);
+}
+
+.uefa-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1020px) {
+    .uefa-hero__card {
+        grid-template-columns: 1fr;
+    }
+
+    .uefa-championsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uefa-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .uefa-hero__title {
+        font-size: 30px;
+    }
+}

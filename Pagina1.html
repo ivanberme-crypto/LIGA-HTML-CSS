@@ -1,13 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UEFA XTART</title>
+  <link rel="stylesheet" href="Pagina1.css" />
+  <link rel="icon" href="Imagenes/uefaxtart.PNG" type="image/x-icon" />
 </head>
 
-<body>
+<body class="uefa-page">
+
+  <header class="uefa-header">
+    <div class="uefa-container uefa-header__inner">
+      <a class="uefa-brand" href="#inicio" aria-label="Inicio">
+        <img class="uefa-brand__icon" src="Imagenes/uefaxtart.PNG" alt="UEFA XTART" />
+      </a>
+
+      <nav class="uefa-nav" aria-label="Navegación principal">
+        <a class="uefa-nav__link" href="#noticias">Noticias</a>
+        <a class="uefa-nav__link" href="#champions">Champions</a>
+        <a class="uefa-nav__link" href="#premier">Premier</a>
+        <a class="uefa-nav__link" href="#laliga">LaLiga</a>
+        <a class="uefa-nav__link" href="#seriea">Serie A</a>
+        <a class="uefa-nav__link" href="#bundesliga">Bundesliga</a>
+        <a class="uefa-nav__link" href="#ligue1">Ligue 1</a>
+      </nav>
+
+      <a class="uefa-button uefa-button--ghost" href="#">Fut Draft</a>
+    </div>
+  </header>
+
+  <main id="inicio" class="uefa-main">
+
+    <section class="uefa-hero">
+      <div class="uefa-container uefa-hero__inner">
+        <div class="uefa-hero__card">
+          <a class="uefa-hero__media" href="#">
+            <img class="uefa-hero__image" src="Imagenes/lamine.PNG" alt="Lamine" />
+          </a>
+
+          <div class="uefa-hero__content">
+            <div class="uefa-hero__meta">
+              <span class="uefa-pill">RESUMEN DE PARTIDO</span>
+              <span class="uefa-hero__separator" aria-hidden="true">|</span>
+              <span class="uefa-hero__date">FECHA: 10/02/2026</span>
+            </div>
+
+            <h1 class="uefa-hero__title">Duro palo para Tebas: Corea del Norte piratea los partidos de LaLiga</h1>
+
+            <p class="uefa-text uefa-text--muted">
+              Javier Tebas sigue inmiscuido en su particular cruzada para terminar con la piratería en el fútbol.
+              Su última medida fue la de ofrecer dinero a aquellos que denunciaran a los bares que estén retransmitiendo
+              partidos del campeonato doméstico español de manera irregular.
+            </p>
+
+            <div class="uefa-hero__actions">
+              <a class="uefa-button uefa-button--outline" href="#ligas">Más noticias</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias" class="uefa-section">
+      <div class="uefa-container uefa-section__head">
+        <h2 class="uefa-section__title">Noticias</h2>
+        <p class="uefa-text uefa-text--muted">Ultimas noticias del momento.</p>
+      </div>
+
+      <div class="uefa-container uefa-newsGrid">
+
+        <article class="uefa-newsCard">
+          <img class="uefa-newsCard__image" src="/LIGA-HTML-CSS/Imagenes/mikel.PNG" alt="Mikel Merino" />
+          <div class="uefa-newsCard__body">
+            <span class="uefa-tag">LESION</span>
+            <h3 class="uefa-newsCard__title">
+              <a class="uefa-newsCard__link" href="#">Lesion de Mikel Merino</a>
+            </h3>
+            <p class="uefa-text uefa-text--muted">
+              Mikel Merino sufrió "una fractura por estrés, algo más interno", que dificulta establecer plazos exactos
+              de recuperación. "Hay un poco de incógnita con el tiempo de recuperación, porque no existe un historial
+              claro de este tipo de lesión".
+            </p>
+          </div>
+        </article>
+
+        <article class="uefa-newsCard">
+          <img class="uefa-newsCard__image" src="/LIGA-HTML-CSS/Imagenes/alvarez.PNG" alt="Julián Álvarez" />
+          <div class="uefa-newsCard__body">
+            <span class="uefa-tag">FICHAJES</span>
+            <h3 class="uefa-newsCard__title">
+              <a class="uefa-newsCard__link" href="#">
+                El Chelsea avanza en silencio el fichaje de Julián Álvarez
+              </a>
+            </h3>
+            <p class="uefa-text uefa-text--muted">
+              Diversos informes han señalado que tanto el Barcelona como el Arsenal están cada vez más interesados en
+              hacerse con Álvarez en una operación que podría superar los 100 millones de libras (115 millones de
+              euros).
+            </p>
+          </div>
+        </article>
+
+        <article class="uefa-newsCard">
+          <img class="uefa-newsCard__image" src="Imagenes/lucho.png" alt="Luis Díaz" />
+          <div class="uefa-newsCard__body">
+            <span class="uefa-tag">PARTIDO</span>
+            <h3 class="uefa-newsCard__title">
+              <a class="uefa-newsCard__link" href="#">
+                Luis Díaz firma un hat-trick en la contundente victoria del Bayern (5-1)
+              </a>
+            </h3>
+            <p class="uefa-text uefa-text--muted">
+              Luis Díaz ha marcado un hat-trick y ha provocado dos penaltis más en la goleada del Bayern Múnich, que
+              vuelve a la senda del triunfo y recupera su ventaja de seis puntos en lo más alto de la Bundesliga.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="champions" class="uefa-section uefa-section--alt">
+      <div class="uefa-container uefa-section__head">
+        <h2 class="uefa-section__title">Champions League</h2>
+        <p class="uefa-text uefa-text--muted">Partido de la semana goleadores y noticias.</p>
+      </div>
+
+      <div class="uefa-container uefa-championsGrid">
+
+        <article class="uefa-panel">
+          <h3 class="uefa-panel__title">Partido de la semana</h3>
+          <p class="uefa-text uefa-text--muted">
+            El partido más destacado de la semana fue el del Real Madrid contra el Barcelona, que terminó con un empate
+            2-2. Destacando el doblete de Mbappe y el penalti anulado de Lamine Yamal.
+          </p>
+        </article>
+
+        <article class="uefa-panel">
+          <h3 class="uefa-panel__title">Goleadores</h3>
+          <ul class="uefa-list">
+            <li class="uefa-list__item">Harry Kane 14 — 8</li>
+            <li class="uefa-list__item">Mbappé 12 — 9</li>
+            <li class="uefa-list__item">Marcus Thuram 7 — 8</li>
+          </ul>
+        </article>
+
+        <article class="uefa-panel">
+          <h3 class="uefa-panel__title">Última hora</h3>
+          <ul class="uefa-list">
+            <li class="uefa-list__item"><a class="uefa-link" href="#">Noticia UCL 1 →</a></li>
+            <li class="uefa-list__item"><a class="uefa-link" href="#">Noticia UCL 2 →</a></li>
+            <li class="uefa-list__item"><a class="uefa-link" href="#">Noticia UCL 3 →</a></li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="ligas" class="uefa-section">
+      <div class="uefa-container uefa-section__head">
+        <h2 class="uefa-section__title">Noticias de la Premier League</h2>
+        <p class="uefa-text uefa-text--muted">
+          Ultimas noticias de la PL de los mejores y mas grandes equipos de europa
+        </p>
+      </div>
+
+      <section id="premier" class="uefa-league">
+        <div class="uefa-container uefa-leagueGrid">
+
+          <article class="uefa-leagueCard">
+            <img class="uefa-leagueCard__image" src="Imagenes/slot.PNG" alt="Arne Slot" />
+            <h4 class="uefa-leagueCard__title">
+              <a class="uefa-leagueCard__link" href="#">
+                Slot admite que el Liverpool tendrá que estar "cerca de la perfección" si quiere ir a Champions
+              </a>
+            </h4>
+            <p class="uefa-text uefa-text--muted uefa-leagueCard__text">
+              Slot espera que su equipo se recupere ante los Black Cats, que son el único equipo de la Premier League
+              que
+              aún no ha perdido como local en la temporada.
+            </p>
+          </article>
+
+          <article class="uefa-leagueCard">
+            <img class="uefa-leagueCard__image" src="Imagenes/pep.PNG" alt="Pep Guardiola" />
+            <h4 class="uefa-leagueCard__title">
+              <a class="uefa-leagueCard__link" href="#">
+                El City busca dar un impulso a la lucha por el título de la Premier
+              </a>
+            </h4>
+            <p class="uefa-text uefa-text--muted uefa-leagueCard__text">
+              El Manchester City puede aumentar la presión sobre el líder de la Premier League, el Arsenal, recortando
+              la
+              distancia en la cima a solo tres puntos si vence al Fulham el miércoles.
+            </p>
+          </article>
+
+          <article class="uefa-leagueCard">
+            <img class="uefa-leagueCard__image" src="Imagenes/grealish.PNG" alt="Jack Grealish" />
+            <h4 class="uefa-leagueCard__title">
+              <a class="uefa-leagueCard__link" href="#">
+                Grealish se pierde lo que queda de temporada
+              </a>
+            </h4>
+            <p class="uefa-text uefa-text--muted uefa-leagueCard__text">
+              El centrocampista del Everton Jack Grealish ha confirmado que su temporada ha terminado tras pasar por el
+              quirófano para tratarse una fractura por estrés en el pie.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Secciones vacías para que no te rompa el menú (si luego las rellenas) -->
+      <section id="laliga"></section>
+      <section id="seriea"></section>
+      <section id="bundesliga"></section>
+      <section id="ligue1"></section>
+
+    </section>
+  </main>
+
+  <footer class="uefa-footer">
+    <div class="uefa-container uefa-footer__inner">
+      <p class="uefa-text uefa-text--muted">© 2026 - UEFA XTART</p>
+      <a class="uefa-link" href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
 
 </body>
 

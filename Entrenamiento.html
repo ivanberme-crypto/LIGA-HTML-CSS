@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutDraft - Formaciones</title>
+    <link rel="stylesheet" href="Principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="Jugadores.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img" src="Imagenes/logo.png" alt="Logo FutDraft">
+            <h1 class="header__title">FutDraft</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="Index.html">Inicio</a></li>
+                <li class="header__item"><a href="#">Acerca de</a></li>
+                <li class="header__item"><a href="#">Contacto</a></li>
+                <li class="desplegable">
+                    <a href="#" class="desplegable__btn">Juego</a>
+                    <div class="desplegable__content">
+                        <a href="#">Jugadores</a>
+                        <a href="#">Equipos</a>
+                        <a href="#">Ligas</a>
+                        <a href="#">Actualizaciones</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-futdraft">
+        <section class="formation-selector" id="formationSelector">
+            <h2 class="section-title">Elige tu Formación</h2>
+            <div class="formations-grid-futdraft">
+                <div class="formation-option" onclick="selectFormation('4-3-3')">
+                    <img src="Imagenes/433.png" alt="4-3-3">
+                    <span>4-3-3</span>
+                </div>
+                <div class="formation-option" onclick="selectFormation('4-4-2')">
+                    <img src="Imagenes/442.png" alt="4-4-2">
+                    <span>4-4-2</span>
+                </div>
+                <div class="formation-option" onclick="selectFormation('5-3-2')">
+                    <img src="Imagenes/532.png" alt="5-3-2">
+                    <span>5-3-2</span>
+                </div>
+                <div class="formation-option" onclick="selectFormation('5-4-1')">
+                    <img src="Imagenes/541.png" alt="5-4-1">
+                    <span>5-4-1</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista del campo con posiciones interactivas -->
+        <section class="field-view" id="fieldView" style="display: none;">
+            <div class="field-header">
+                <button class="back-btn-futdraft" onclick="goBackToFormations()">← Cambiar Formación</button>
+                <h2 class="formation-name-display" id="formationNameDisplay"></h2>
+            </div>
+            
+            <!-- Campo de fútbol interactivo -->
+            <div class="field-container">
+                <div class="field">
+                    <!-- Área de portería -->
+                    <div class="penalty-area-top"></div>
+                    <div class="penalty-area-bottom"></div>
+                    
+                    <!-- Círculo central -->
+                    <div class="center-circle"></div>
+                    <div class="center-line"></div>
+                    
+                    <!-- Posiciones de jugadores - Se generarán dinámicamente -->
+                    <div class="positions-container" id="positionsContainer">
+                        <!-- Las posiciones se insertarán aquí con JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel de selección de jugador -->
+            <div class="player-selector-panel" id="playerSelectorPanel" style="display: none;">
+                <h3>Seleccionar Jugador</h3>
+                <div class="player-list" id="playerList">
+                    <!-- Jugadores se cargarán aquí -->
+                </div>
+                <button class="close-panel-btn" onclick="closePlayerPanel()">Cerrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <p class="footer__list">Developed by: 
+                    <a href="https://github.com/yourusername">Javier Vega</a>
+                    <a href="https://github.com/yourusername">Javier Clemente</a>
+                    <a href="https://github.com/yourusername">Berme</a>
+                    <a href="https://github.com/yourusername">Helen</a>
+                </p>
+            </div>
+            <div class="footer__section">
+                <p class="footer__text">Síguenos en redes sociales</p>
+                <div class="social__links">
+                    <a href="#" class="social__link" aria-label="Facebook">F</a>
+                    <a href="#" class="social__link" aria-label="Twitter">X</a>
+                    <a href="#" class="social__link" aria-label="Instagram">I</a>
+                    <a href="#" class="social__link" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer__section">
+                <p class="footer__text">© 2026 FutDraft. All rights reserved.</p>
+                <p class="footer__text">Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

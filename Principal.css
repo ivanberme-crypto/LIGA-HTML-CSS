@@ -524,3 +524,336 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* FUTDRAFT FORMATIONS STYLES */
+
+.main-futdraft {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: calc(100vh - 150px);
+}
+
+.section-title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Formation Selector Grid */
+
+.formations-grid-futdraft {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.formation-option {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.formation-option:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-acento);
+    box-shadow: 0 10px 30px rgba(255, 152, 0, 0.3);
+}
+
+.formation-option img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.formation-option span {
+    color: var(--color-texto);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+}
+
+/* Field View */
+
+.field-view {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.back-btn-futdraft {
+    background: var(--color-acento);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-btn-futdraft:hover {
+    transform: scale(1.05);
+}
+
+.formation-name-display {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* Football Field */
+
+.field-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.field {
+    width: 100%;
+    aspect-ratio: 70/100;
+    max-height: 600px;
+    background: linear-gradient(180deg, #2d5a27 0%, #3d7a37 50%, #2d5a27 100%);
+    border: 3px solid white;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.field::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 50px,
+            rgba(255,255,255,0.03) 50px,
+            rgba(255,255,255,0.03) 51px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 50px,
+            rgba(255,255,255,0.03) 50px,
+            rgba(255,255,255,0.03) 51px
+        );
+    pointer-events: none;
+}
+
+.penalty-area-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 16%;
+    border: 2px solid white;
+    border-top: none;
+}
+
+.penalty-area-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 16%;
+    border: 2px solid white;
+    border-bottom: none;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.center-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateY(-50%);
+}
+
+/* Positions */
+
+.positions-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(233, 69, 96, 0.9);
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.position:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+    background: #ff6b6b;
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+}
+
+.position.occupied {
+    background: #4CAF50;
+}
+
+.position.occupied:hover {
+    background: #66BB6A;
+}
+
+.pos-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.player-name {
+    font-size: 0.6rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Player Selector Panel */
+
+.player-selector-panel {
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.player-selector-panel h3 {
+    color: var(--color-texto);
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.player-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.player-option {
+    background: rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-texto);
+}
+
+.player-option:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.close-panel-btn {
+    width: 100%;
+    padding: 12px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.close-panel-btn:hover {
+    background: #777;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .formations-grid-futdraft {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .position {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .field {
+        max-height: 450px;
+    }
+    
+    .pos-label {
+        font-size: 0.6rem;
+    }
+    
+    .player-name {
+        font-size: 0.5rem;
+    }
+}

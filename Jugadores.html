@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutDraft</title>
     <link rel="stylesheet" href="Principal.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <script src="Jugadores.js" defer></script>
+    <script src="Cartas.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -33,11 +34,12 @@
     </header>
     <main class="main__jugadores">
         <section class="section__jugadores">
-            <div class="jugadores">
-                <img src="Imagenes/Jugadores/Alisson.png" alt="">
-                <img src="Imagenes/Jugadores/Bellingham.png" alt="">
-                <img src="Imagenes/Jugadores/Bruno Fernandes.png" alt="">
-
+            <div class="jugadores__header">
+                <h2 class="jugadores__title">Jugadores</h2>
+                <p class="jugadores__subtitle">Todos los jugadores disponibles ordenados por posición y rating</p>
+            </div>
+            <div id="jugadoresContainer">
+                
             </div>
         </section>
     </main>

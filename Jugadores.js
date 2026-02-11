@@ -4,65 +4,65 @@ const formations = {
     '4-3-3': {
         name: '4-3-3',
         positions: [
-            { id: 'GK', name: 'POR', x: 50, y: 92, type: 'GK' },
-            { id: 'LB', name: 'LI', x: 12, y: 75, type: 'LB' },
-            { id: 'CB1', name: 'DFC', x: 35, y: 78, type: 'CB' },
-            { id: 'CB2', name: 'DFC', x: 65, y: 78, type: 'CB' },
-            { id: 'RB', name: 'LD', x: 88, y: 75, type: 'RB' },
-            { id: 'CM1', name: 'MCD', x: 35, y: 55, type: 'CM' },
-            { id: 'CM2', name: 'MC', x: 50, y: 50, type: 'CM' },
-            { id: 'CM3', name: 'MCD', x: 65, y: 55, type: 'CM' },
-            { id: 'LW', name: 'EI', x: 18, y: 28, type: 'LW' },
+            { id: 'GK', name: 'POR', x: 50, y: 90, type: 'GK' },
+            { id: 'LB', name: 'LI', x: 10, y: 70, type: 'LB' },
+            { id: 'CB1', name: 'DFC', x: 35, y: 75, type: 'CB' },
+            { id: 'CB2', name: 'DFC', x: 65, y: 75, type: 'CB' },
+            { id: 'RB', name: 'LD', x: 90, y: 70, type: 'RB' },
+            { id: 'CM1', name: 'MCD', x: 35, y: 50, type: 'CM' },
+            { id: 'CM2', name: 'MC', x: 50, y: 40, type: 'CM' },
+            { id: 'CM3', name: 'MCD', x: 65, y: 50, type: 'CM' },
+            { id: 'LW', name: 'EI', x: 10, y: 28, type: 'LW' },
             { id: 'ST', name: 'DEL', x: 50, y: 18, type: 'ST' },
-            { id: 'RW', name: 'ED', x: 82, y: 28, type: 'RW' }
+            { id: 'RW', name: 'ED', x: 90, y: 28, type: 'RW' }
         ]
     },
     '4-4-2': {
         name: '4-4-2',
         positions: [
-            { id: 'GK', name: 'POR', x: 50, y: 92, type: 'GK' },
-            { id: 'LB', name: 'LI', x: 12, y: 75, type: 'LB' },
-            { id: 'CB1', name: 'DFC', x: 35, y: 78, type: 'CB' },
-            { id: 'CB2', name: 'DFC', x: 65, y: 78, type: 'CB' },
-            { id: 'RB', name: 'LD', x: 88, y: 75, type: 'RB' },
-            { id: 'LM', name: 'MI', x: 15, y: 50, type: 'LM' },
-            { id: 'CM1', name: 'MC', x: 38, y: 55, type: 'CM' },
-            { id: 'CM2', name: 'MC', x: 62, y: 55, type: 'CM' },
-            { id: 'RM', name: 'MD', x: 85, y: 50, type: 'RM' },
-            { id: 'ST1', name: 'DEL', x: 38, y: 30, type: 'ST' },
-            { id: 'ST2', name: 'DEL', x: 62, y: 30, type: 'ST' }
+            { id: 'GK', name: 'POR', x: 50, y: 90, type: 'GK' },
+            { id: 'LB', name: 'LI', x: 13, y: 65, type: 'LB' },
+            { id: 'CB1', name: 'DFC', x: 31, y: 75, type: 'CB' },
+            { id: 'CB2', name: 'DFC', x: 68, y: 75, type: 'CB' },
+            { id: 'RB', name: 'LD', x: 87, y: 65, type: 'RB' },
+            { id: 'LM', name: 'MI', x: 10, y: 40, type: 'LM' },
+            { id: 'CM1', name: 'MC', x: 35, y: 50, type: 'CM' },
+            { id: 'CM2', name: 'MC', x: 65, y: 50, type: 'CM' },
+            { id: 'RM', name: 'MD', x: 90, y: 40, type: 'RM' },
+            { id: 'ST1', name: 'DEL', x: 35, y: 25, type: 'ST' },
+            { id: 'ST2', name: 'DEL', x: 65, y: 25, type: 'ST' }
         ]
     },
     '5-3-2': {
         name: '5-3-2',
         positions: [
-            { id: 'GK', name: 'POR', x: 50, y: 92, type: 'GK' },
-            { id: 'LB', name: 'LI', x: 8, y: 72, type: 'LB' },
-            { id: 'CB1', name: 'DFC', x: 28, y: 76, type: 'CB' },
-            { id: 'CB2', name: 'DFC', x: 50, y: 78, type: 'CB' },
-            { id: 'CB3', name: 'DFC', x: 72, y: 76, type: 'CB' },
-            { id: 'RB', name: 'LD', x: 92, y: 72, type: 'RB' },
-            { id: 'CM1', name: 'MCD', x: 32, y: 52, type: 'CM' },
-            { id: 'CM2', name: 'MCO', x: 50, y: 42, type: 'CM' },
-            { id: 'CM3', name: 'MCD', x: 68, y: 52, type: 'CM' },
-            { id: 'ST1', name: 'DEL', x: 38, y: 22, type: 'ST' },
-            { id: 'ST2', name: 'DEL', x: 62, y: 22, type: 'ST' }
+            { id: 'GK', name: 'POR', x: 50, y: 90, type: 'GK' },
+            { id: 'LB', name: 'LI', x: 8, y: 56, type: 'LB' },
+            { id: 'CB1', name: 'DFC', x: 30, y: 70, type: 'CB' },
+            { id: 'CB2', name: 'DFC', x: 50, y: 70, type: 'CB' },
+            { id: 'CB3', name: 'DFC', x: 70, y: 70, type: 'CB' },
+            { id: 'RB', name: 'LD', x: 92, y: 56, type: 'RB' },
+            { id: 'CM1', name: 'MC', x: 25, y: 42, type: 'CM' },
+            { id: 'CM2', name: 'MC', x: 50, y: 42, type: 'CM' },
+            { id: 'CM3', name: 'MC', x: 75, y: 42, type: 'CM' },
+            { id: 'ST1', name: 'DEL', x: 38, y: 20, type: 'ST' },
+            { id: 'ST2', name: 'DEL', x: 62, y: 20, type: 'ST' }
         ]
     },
     '5-4-1': {
         name: '5-4-1',
         positions: [
-            { id: 'GK', name: 'POR', x: 50, y: 92, type: 'GK' },
-            { id: 'LB', name: 'LI', x: 8, y: 72, type: 'LB' },
-            { id: 'CB1', name: 'DFC', x: 28, y: 76, type: 'CB' },
-            { id: 'CB2', name: 'DFC', x: 50, y: 78, type: 'CB' },
-            { id: 'CB3', name: 'DFC', x: 72, y: 76, type: 'CB' },
-            { id: 'RB', name: 'LD', x: 92, y: 72, type: 'RB' },
-            { id: 'LM', name: 'MI', x: 15, y: 48, type: 'LM' },
-            { id: 'CM1', name: 'MC', x: 38, y: 46, type: 'CM' },
-            { id: 'CM2', name: 'MC', x: 62, y: 46, type: 'CM' },
-            { id: 'RM', name: 'MD', x: 85, y: 48, type: 'RM' },
-            { id: 'ST', name: 'DEL', x: 50, y: 18, type: 'ST' }
+            { id: 'GK', name: 'POR', x: 50, y: 90, type: 'GK' },
+            { id: 'LB', name: 'LI', x: 8, y: 65, type: 'LB' },
+            { id: 'CB1', name: 'DFC', x: 28, y: 70, type: 'CB' },
+            { id: 'CB2', name: 'DFC', x: 50, y: 70, type: 'CB' },
+            { id: 'CB3', name: 'DFC', x: 72, y: 70, type: 'CB' },
+            { id: 'RB', name: 'LD', x: 92, y: 65, type: 'RB' },
+            { id: 'LM', name: 'MI', x: 13, y: 40, type: 'LM' },
+            { id: 'CM1', name: 'MC', x: 35, y: 45, type: 'CM' },
+            { id: 'CM2', name: 'MC', x: 65, y: 45, type: 'CM' },
+            { id: 'RM', name: 'MD', x: 87, y: 40, type: 'RM' },
+            { id: 'ST', name: 'DEL', x: 50, y: 25, type: 'ST' }
         ]
     }
 };
@@ -71,7 +71,7 @@ const formations = {
 
 const availablePlayers = [
     // Porteros
-    { id: 1, name: 'Courtois', position: 'POR', rating: 91, image: 'Imagenes/Jugadores/courtois.png' },
+    { id: 1, name: 'Courtois', position: 'POR', rating: 90, image: 'Imagenes/Jugadores/Courtois.png' },
     { id: 2, name: 'Ter Stegen', position: 'POR', rating: 89, image: 'Imagenes/Jugadores/ter Stegen.png' },
     { id: 3, name: 'Alisson', position: 'POR', rating: 89, image: 'Imagenes/Jugadores/Alisson.png' },
     { id: 4, name: 'Ederson', position: 'POR', rating: 87, image: 'Imagenes/Jugadores/Ederson.png' },
@@ -87,7 +87,7 @@ const availablePlayers = [
     { id: 12, name: 'Theo Hernandez', position: 'LI', rating: 84, image: 'Imagenes/Jugadores/Hernandez.png' },
     { id: 13, name: 'Davies', position: 'LI', rating: 84, image: 'Imagenes/Jugadores/Davies.png' },
     { id: 14, name: 'Saliba', position: 'DFC', rating: 90, image: 'Imagenes/Jugadores/Saliba.png' },
-    { id: 15, name: 'Gvardiol', position: 'DFC', rating: 84, image: 'Imagenes/Jugadores/Gvardiol.png' },
+    { id: 15, name: 'Gvardiol', position: 'LI', rating: 84, image: 'Imagenes/Jugadores/Gvardiol.png' },
     
     // Centrocampistas
     { id: 16, name: 'Rodri', position: 'MCD', rating: 91, image: 'Imagenes/Jugadores/Rodri.png' },
@@ -100,27 +100,31 @@ const availablePlayers = [
     { id: 23, name: 'Gavi', position: 'MC', rating: 83, image: 'Imagenes/Jugadores/Gavi.png' },
     { id: 24, name: 'Fernandes', position: 'MCO', rating: 87, image: 'Imagenes/Jugadores/Bruno Fernandes.png' },
     { id: 25, name: 'Rice', position: 'MCD', rating: 94, image: 'Imagenes/Jugadores/Rice.png' },
-    { id: 35, name: 'Musiala', position: 'MCO', rating: 88, image: 'Imagenes/Jugadores/Musiala.png' },
+    { id: 26, name: 'Musiala', position: 'MCO', rating: 88, image: 'Imagenes/Jugadores/Musiala.png' },
+    { id: 27, name: 'Ruben Garcia', position: 'MD', rating: 78, image: 'Imagenes/Jugadores/Ruben Garcia.png' },
+    { id: 28, name: 'Baku', position: 'MD', rating: 78, image: 'Imagenes/Jugadores/Baku.png' },
+    { id: 29, name: 'Antman', position: 'MD', rating: 75, image: 'Imagenes/Jugadores/Antman.png' },
+    { id: 30, name: 'McGinn', position: 'MI', rating: 81, image: 'Imagenes/Jugadores/McGinn.png' },
+    { id: 31, name: 'Sergio Gomez', position: 'MI', rating: 79, image: 'Imagenes/Jugadores/Sergio Gomez.png' },
+    { id: 32, name: 'Ruggeri', position: 'MI', rating: 75, image: 'Imagenes/Jugadores/Ruggeri.png' },
+    { id: 33, name: 'Salah', position: 'MD', rating: 91, image: 'Imagenes/Jugadores/Salah.png' },
+    { id: 34, name: 'Raphinha', position: 'MI', rating: 95, image: 'Imagenes/Jugadores/Raphinha.png' },
     
     // Delanteros
-    { id: 26, name: 'Haaland', position: 'DEL', rating: 90, image: 'Imagenes/Jugadores/Haaland.png' },
-    { id: 27, name: 'Mbappé', position: 'DEL', rating: 96, image: 'Imagenes/Jugadores/Mbappe.png' },
-    { id: 28, name: 'Vinicius Jr', position: 'EI', rating: 89, image: 'Imagenes/Jugadores/Vini Jr..png' },
-    { id: 29, name: 'Salah', position: 'ED', rating: 91, image: 'Imagenes/Jugadores/Salah.png' },
-    { id: 30, name: 'Lewandowski', position: 'DEL', rating: 88, image: 'Imagenes/Jugadores/Lewandowski.png' },
-    { id: 31, name: 'Kane', position: 'DEL', rating: 89, image: 'Imagenes/Jugadores/Kane.png' },
-    { id: 32, name: 'Saka', position: 'ED', rating: 88, image: 'Imagenes/Jugadores/Saka.png' },
-    { id: 33, name: 'Raphinha', position: 'EI', rating: 95, image: 'Imagenes/Jugadores/Raphinha.png' },
-    { id: 34, name: 'Foden', position: 'EI', rating: 85, image: 'Imagenes/Jugadores/Foden.png' }
+    { id: 35, name: 'Haaland', position: 'DEL', rating: 90, image: 'Imagenes/Jugadores/Haaland.png' },
+    { id: 36, name: 'Mbappé', position: 'DEL', rating: 96, image: 'Imagenes/Jugadores/Mbappe.png' },
+    { id: 37, name: 'Vinicius Jr', position: 'EI', rating: 89, image: 'Imagenes/Jugadores/Vini Jr..png' },
+    { id: 38, name: 'Lewandowski', position: 'DEL', rating: 88, image: 'Imagenes/Jugadores/Lewandowski.png' },
+    { id: 39, name: 'Kane', position: 'DEL', rating: 89, image: 'Imagenes/Jugadores/Kane.png' },
+    { id: 40, name: 'Saka', position: 'ED', rating: 88, image: 'Imagenes/Jugadores/Saka.png' },
+    { id: 41, name: 'Foden', position: 'ED', rating: 85, image: 'Imagenes/Jugadores/Foden.png' }
 ];
-
-// ESTADO DE LA APLICACIÓN
 
 let currentFormation = null;
 let selectedPosition = null;
 let assignedPlayers = {};
 
-// FUNCIONES DE FORMACIÓN
+// FUNCIONES FORMACION
 
 function selectFormation(formationKey) {
     currentFormation = formationKey;
@@ -157,7 +161,7 @@ function renderPositions(formation) {
     });
 }
 
-// FUNCIONES DE SELECCIÓN DE JUGADORES
+// FUNCIONES DE SELECCIÓN
 
 function openPlayerSelector(position) {
     selectedPosition = position;
@@ -202,14 +206,6 @@ function removePlayer(positionId) {
     }
 }
 
-function closePlayerPanel() {
-    const panel = document.getElementById('playerSelectorPanel');
-    if (panel) {
-        panel.style.display = 'none';
-    }
-    selectedPosition = null;
-}
-
 function goBackToFormations() {
     const fieldView = document.getElementById('fieldView');
     const selector = document.getElementById('formationSelector');
@@ -224,27 +220,27 @@ function goBackToFormations() {
 function getSimilarPositions(position) {
     const similar = {
         'GK': ['POR'],
+        'POR': ['GK'],
         'DFC': ['CB', 'LB', 'LD', 'RB', 'LI'],
         'CB': ['DFC', 'LB', 'LD', 'RB', 'LI'],
-        'LB': ['LD', 'DFC', 'CB'],
-        'LD': ['LB', 'DFC', 'CB'],
-        'RB': ['LI', 'DFC', 'CB'],
-        'LI': ['RB', 'DFC', 'CB'],
+        'LB': ['LI', 'DFC', 'CB'],
+        'LD': ['RB', 'DFC', 'CB'],
+        'RB': ['LD', 'DFC', 'CB'],
+        'LI': ['LB', 'DFC', 'CB'],
         'MCD': ['MC', 'CM', 'MCO'],
         'MC': ['CM', 'MCD', 'MCO'],
         'CM': ['MC', 'MCD', 'MCO'],
-        'MCO': ['MC', 'CM', 'DEL'],
+        'MCO': ['MC', 'CM', 'MCD'],
         'LM': ['MI', 'MC', 'CM'],
         'MI': ['LM', 'MC', 'CM'],
         'RM': ['MD', 'MC', 'CM'],
         'MD': ['RM', 'MC', 'CM'],
-        'DEL': ['ST', 'MCO'],
-        'ST': ['DEL', 'MCO'],
-        'EI': ['ED', 'DEL', 'LW'],
-        'ED': ['EI', 'DEL', 'RW'],
-        'LW': ['EI', 'DEL', 'ED'],
-        'RW': ['ED', 'DEL', 'EI'],
-        'POR': ['GK']
+        'DEL': ['ST'],
+        'ST': ['DEL'],
+        'EI': ['DEL', 'LW'],
+        'ED': ['DEL', 'RW'],
+        'LW': ['EI', 'DEL'],
+        'RW': ['ED', 'DEL']
     };
     
     return similar[position] || [];
@@ -257,7 +253,6 @@ function searchPlayers(query) {
     
     const lowerQuery = query.toLowerCase();
     return availablePlayers.filter(player =>
-        player.name.toLowerCase().includes(lowerQuery) ||
         player.position.toLowerCase().includes(lowerQuery)
     );
 }
@@ -293,7 +288,7 @@ function sortPlayers(players, criteria = 'rating') {
 // INICIALIZACIÓN
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('FutDraft 2026 - Sistema de Formaciones cargado');
+    console.log('FutDraft');
     const searchInput = document.getElementById('playerSearch');
     if (searchInput) {
         searchInput.addEventListener('input', function(e) {

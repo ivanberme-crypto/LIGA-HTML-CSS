@@ -1,14 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIGA | Home</title>
+  <link rel="stylesheet" href="Pagina1.css" />
 </head>
 
-<body>
+<body class="p-pl">
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="#inicio">
+        <span class="marca__logo">⚽</span>
+        <span class="marca__texto">LIGA</span>
+      </a>
 
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#partidos">Partidos</a>
+        <a class="navegacion__enlace" href="#tabla">Tabla</a>
+        <a class="navegacion__enlace" href="#noticias">Noticias</a>
+        <a class="navegacion__enlace" href="#equipos">Equipos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor hero__rejilla">
+        <div class="hero__contenido">
+          <h1 class="hero__titulo">Todo el fútbol, en un solo sitio</h1>
+          <p class="hero__subtitulo">Resultados, calendario, tabla, noticias y equipos.</p>
+
+          <form class="buscador" onsubmit="return false">
+            <input class="buscador__entrada" type="search" placeholder="Buscar..." />
+            <button class="boton" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="hero__panel">
+          <div class="partido">
+            <span>Liverpool</span>
+            <strong>2 - 1</strong>
+            <span>Chelsea</span>
+          </div>
+
+          <div class="hero__acciones">
+            <a class="boton boton--fantasma" href="#partidos">Calendario</a>
+            <a class="boton" href="#tabla">Tabla</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="partidos">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Partidos</h2>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="tarjeta__arriba"><span>Hoy 20:45</span><span class="etiqueta">Previo</span></div>
+            <div class="tarjeta__principal">Valladolid vs Sevilla</div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__arriba"><span>LIVE</span><span class="etiqueta etiqueta--directo">En directo</span>
+            </div>
+            <div class="tarjeta__principal">Everton 1 - 1 Arsenal</div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__arriba"><span>Sáb 18:30</span><span class="etiqueta">Previo</span></div>
+            <div class="tarjeta__principal">Real Madrid vs Barcelona</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="noticias">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Noticias</h2>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <span class="etiqueta">Última hora</span>
+            <h3 class="tarjeta__titulo">Salah firma una actuación histórica</h3>
+            <p class="texto--muted">Resumen rápido con lo más importante.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="etiqueta">Análisis</span>
+            <h3 class="tarjeta__titulo">La clave táctica de la segunda parte</h3>
+            <p class="texto--muted">Puntos clave y datos.</p>
+          </article>
+
+          <aside class="tarjeta" id="tabla">
+            <h3 class="tarjeta__titulo">Tabla (Top 6)</h3>
+            <ol class="tabla">
+              <li><span>Liverpool</span><strong>45</strong></li>
+              <li><span>Man City</span><strong>43</strong></li>
+              <li><span>Real Madrid</span><strong>41</strong></li>
+              <li><span>Tottenham</span><strong>40</strong></li>
+              <li><span>Arsenal</span><strong>39</strong></li>
+              <li><span>Chelsea</span><strong>37</strong></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="equipos">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Equipos</h2>
+
+        <div class="equipos">
+          <a class="equipo" href="#">Liverpool</a>
+          <a class="equipo" href="#">Chelsea</a>
+          <a class="equipo" href="#">Real Madrid</a>
+          <a class="equipo" href="#">Tottenham</a>
+          <a class="equipo" href="#">Villarreal</a>
+          <a class="equipo" href="#">Betis</a>
+          <a class="equipo" href="#">Newcastle</a>
+          <a class="equipo" href="#">Arsenal</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <span class="texto--muted">© 2026 LIGA</span>
+      <span class="texto--muted">Hecho con HTML + CSS</span>
+    </div>
+  </footer>
 </body>
 
 </html>

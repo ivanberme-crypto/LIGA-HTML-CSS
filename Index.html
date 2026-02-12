@@ -67,27 +67,82 @@
         </section>
         <section class="section__mode">
             <h3 class="section__title--mode">Elige el Modo de Juego</h3>
-            <div class="box">
-                <div class="box__content">
-                    <img class="box__img" src="Imagenes/entrenamiento.png" alt="Entrenamiento">
-                    <a href="Entrenamiento.html" class="box__btn">
-                        <span class="text__default">ENTRENAMIENTO</span>
-                        <span class="text__hover">JUGAR</span>
-                    </a>
-                </div>
-                <div class="box__content">
-                    <img class="box__img" src="Imagenes/campo-futbol.jpg" alt="Liga">
-                    <a href="#" class="box__btn">
-                        <span class="text__default">LIGA</span>
-                        <span class="text__hover">JUGAR</span>
-                    </a>
-                </div>
-                <div class="box__content">
-                    <img class="box__img" src="Imagenes/champion.jpg" alt="Champions League">
-                    <a href="#" class="box__btn">
-                        <span class="text__default">CHAMPIONS</span>
-                        <span class="text__hover">JUGAR</span>
-                    </a>
+            <div class="ea-carousel">
+                <div class="ea-carousel__track-container">
+                    <ul class="ea-carousel__track">
+                        <li class="ea-slide ea-slide--active">
+                            <div class="ea-card">
+                                <div class="ea-card__image-wrapper">
+                                    <img class="ea-card__image" src="Imagenes/entrenamiento.png" alt="Entrenamiento">
+                                    <div class="ea-card__overlay"></div>
+                                </div>
+                                <div class="ea-card__content">
+                                    <span class="ea-card__label">MODO DE JUEGO</span>
+                                    <h4 class="ea-card__title">ENTRENAMIENTO</h4>
+                                    <p class="ea-card__desc">Crea tu equipo ideal sin competir</p>
+                                    <a href="Entrenamiento.html" class="ea-card__btn">
+                                        <span>JUGAR</span>
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="ea-card__nav">
+                                    <button class="ea-dot ea-dot--active" data-slide="0"></button>
+                                    <button class="ea-dot" data-slide="1"></button>
+                                    <button class="ea-dot" data-slide="2"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ea-slide">
+                            <div class="ea-card">
+                                <div class="ea-card__image-wrapper">
+                                    <img class="ea-card__image" src="Imagenes/campo-futbol.jpg" alt="Liga">
+                                    <div class="ea-card__overlay"></div>
+                                </div>
+                                <div class="ea-card__content">
+                                    <span class="ea-card__label">MODO DE JUEGO</span>
+                                    <h4 class="ea-card__title">LIGA</h4>
+                                    <p class="ea-card__desc">Compite en una liga contra equipos profesionales</p>
+                                    <a href="#" class="ea-card__btn">
+                                        <span>JUGAR</span>
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="ea-card__nav">
+                                    <button class="ea-dot" data-slide="0"></button>
+                                    <button class="ea-dot ea-dot--active" data-slide="1"></button>
+                                    <button class="ea-dot" data-slide="2"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ea-slide">
+                            <div class="ea-card">
+                                <div class="ea-card__image-wrapper">
+                                    <img class="ea-card__image" src="Imagenes/champion.jpg" alt="Champions">
+                                    <div class="ea-card__overlay"></div>
+                                </div>
+                                <div class="ea-card__content">
+                                    <span class="ea-card__label">MODO DE JUEGO</span>
+                                    <h4 class="ea-card__title">CHAMPIONS</h4>
+                                    <p class="ea-card__desc">Torneo basado en la Champions League</p>
+                                    <a href="#" class="ea-card__btn">
+                                        <span>JUGAR</span>
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="ea-card__nav">
+                                    <button class="ea-dot" data-slide="0"></button>
+                                    <button class="ea-dot" data-slide="1"></button>
+                                    <button class="ea-dot ea-dot--active" data-slide="2"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

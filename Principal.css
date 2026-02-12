@@ -751,6 +751,7 @@ main {
     margin-bottom: 40px;
     margin-top: 0;
     text-shadow: 0 4px 20px var(--color-sombra);
+}
 
 .features__grid {
     display: grid;

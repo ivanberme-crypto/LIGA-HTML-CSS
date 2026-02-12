@@ -1,687 +1,589 @@
 :root {
-  --uefa-color-principal: rgba(17, 24, 39, 1);
-  --uefa-color-secundario: rgba(31, 42, 107, 1);
-  --uefa-color-terciario: rgba(55, 65, 81, 1);
-  --uefa-color-acento: rgba(225, 29, 72, 1);
-  --uefa-color-texto: rgba(255, 255, 255, 1);
-  --uefa-color-texto-oscuro: rgba(11, 18, 32, 1);
-  --uefa-color-acento: rgba(255, 0, 0, 1);
-  --uefa-color-sombra: rgba(0, 0, 0, 0.30);
+    --uefa-color-principal: #111827;
+    --uefa-color-secundario: #1f2a6b;
+    --uefa-color-terciario: #374151;
+    --uefa-color-acento: #e11d48;
+    --uefa-color-texto: #ffffff;
+    --uefa-color-texto-oscuro: #0b1220;
+    --uefa-color-acento: #ff0000;
+    --uefa-color-sombra: rgba(0, 0, 0, 0.30);
+    --uefa-color-principal: rgba(17, 24, 39, 1);
+    --uefa-color-secundario: rgba(31, 42, 107, 1);
+    --uefa-color-terciario: rgba(55, 65, 81, 1);
+    --uefa-color-acento: rgba(225, 29, 72, 1);
+    --uefa-color-texto: rgba(255, 255, 255, 1);
+    --uefa-color-texto-oscuro: rgba(11, 18, 32, 1);
+    --uefa-color-acento: rgba(255, 0, 0, 1);
+    --uefa-color-sombra: rgba(0, 0, 0, 0.30);
 
-  --uefa-bg: var(--uefa-color-principal);
-  --uefa-text: var(--uefa-color-texto);
-  --uefa-muted: rgba(255, 255, 255, 0.85);
+    --uefa-bg: var(--uefa-color-principal);
+    --uefa-text: var(--uefa-color-texto);
+    --uefa-muted: rgba(255, 255, 255, 0.85);
+    --uefa-bg: var(--uefa-color-principal);
+    --uefa-text: var(--uefa-color-texto);
+    --uefa-muted: rgba(255, 255, 255, 0.85);
 
-  --uefa-card: var(--uefa-color-secundario);
+    --uefa-card: var(--uefa-color-secundario);
+    --uefa-card: var(--uefa-color-secundario);
 
-  --uefa-radius: 16px;
-  --uefa-shadow: 0 12px 30px var(--uefa-color-sombra);
-  --uefa-container: 1140px;
-  --uefa-gap: 18px;
+    --uefa-radius: 16px;
+    --uefa-shadow: 0 12px 30px var(--uefa-color-sombra);
+    --uefa-container: 1140px;
+    --uefa-gap: 18px;
+    --uefa-radius: 16px;
+    --uefa-shadow: 0 12px 30px var(--uefa-color-sombra);
+    --uefa-container: 1140px;
+    --uefa-gap: 18px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .uefa-page {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--uefa-bg);
-  color: var(--uefa-text);
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--uefa-bg);
+    color: var(--uefa-text);
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--uefa-bg);
+    color: var(--uefa-text);
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
+    max-width: 100%;
+    display: block;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .uefa-container {
-  width: min(var(--uefa-container), calc(100% - 32px));
-  margin: 0 auto;
+    width: min(var(--uefa-container), calc(100% - 32px));
+    margin: 0 auto;
+    width: min(var(--uefa-container), calc(100% - 32px));
+    margin: 0 auto;
 }
 
 .uefa-text--muted {
-  color: var(--uefa-muted);
+    color: var(--uefa-muted);
+    color: var(--uefa-muted);
 }
 
 .uefa-link {
-  color: var(--uefa-color-acento);
-  font-weight: 800;
+    color: var(--uefa-color-acento);
+    font-weight: 800;
+    color: var(--uefa-color-acento);
+    font-weight: 800;
 }
 
 .uefa-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Header */
 .uefa-header {
-  background: var(--uefa-color-secundario);
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  box-shadow: 0 6px 18px var(--uefa-color-sombra);
+    background: var(--uefa-color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 6px 18px var(--uefa-color-sombra);
+    background: var(--uefa-color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 6px 18px var(--uefa-color-sombra);
 }
 
 .uefa-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--uefa-gap);
-  padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--uefa-gap);
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--uefa-gap);
+    padding: 14px 0;
 }
 
 .uefa-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
 }
 
 .uefa-brand__icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
 }
 
 /* Nav */
 .uefa-nav {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .uefa-nav__link {
-  padding: 9px 10px;
-  border-radius: 999px;
-  font-weight: 700;
+    padding: 9px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    padding: 9px 10px;
+    border-radius: 999px;
+    font-weight: 700;
 }
 
 .uefa-nav__link:hover {
-  background: var(--uefa-color-acento);
-  color: var(--uefa-color-texto-oscuro);
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
 }
 
 /* Buttons */
 .uefa-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 11px 14px;
-  border-radius: 999px;
-  font-weight: 900;
-  border: 1px solid var(--uefa-color-terciario);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    border-radius: 999px;
+    font-weight: 900;
+    border: 1px solid var(--uefa-color-terciario);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    border-radius: 999px;
+    font-weight: 900;
+    border: 1px solid var(--uefa-color-terciario);
 }
 
 .uefa-button--outline {
-  background: transparent;
+    background: transparent;
+    background: transparent;
 }
 
 .uefa-button--outline:hover {
-  background: var(--uefa-color-terciario);
+    background: var(--uefa-color-terciario);
+    background: var(--uefa-color-terciario);
 }
 
 .uefa-button--ghost {
-  padding: 10px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--uefa-color-acento);
-  font-weight: 900;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--uefa-color-acento);
+    font-weight: 900;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--uefa-color-acento);
+    font-weight: 900;
 }
 
 .uefa-button--ghost:hover {
-  background: var(--uefa-color-acento);
-  color: var(--uefa-color-texto-oscuro);
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
 }
 
 /* Hero */
 .uefa-hero {
-  padding: 18px 0 0;
-  margin-bottom: 30px;
+    padding: 18px 0 0;
+    margin-bottom: 30px;
+    padding: 18px 0 0;
+    margin-bottom: 30px;
 }
 
 .uefa-hero__card {
-  background: var(--uefa-card);
-  border-radius: calc(var(--uefa-radius) + 6px);
-  padding: 22px;
-  box-shadow: var(--uefa-shadow);
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 22px;
+    background: var(--uefa-card);
+    border-radius: calc(var(--uefa-radius) + 6px);
+    padding: 22px;
+    box-shadow: var(--uefa-shadow);
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 22px;
+    background: var(--uefa-card);
+    border-radius: calc(var(--uefa-radius) + 6px);
+    padding: 22px;
+    box-shadow: var(--uefa-shadow);
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 22px;
 }
 
 .uefa-hero__media {
-  border-radius: var(--uefa-radius);
-  overflow: hidden;
-  background: var(--uefa-color-terciario);
-  min-height: 280px;
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    background: var(--uefa-color-terciario);
+    min-height: 280px;
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    background: var(--uefa-color-terciario);
+    min-height: 280px;
 }
 
 .uefa-hero__image {
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
 }
 
 .uefa-hero__content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
 }
 
 .uefa-hero__meta {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .uefa-pill {
-  background: var(--uefa-color-acento);
-  color: var(--uefa-color-texto-oscuro);
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-weight: 900;
-  font-size: 12px;
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 12px;
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 12px;
 }
 
 .uefa-hero__separator,
 .uefa-hero__date {
-  font-weight: 800;
-  font-size: 12px;
-  opacity: 0.95;
+    font-weight: 800;
+    font-size: 12px;
+    opacity: 0.95;
+    font-weight: 800;
+    font-size: 12px;
+    opacity: 0.95;
 }
 
 .uefa-hero__title {
-  margin: 0;
-  font-size: 38px;
-  line-height: 1.05;
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.05;
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.05;
 }
 
 .uefa-hero__actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 6px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
 }
 
 /* Sections */
 .uefa-section {
-  padding: 34px 0;
+    padding: 34px 0;
+    padding: 34px 0;
 }
 
 .uefa-section--alt {
-  padding: 34px 0;
+    padding: 34px 0;
+    padding: 34px 0;
 }
 
 .uefa-section__head .uefa-section__title {
-  margin: 0 0 6px;
-  font-size: 28px;
+    margin: 0 0 6px;
+    font-size: 28px;
+    margin: 0 0 6px;
+    font-size: 28px;
 }
 
 .uefa-section__head p {
-  margin: 0;
+    margin: 0;
+    margin: 0;
 }
 
 /* News */
 .uefa-newsGrid {
-  margin-top: 18px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--uefa-gap);
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
 }
 
 .uefa-newsCard {
-  background: var(--uefa-card);
-  border-radius: var(--uefa-radius);
-  overflow: hidden;
-  box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
 }
 
 .uefa-newsCard__image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
 .uefa-newsCard__body {
-  padding: 14px;
+    padding: 14px;
+    padding: 14px;
 }
 
 .uefa-tag {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: var(--uefa-color-acento);
-  color: var(--uefa-color-texto-oscuro);
-  font-weight: 900;
-  font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    font-weight: 900;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--uefa-color-acento);
+    color: var(--uefa-color-texto-oscuro);
+    font-weight: 900;
+    font-size: 12px;
 }
 
 .uefa-newsCard__title {
-  margin: 0 0 8px;
-  font-size: 16px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    margin: 0 0 8px;
+    font-size: 16px;
 }
 
 .uefa-newsCard__link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Champions */
 .uefa-championsGrid {
-  margin-top: 18px;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  gap: var(--uefa-gap);
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+    gap: var(--uefa-gap);
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+    gap: var(--uefa-gap);
 }
 
 .uefa-panel {
-  background: var(--uefa-card);
-  border-radius: var(--uefa-radius);
-  padding: 16px;
-  box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    padding: 16px;
+    box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    padding: 16px;
+    box-shadow: var(--uefa-shadow);
 }
 
 .uefa-panel__title {
-  margin: 0 0 8px;
+    margin: 0 0 8px;
+    margin: 0 0 8px;
 }
 
 .uefa-list {
-  margin: 0;
-  padding-left: 18px;
+    margin: 0;
+    padding-left: 18px;
+    margin: 0;
+    padding-left: 18px;
 }
 
 .uefa-list__item {
-  margin: 8px 0;
+    margin: 8px 0;
+    margin: 8px 0;
 }
 
 /* League */
 .uefa-league {
-  margin-top: 26px;
+    margin-top: 26px;
+    margin-top: 26px;
 }
 
 .uefa-leagueGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--uefa-gap);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--uefa-gap);
 }
 
 .uefa-leagueCard {
-  background: var(--uefa-card);
-  border-radius: var(--uefa-radius);
-  overflow: hidden;
-  box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
+    background: var(--uefa-card);
+    border-radius: var(--uefa-radius);
+    overflow: hidden;
+    box-shadow: var(--uefa-shadow);
 }
 
 .uefa-leagueCard__image {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
 .uefa-leagueCard__title {
-  margin: 12px 12px 6px;
-  font-size: 15px;
+    margin: 12px 12px 6px;
+    font-size: 15px;
+    margin: 12px 12px 6px;
+    font-size: 15px;
 }
 
 .uefa-leagueCard__text {
-  margin: 0 12px 12px;
+    margin: 0 12px 12px;
+    margin: 0 12px 12px;
 }
 
 /* Footer */
 .uefa-footer {
-  background: var(--uefa-color-secundario);
-  padding: 18px 0 28px;
-  box-shadow: 0 -6px 18px var(--uefa-color-sombra);
+    background: var(--uefa-color-secundario);
+    padding: 18px 0 28px;
+    box-shadow: 0 -6px 18px var(--uefa-color-sombra);
+    background: var(--uefa-color-secundario);
+    padding: 18px 0 28px;
+    box-shadow: 0 -6px 18px var(--uefa-color-sombra);
 }
 
 .uefa-footer__inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 /* Responsive */
 @media (max-width: 1020px) {
-  .uefa-hero__card {
-    grid-template-columns: 1fr;
-  }
+    .uefa-hero__card {
+        grid-template-columns: 1fr;
+    }
 
-  .uefa-championsGrid {
-    grid-template-columns: 1fr;
-  }
+    .uefa-hero__card {
+        grid-template-columns: 1fr;
+    }
+
+    .uefa-championsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .uefa-championsGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 860px) {
 
-  .uefa-newsGrid,
-  .uefa-leagueGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .uefa-nav {
-    display: none;
-  }
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uefa-nav {
+        display: none;
+    }
+
+    .uefa-nav {
+        display: none;
+    }
 }
 
 @media (max-width: 520px) {
 
-  .uefa-newsGrid,
-  .uefa-leagueGrid {
-    grid-template-columns: 1fr;
-  }
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: 1fr;
+    }
 
-  .uefa-hero__title {
+    .uefa-newsGrid,
+    .uefa-leagueGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .uefa-hero__title {
+        font-size: 30px;
+    }
+}
+
+.uefa-hero__title {
     font-size: 30px;
-  }
-}
-
-
-
-
-.p-pl {
-  --fondo: #0b1020;
-  --fondo2: #0f1731;
-  --texto: rgba(255, 255, 255, 1);
-  --muted: rgba(255, 255, 255, .72);
-  --borde: rgba(255, 255, 255, .12);
-  --tarjeta: rgba(255, 255, 255, .06);
-  --sombra: 0 12px 40px rgba(0, 0, 0, .35);
-  --radio: 16px;
-  --ancho: 1120px;
-
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--texto);
-  background:
-    radial-gradient(1200px 800px at 20% -10%, rgba(122, 92, 255, .35), transparent 55%),
-    radial-gradient(900px 700px at 90% 0%, rgba(0, 255, 135, .22), transparent 50%),
-    linear-gradient(180deg, var(--fondo), var(--fondo2));
-}
-
-.p-pl * {
-  box-sizing: border-box
-}
-
-.p-pl a {
-  color: inherit;
-  text-decoration: none
-}
-
-.p-pl .contenedor {
-  width: min(var(--ancho), calc(100% - 32px));
-  margin: 0 auto
-}
-
-.p-pl .texto--muted {
-  color: var(--muted)
-}
-
-.p-pl .encabezado {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(11, 16, 32, .65);
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
-  backdrop-filter: blur(12px);
-}
-
-.p-pl .encabezado__interior {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-  gap: 16px
-}
-
-.p-pl .marca {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 900
-}
-
-.p-pl .marca__logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--borde);
-  background: rgba(255, 255, 255, .06);
-}
-
-.p-pl .marca__texto {
-  font-size: 18px
-}
-
-.p-pl .navegacion {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap
-}
-
-.p-pl .navegacion__enlace {
-  padding: 10px 12px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  color: var(--muted);
-}
-
-.p-pl .navegacion__enlace:hover {
-  border-color: var(--borde);
-  background: rgba(255, 255, 255, .05);
-  color: var(--texto)
-}
-
-.p-pl .hero {
-  padding: 26px 0
-}
-
-.p-pl .hero__rejilla {
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 16px
-}
-
-.p-pl .hero__contenido,
-.p-pl .hero__panel {
-  background: var(--tarjeta);
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-  box-shadow: var(--sombra);
-  padding: 18px;
-}
-
-.p-pl .hero__titulo {
-  margin: 0 0 8px;
-  font-size: clamp(26px, 3vw, 40px);
-  line-height: 1.1
-}
-
-.p-pl .hero__subtitulo {
-  margin: 0 0 14px;
-  color: var(--muted)
-}
-
-.p-pl .buscador {
-  display: flex;
-  gap: 10px
-}
-
-.p-pl .buscador__entrada {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--borde);
-  background: rgba(0, 0, 0, .18);
-  color: var(--texto);
-  outline: none;
-}
-
-.p-pl .boton {
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--borde);
-  background: rgba(255, 255, 255, .08);
-  color: var(--texto);
-  font-weight: 800;
-}
-
-.p-pl .boton:hover {
-  background: rgba(255, 255, 255, .12)
-}
-
-.p-pl .boton--fantasma {
-  background: transparent
-}
-
-.p-pl .boton--fantasma:hover {
-  background: rgba(255, 255, 255, .08)
-}
-
-.p-pl .partido {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid var(--borde);
-  background: rgba(0, 0, 0, .18);
-  margin-bottom: 12px;
-}
-
-.p-pl .hero__acciones {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap
-}
-
-.p-pl .seccion {
-  padding: 20px 0
-}
-
-.p-pl .seccion__titulo {
-  margin: 0 0 12px;
-  font-size: 22px
-}
-
-.p-pl .rejilla {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px
-}
-
-.p-pl .tarjeta {
-  background: var(--tarjeta);
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-  box-shadow: var(--sombra);
-  padding: 14px;
-}
-
-.p-pl .tarjeta__arriba {
-  display: flex;
-  justify-content: space-between;
-  color: var(--muted);
-  font-size: 13px
-}
-
-.p-pl .tarjeta__principal {
-  margin-top: 10px;
-  font-weight: 900
-}
-
-.p-pl .tarjeta__titulo {
-  margin: 10px 0 6px
-}
-
-.p-pl .etiqueta {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 900;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--borde);
-  background: rgba(255, 255, 255, .06);
-}
-
-.p-pl .etiqueta--directo {
-  border-color: rgba(255, 42, 109, .45);
-  background: rgba(255, 42, 109, .18)
-}
-
-.p-pl .tabla {
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-  display: grid;
-  gap: 8px
-}
-
-.p-pl .tabla li {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid var(--borde);
-  background: rgba(0, 0, 0, .14);
-}
-
-.p-pl .equipos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px
-}
-
-.p-pl .equipo {
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid var(--borde);
-  background: rgba(255, 255, 255, .05);
-  font-weight: 800;
-  text-align: center;
-}
-
-.p-pl .equipo:hover {
-  background: rgba(255, 255, 255, .08)
-}
-
-.p-pl .pie {
-  border-top: 1px solid rgba(255, 255, 255, .08);
-  margin-top: 12px
-}
-
-.p-pl .pie__interior {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 0
-}
-
-@media (max-width:980px) {
-  .p-pl .hero__rejilla {
-    grid-template-columns: 1fr
-  }
-
-  .p-pl .rejilla {
-    grid-template-columns: 1fr
-  }
-
-  .p-pl .equipos {
-    grid-template-columns: repeat(2, 1fr)
-  }
 }

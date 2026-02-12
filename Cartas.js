@@ -107,24 +107,27 @@ function renderSortedCards(container, players) {
             if (!groups[type]) return;
 
             const groupDiv = document.createElement('div');
-            groupDiv.className = 'position-group';
+            groupDiv.className = 'jugadores__group';
 
             groupDiv.innerHTML = `
-                <div class="position-group__header">
-                    <h3 class="position-group__title">${config.display}</h3>
-                    <span class="position-group__count">${groups[type].length}</span>
+                <div class="jugadores__group-header">
+                    <h3 class="jugadores__group-title">${config.display}</h3>
+                    <span class="jugadores__group-count">${groups[type].length}</span>
                 </div>
-                <div class="jugadores">
+                <div class="jugadores__grid">
                     ${groups[type].map(player => `
                         <div class="card">
-                            <img src="${player.image}" 
-                                alt="${player.name}" 
-                                class="card__image">
+                            <div class="card__image-container">
+                                <img src="${player.image}" 
+                                    alt="${player.name}" 
+                                    class="card__image">
+                                ${player.rating >= 90 ? '<span class="card__badge">★ TOP</span>' : ''}
+                            </div>
                             <div class="card__info">
                                 <h4 class="card__name">${player.name}</h4>
                                 <div class="card__details">
                                     <span class="card__position">${player.position}</span>
-                                    <span class="card__rating ${getRatingClass(player.rating)}">
+                                    <span class="card__rating card__rating--${getRatingClass(player.rating)}">
                                         ${player.rating}
                                     </span>
                                 </div>

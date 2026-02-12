@@ -261,7 +261,7 @@ main {
     gap: 40px;
 }
 
-/* INDEX HERO SECTION */
+/* INDEX SECCION */
 
 .index__section {
     display: flex;
@@ -325,7 +325,7 @@ main {
     line-height: 1.7;
 }
 
-/* FEATURE LIST */
+/* LISTA INDEX */
 
 .text__list {
     display: flex;
@@ -370,7 +370,7 @@ main {
     font-weight: 700;
 }
 
-/* GAME MODE CARDS */
+/* MODOS DE JUEGOS SECCION */
 
 .section__mode {
     padding: 20px 0;
@@ -481,7 +481,7 @@ main {
     transform: translateY(0);
 }
 
-/* FEATURES SECTION */
+/* CARACTERISTICAS SECCION */
 
 .section__features {
     padding: 50px 40px;
@@ -564,7 +564,7 @@ main {
     min-height: calc(100vh - 150px);
 }
 
-/* Formation Selector */
+/* Seleccionar jugadores */
 
 .formation__title {
     color: var(--color-texto);

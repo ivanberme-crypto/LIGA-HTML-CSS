@@ -1536,6 +1536,96 @@ main {
     margin-top: 40px;
 }
 
+/* ESTILOS DE LAS LIGAS */
+
+.laliga {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);
+}
+
+.laliga a {
+    text-decoration: none;
+}
+
+.ligueone {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #1f3c88 0%,  #0b1d4d 100%);
+}
+
+.ligueone a {
+    text-decoration: none;
+}
+
+.bundesliga {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
+}
+
+.bundesliga a {
+    text-decoration: none;
+}
+
+.premierleague {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
+}
+
+.premierleague a {
+    text-decoration: none;
+}
+
+.seriea {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #059669 0%, #022c22 100%);
+}
+
+.seriea a {
+    text-decoration: none;
+}
+
+.liga-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+.liga-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.liga-image {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.liga-title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 900px) {

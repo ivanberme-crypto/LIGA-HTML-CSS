@@ -1236,9 +1236,12 @@ main {
 }
 
 .jugadores__subtitle {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
+    color: var(--color-blanco-medio-transparente);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin: 0;
+    text-shadow: none;
 }
 
 .jugadores__groups {
@@ -1481,9 +1484,61 @@ main {
     text-transform: uppercase;
 }
 
+/* LIGAS */
+
+.ligas-page {
+    flex: 1 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+}
+
+.ligas {
+    margin: 0 auto;
+}
+
+.ligas__header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.ligas__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ligas__subtitle {
+    color: var(--color-blanco-medio-transparente);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+}
+
+.ligas__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ligas__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
 /* MEDIA QUERIES */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header {
         flex-direction: column;
         gap: 15px;
@@ -1595,7 +1650,7 @@ main {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .jugadores__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;

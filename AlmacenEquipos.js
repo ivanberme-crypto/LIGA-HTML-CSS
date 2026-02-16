@@ -33,9 +33,5 @@ const availableTeams = [
     { id: 23, name: 'Arsenal FC', ligue: 'Premier League', titles: 48 },
     { id: 24, name: 'Manchester City', ligue: 'Premier League', titles: 36 },
     { id: 25, name: 'Chelsea', ligue: 'Premier League', titles: 36 },
-
-
-
-
-
 ]
+

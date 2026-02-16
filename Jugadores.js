@@ -91,7 +91,7 @@ const availablePlayers = [
     
     // Centrocampistas
     { id: 16, name: 'Rodri', position: 'MCD', rating: 91, image: 'Imagenes/Jugadores/Rodri.png' },
-    { id: 17, name: 'De Bruyne', position: 'MCO', rating: 89, image: 'Imagenes/Jugadores/De Bruyne.png' },
+    { id: 17, name: 'De Bruyne', position: 'MCD', rating: 89, image: 'Imagenes/Jugadores/De Bruyne.png' },
     { id: 18, name: 'Bellingham', position: 'MCO', rating: 92, image: 'Imagenes/Jugadores/Bellingham.png' },
     { id: 19, name: 'Modric', position: 'MC', rating: 83, image: 'Imagenes/Jugadores/Modric.png' },
     { id: 20, name: 'Kroos', position: 'MC', rating: 90, image: 'Imagenes/Jugadores/Kroos.png' },

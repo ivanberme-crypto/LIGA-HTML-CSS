@@ -1443,9 +1443,19 @@ main {
     font-weight: 800;
 }
 
+.card__rating--diamond {
+    color: #B9F2FF;
+    text-shadow: 0 0 25px rgba(185, 242, 255, 0.6);
+}
+
+.card__rating--platinum {
+    color: #E5E4E2;
+    text-shadow: 0 0 20px rgba(229, 228, 226, 0.6);
+}
+
 .card__rating--gold {
     color: #ffd700;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
 .card__rating--silver {
@@ -1455,7 +1465,12 @@ main {
 
 .card__rating--bronze {
     color: #cd7f32;
-    text-shadow: 0 0 15px rgba(205, 127, 50, 0.5);
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+.card__rating--iron {
+    color: #4B4B4B;
+    text-shadow: 0 0 10px rgba(75, 75, 75, 0.4);
 }
 
 .card__stats {

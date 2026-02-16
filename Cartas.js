@@ -115,13 +115,11 @@ function renderSortedCards(container, players) {
                     <span class="jugadores__group-count">${groups[type].length}</span>
                 </div>
                 <div class="jugadores__grid">
-                    ${groups[type].map(player => `
+                    ${groups[type].map((player, index)=> `
                         <div class="card">
                             <div class="card__image-container">
-                                <img src="${player.image}" 
-                                    alt="${player.name}" 
-                                    class="card__image">
-                                ${player.rating >= 90 ? '<span class="card__badge">★ TOP</span>' : ''}
+                                <img src="${player.image}" alt="" class="card__image">
+                                ${index === 0 ? '<span class="card__badge">★ TOP</span>' : ''}
                             </div>
                             <div class="card__info">
                                 <h4 class="card__name">${player.name}</h4>
@@ -142,9 +140,12 @@ function renderSortedCards(container, players) {
 }
 
 function getRatingClass(rating) {
+    if (rating >= 95) return 'diamond';
+    if (rating >= 92) return 'platinum';
     if (rating >= 90) return 'gold';
     if (rating >= 85) return 'silver';
-    return 'bronze';
+    if (rating >= 80) return 'bronze';
+    return 'iron';
 }
 
 document.addEventListener('DOMContentLoaded', () => {

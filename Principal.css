@@ -1369,6 +1369,7 @@ main {
 .card:hover .card__image {
     transform: scale(1.1);
     filter: brightness(1.1);
+    transition: all 0.3s ease;
 }
 
 .card__badge {
@@ -1382,7 +1383,6 @@ main {
     font-weight: 800;
     padding: 6px 12px;
     border-radius: 12px;
-    text-transform: uppercase;
     box-shadow: 0 4px 15px var(--color-sombra-verde);
 }
 
@@ -1619,10 +1619,22 @@ main {
     transform: translateY(-8px);
 }
 
-.laliga a,
-.ligueone a,
-.bundesliga a,
-.premierleague a,
+.laliga a {
+    text-decoration: none;
+}
+
+.ligueone a {
+    text-decoration: none;
+}
+
+.bundesliga a {
+    text-decoration: none;
+}
+
+.premierleague a {
+    text-decoration: none;
+}
+
 .seriea a {
     text-decoration: none;
 }
@@ -1667,11 +1679,50 @@ main {
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Efecto de brillo en hover */
-.laliga::after,
-.ligueone::after,
-.bundesliga::after,
-.premierleague::after,
+.laliga::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.ligueone::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.bundesliga::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.premierleague::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
 .seriea::after {
     content: '';
     position: absolute;
@@ -1683,19 +1734,78 @@ main {
     transition: left 0.6s ease;
 }
 
-.laliga:hover::after,
-.ligueone:hover::after,
-.bundesliga:hover::after,
-.premierleague:hover::after,
+.laliga:hover::after {
+    left: 100%;
+}
+
+.ligueone:hover::after {
+    left: 100%;
+}
+
+.bundesliga:hover::after {
+    left: 100%;
+}
+
+.premierleague:hover::after {
+    left: 100%;
+}
+
 .seriea:hover::after {
     left: 100%;
 }
 
-/* Indicador de hover */
-.laliga::before,
-.ligueone::before,
-.bundesliga::before,
-.premierleague::before,
+.laliga::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.ligueone::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.bundesliga::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.premierleague::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
 .seriea::before {
     content: '';
     position: absolute;
@@ -1709,15 +1819,25 @@ main {
     z-index: 3;
 }
 
-.laliga:hover::before,
-.ligueone:hover::before,
-.bundesliga:hover::before,
-.premierleague:hover::before,
-.seriea:hover::before {
+.laliga:hover::before {
     width: 80%;
 }
 
+.ligueone:hover::before {
+    width: 80%;
+}
 
+.bundesliga:hover::before {
+    width: 80%;
+}
+
+.premierleague:hover::before {
+    width: 80%;
+}
+
+.seriea:hover::before {
+    width: 80%;
+}
 
 /* MEDIA QUERIES */
 
@@ -1831,7 +1951,6 @@ main {
         bottom: 15px;
         right: 15px;
     }
-    /* LIGAS RESPONSIVE */
     .ligas__title {
         font-size: 2rem;
     }
@@ -1878,7 +1997,6 @@ main {
         font-size: 0.6rem;
         padding: 4px 6px;
     }
-    /* LIGAS RESPONSIVE */
     .ligas-page {
         padding: 25px 15px;
     }

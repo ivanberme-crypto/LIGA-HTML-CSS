@@ -1488,8 +1488,9 @@ main {
 
 .ligas-page {
     flex: 1 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
     background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+    min-height: calc(100vh - 150px);
 }
 
 .ligas {
@@ -1498,8 +1499,7 @@ main {
 
 .ligas__header {
     text-align: center;
-    margin-bottom: 50px;
-    position: relative;
+    margin-bottom: 40px;
 }
 
 .ligas__title {
@@ -1539,56 +1539,90 @@ main {
 /* ESTILOS DE LAS LIGAS */
 
 .laliga {
+    background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);  
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);
-}
-
-.laliga a {
-    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .ligueone {
+    background: linear-gradient(145deg, #1f3c88 0%, #0b1d4d 100%);
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(145deg, #1f3c88 0%,  #0b1d4d 100%);
-}
-
-.ligueone a {
-    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .bundesliga {
+    background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
-}
-
-.bundesliga a {
-    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .premierleague {
+    background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
-}
-
-.premierleague a {
-    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .seriea {
+    background: linear-gradient(145deg, #059669 0%, #022c22 100%);
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(145deg, #059669 0%, #022c22 100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+/* BORDES ILUMINADOS*/
+.laliga:hover {
+    border-color: #ff6b6b;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 107, 107, 0.4);
+    transform: translateY(-8px);
+}
+
+.ligueone:hover {
+    border-color: #4dabf7;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(77, 171, 247, 0.4);
+    transform: translateY(-8px);
+}
+
+.bundesliga:hover {
+    border-color: #ff8787;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 135, 135, 0.4);
+    transform: translateY(-8px);
+}
+
+.premierleague:hover {
+    border-color: #9775fa;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(151, 117, 250, 0.4);
+    transform: translateY(-8px);
+}
+
+.seriea:hover {
+    border-color: #38d9a9;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(56, 217, 169, 0.4);
+    transform: translateY(-8px);
+}
+
+.laliga a,
+.ligueone a,
+.bundesliga a,
+.premierleague a,
 .seriea a {
     text-decoration: none;
 }
@@ -1597,31 +1631,90 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 30px;
+    padding: 50px 30px;
     text-decoration: none;
     position: relative;
 }
 
-.liga-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.liga-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.liga-image {
-    width: 140px;
-    height: 140px;
-    object-fit: contain;
-    margin-bottom: 25px;
+.liga-item:hover .liga-image {
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
 }
 
 .liga-title {
     color: var(--color-texto);
     font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
     transition: all 0.3s ease;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.liga-item:hover .liga-title {
+    transform: translateY(5px);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto de brillo en hover */
+.laliga::after,
+.ligueone::after,
+.bundesliga::after,
+.premierleague::after,
+.seriea::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.laliga:hover::after,
+.ligueone:hover::after,
+.bundesliga:hover::after,
+.premierleague:hover::after,
+.seriea:hover::after {
+    left: 100%;
+}
+
+/* Indicador de hover */
+.laliga::before,
+.ligueone::before,
+.bundesliga::before,
+.premierleague::before,
+.seriea::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.laliga:hover::before,
+.ligueone:hover::before,
+.bundesliga:hover::before,
+.premierleague:hover::before,
+.seriea:hover::before {
+    width: 80%;
 }
 
 
@@ -1738,6 +1831,31 @@ main {
         bottom: 15px;
         right: 15px;
     }
+    /* LIGAS RESPONSIVE */
+    .ligas__title {
+        font-size: 2rem;
+    }
+    .ligas__subtitle {
+        font-size: 1rem;
+    }
+    .ligas__grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    .liga-item {
+        padding: 40px 20px;
+    }
+    .liga-item::before {
+        width: 130px;
+        height: 130px;
+    }
+    .liga-image {
+        width: 100px;
+        height: 100px;
+    }
+    .liga-title {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1759,5 +1877,34 @@ main {
     .card__position {
         font-size: 0.6rem;
         padding: 4px 6px;
+    }
+    /* LIGAS RESPONSIVE */
+    .ligas-page {
+        padding: 25px 15px;
+    }
+    .ligas__title {
+        font-size: 1.8rem;
+    }
+    .ligas__subtitle {
+        font-size: 0.9rem;
+    }
+    .ligas__grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .liga-item {
+        padding: 35px 15px;
+    }
+    .liga-item::before {
+        width: 110px;
+        height: 110px;
+    }
+    .liga-image {
+        width: 85px;
+        height: 85px;
+    }
+    .liga-title {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
     }
 }

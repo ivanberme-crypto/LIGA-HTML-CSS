@@ -56,7 +56,7 @@ a {
 
 .xtart-box-enlace {
   color: var(--xt-color-acento);
-  font-weight: 800;
+  width: 200px;
 }
 
 .xtart-box-enlace:hover {
@@ -238,6 +238,7 @@ a {
 .xtart-container-seccion__encabezado {
   width: min(var(--xt-container), calc(100% - 32px));
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .xtart-container-seccion__encabezado p {
@@ -357,23 +358,96 @@ a {
   margin: 0 12px 12px;
 }
 
-/* Pie */
+
+/* FOOTER ESTRUCTURA */
+
+.xtart-container-pie__interior {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  width: min(var(--xt-container), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
 .xtart-box-pie {
   background: var(--xt-color-secundario);
+  color: var(--xt-text);
   padding: 18px 0 28px;
   box-shadow: 0 -6px 18px var(--xt-color-sombra);
 }
 
-.xtart-container-pie__interior {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  width: min(var(--xt-container), calc(100% - 32px));
-  margin: 0 auto;
+
+.xtart-pie-columna h3,
+.xtart-pie-columna h4 {
+  margin-bottom: 14px;
+  color: var(--xt-color-texto);
 }
 
-/* Responsive */
+.xtart-pie-descripcion {
+  font-size: 14px;
+  opacity: .8;
+  line-height: 1.6;
+}
+
+.xtart-pie-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.xtart-pie-lista li {
+  margin-bottom: 8px;
+}
+
+.xtart-pie-lista a {
+  text-decoration: none;
+  color: var(--xt-color-texto);
+  opacity: .8;
+  transition: .3s;
+}
+
+.xtart-pie-lista a:hover {
+  opacity: 1;
+  color: var(--xt-color-acento);
+}
+
+.xtart-pie-redes {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.xtart-pie-redes a {
+  text-decoration: none;
+  font-size: 14px;
+  opacity: .8;
+  transition: .3s;
+}
+
+.xtart-pie-redes a:hover {
+  color: var(--xt-color-acento);
+  opacity: 1;
+}
+
+.xtart-pie-volver {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--xt-color-acento);
+}
+
+.xtart-pie-bottom {
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid var(--xt-color-borde);
+  font-size: 13px;
+  opacity: .7;
+}
+
+
+
 @media (max-width: 1020px) {
   .xtart-box-portada__tarjeta {
     grid-template-columns: 1fr;

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutDraft 2026 - Formaciones</title>
     <link rel="stylesheet" href="Principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="header__logo">
-            <img class="header__img" src="Imagenes/logo.png" alt="">
+            <img class="header__img" src="../Imagenes/logo.png" alt="">
             <h1 class="header__title">FutDraft</h1>
         </div>
         <nav class="header__nav">
@@ -33,7 +37,7 @@
     <main class="futdraft">
         <section class="formation" id="formationSelector">
             <h2 class="formation__title">Elige tu Formación</h2>
-            
+
             <div class="formation__grid">
                 <div class="formation__option" onclick="selectFormation('4-3-3')">
                     <img src="Imagenes/4-3-3.png" alt="4-3-3">
@@ -61,15 +65,15 @@
                 </button>
                 <h2 class="field-view__formation-name" id="formationNameDisplay"></h2>
             </div>
-            
+
             <div class="field-view__container">
                 <div class="field">
                     <div class="field__penalty-area field__penalty-area--top"></div>
                     <div class="field__penalty-area field__penalty-area--bottom"></div>
-                    
+
                     <div class="field__center-circle"></div>
                     <div class="field__center-line"></div>
-                    
+
                     <div class="field__positions" id="positionsContainer">
                     </div>
                 </div>
@@ -86,7 +90,7 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__section">
-                <p class="footer__list">Developed by: 
+                <p class="footer__list">Developed by:
                     <a href="https://github.com/javiervega">Javier Vega</a>
                     <a href="https://github.com/javierclemente">Javier Clemente</a>
                     <a href="https://github.com/ivanbermejo">Ivan Bermejo</a>
@@ -109,4 +113,5 @@
     </footer>
     <script src="Jugadores.js"></script>
 </body>
+
 </html>

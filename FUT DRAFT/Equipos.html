@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+    <link rel="stylesheet" href="Principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="AlmacenEquipos.js" defer></script>
+    <script src="Equipos.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img" src="Imagenes/logo.png" alt="">
+            <h1 class="header__title">FutDraft</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="Index.html">Inicio</a></li>
+                <li class="header__item"><a href="#">Página Web</a></li>
+                <li class="header__item"><a href="#">Contacto</a></li>
+                <li class="desplegable">
+                    <a href="#" class="desplegable__btn">Juego</a>
+                    <div class="desplegable__content">
+                        <a href="Jugadores.html">Jugadores</a>
+                        <a href="Equipos.html">Equipos</a>
+                        <a href="Ligas.html">Ligas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="equipos__page">
+        <section class="equipos">
+            <div class="equipos__header">
+                <h2 class="equipos__title">Equipos</h2>
+                <p class="equipos__subtitle">Todos los equipos disponibles ordenados por posición y rating</p>
+            </div>
+            <div id="equiposContainer" class="equipos__groups">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <p class="footer__list">Developed by: 
+                    <a href="https://github.com/javiervega">Javier Vega</a>
+                    <a href="https://github.com/javierclemente">Javier Clemente</a>
+                    <a href="https://github.com/ivanbermejo">Ivan Bermejo</a>
+                </p>
+            </div>
+            <div class="footer__section">
+                <p class="footer__text">Síguenos en redes sociales</p>
+                <div class="social__links">
+                    <a href="#" class="social__link" aria-label="Facebook">F</a>
+                    <a href="#" class="social__link" aria-label="Twitter">X</a>
+                    <a href="#" class="social__link" aria-label="Instagram">I</a>
+                    <a href="#" class="social__link" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer__section">
+                <p class="footer__text">© 2026 FutDraft. All rights reserved.</p>
+                <p class="footer__text">Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

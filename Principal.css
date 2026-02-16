@@ -1,0 +1,2043 @@
+:root {
+    /* Colores principales */
+    --color-principal: #4CAF50;
+    --color-secundario: #333;
+    --color-terciario: #555;
+    --color-cuaternario: #f1f1f1;
+    
+    /* Colores de texto */
+    --color-texto: #fff;
+    --color-texto-oscuro: #000;
+    
+    /* Colores de acento */
+    --color-acento: #ff9800;
+    --color-verde-brillante: #4ade80;
+    --color-cian: #22d3ee;
+    --color-cian-oscuro: #06b6d4;
+    
+    /* Colores de fondo */
+    --color-fondo-oscuro: #0a0a12;
+    --color-fondo-cards: #1a1a2e;
+
+    /* Colores de bordes */
+    --color-borde-oscuro: rgba(255, 255, 255, 0.08);
+    
+    /* Sombras */
+    --color-sombra: rgba(0, 0, 0, 0.3);
+    --color-sombra2: rgba(0, 0, 0, 0.4);
+    --color-sombra-oscura: rgba(0, 0, 0, 0.5);
+    --color-sombra-verde: rgba(74, 222, 128, 0.4);
+    
+    /* Transparencias - Blanco */
+    --color-blanco-transparente: rgba(255, 255, 255, 0.8);
+    --color-blanco-medio-transparente: rgba(255, 255, 255, 0.5);
+    --color-blanco-poco-transparente: rgba(255, 255, 255, 0.1);
+    --color-blanco-muy-poco-transparente: rgba(255, 255, 255, 0.05);
+    
+    /* Transparencias - Verde */
+    --color-verde-poco-transparente: rgba(74, 222, 128, 0.1);
+    --color-verde-medio-transparente: rgba(74, 222, 128, 0.3);
+    
+    /* Transparencias - Cian */
+    --color-cian-medio-transparente: rgba(34, 211, 238, 0.8);
+
+    /* Transparencias - Oscuro */
+    --color-azulOscuro-transparente: rgba(15, 20, 25, 0.9);
+    --color-oscuro-transparente: rgba(0, 0, 0, 0.9);
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-principal) var(--color-secundario);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-principal);
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secundario);
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px var(--color-sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__img {
+    width: 75px;
+    height: 75px;
+}
+
+.header__title {
+    color: var(--color-texto);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px var(--color-sombra);
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__item a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.header__item a:hover {
+    background-color: var(--color-acento);
+    transform: translateY(-2px);
+}
+
+.desplegable__btn {
+    background-color: transparent;
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.desplegable__btn:hover {
+    background-color: var(--color-acento);
+    transform: translateX(2px);
+}
+
+.desplegable {
+    position: relative;
+}
+
+.desplegable__content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-secundario);
+    min-width: 180px;
+    box-shadow: 0 8px 20px var(--color-sombra);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.desplegable__content a {
+    color: var(--color-texto);
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.desplegable__content a:hover {
+    background-color: var(--color-acento);
+}
+
+.desplegable:hover .desplegable__content{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color-secundario);
+    padding: 20px 30px;
+    flex-shrink: 0;
+    box-shadow: 0 -4px 15px var(--color-sombra);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--color-texto);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: var(--color-texto);
+}
+
+.footer__text a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer__text a:hover {
+    background-color: var(--color-acento);
+    transform: translateY(-2px);
+}
+
+.social__links {
+    display: flex;
+    gap: 15px;
+}
+
+.social__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social__link:hover {
+    transform: scale(1.2);
+}
+
+/* INDEX MAIN */
+
+.index__main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 40px;
+}
+
+/* INDEX SECCION */
+
+.index__section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    background-image: 
+        linear-gradient(135deg, var(--color-azulOscuro-transparente) 0%, rgba(26, 26, 46, 0.85) 50%, var(--color-azulOscuro-transparente) 100%),
+        url(Imagenes/campo-futbol2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    margin: 0;
+    box-shadow: 0 20px 60px var(--color-sombra2);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.index__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 4px 20px var(--color-sombra-oscura);
+    background: linear-gradient(135deg, var(--color-texto) 0%, var(--color-verde-brillante) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.index__text {
+    margin: 0;
+    color: var(--color-blanco-transparente);
+}
+
+.index__slogan {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-verde-brillante);
+    margin: 0;
+    text-shadow: 0 0 30px var(--color-sombra-verde);
+}
+
+.index__description {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+/* LISTA INDEX */
+
+.text__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.text__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-texto);
+    padding: 20px 25px;
+    background: var(--color-blanco-muy-poco-transparente);
+    border-radius: 16px;
+    border: 1px solid var(--color-borde-oscuro);
+    transition: all 0.3s ease;
+}
+
+.text__item:hover {
+    background: var(--color-verde-poco-transparente);
+    border-color: var(--color-verde-medio-transparente);
+    transform: translateX(15px);
+}
+
+.text__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: drop-shadow(0 4px 8px var(--color-sombra));
+}
+
+.item__content {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.item__content strong {
+    color: var(--color-verde-brillante);
+    font-weight: 700;
+}
+
+/* MODOS DE JUEGOS SECCION */
+
+.section__mode {
+    padding: 50px 40px;
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-azulOscuro-transparente) 100%);
+    border-radius: 24px;
+    border: 1px solid var(--color-blanco-muy-poco-transparente);
+}
+
+.section__mode::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        #4ade80 30%, 
+        #4ade80 70%, 
+        transparent 100%);
+    box-shadow: 0 0 20px var(--color-verde-brillante);
+}
+
+.section__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-shadow: 0 0 30px rgba(74, 222, 128, 0.5);
+    text-transform: uppercase;
+}
+
+/* CARRUSEL */
+
+.ea-carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ea-carousel__track-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.ea-carousel__track {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.6s cubic-bezier(.77,0,.18,1);
+}
+
+.ea-slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.ea-carousel__track-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.ea-carousel__track {
+    will-change: transform;
+}
+
+.ea-card__nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 15;
+}
+
+.ea-dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ea-dot--active,
+.ea-dot:hover {
+    background: var(--color-verde-brillante);
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.8);
+    transform: scale(1.2);
+}
+
+.ea-card {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 380px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(145deg, 
+        rgba(20, 25, 35, 0.95) 0%, 
+        rgba(10, 12, 18, 0.98) 100%);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(74, 222, 128, 0.1),
+        0 0 30px rgba(74, 222, 128, 0.1);
+}
+
+.ea-card__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 45px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--color-texto);
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.ea-card__arrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ea-card__arrow--prev {
+    left: 15px;
+}
+
+.ea-card__arrow--next {
+    right: 15px;
+}
+
+.ea-card__arrow:hover {
+    background: var(--color-verde-brillante);
+    color: var(--color-texto);
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.ea-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        #4ade80 20%, 
+        #4ade80 80%, 
+        transparent 100%);
+    z-index: 10;
+}
+
+.ea-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, 
+        rgba(74, 222, 128, 0.03) 0%, 
+        transparent 30%,
+        transparent 70%,
+        rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+}
+
+.ea-card__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ea-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) saturate(1.2);
+    transition: all 0.5s ease;
+}
+
+.ea-card:hover .ea-card__image {
+    filter: brightness(0.65) saturate(1.4);
+    transform: scale(1.05);
+}
+
+.ea-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, 
+        rgba(74, 222, 128, 0.05) 0%, 
+        transparent 25%,
+        rgba(0, 0, 0, 0.5) 70%,
+        rgba(0, 0, 0, 0.8) 100%);
+}
+
+.ea-card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    padding: 30px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ea-card__label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-verde-brillante);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(74, 222, 128, 0.8);
+}
+
+.ea-card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-texto);
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    text-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(74, 222, 128, 0.4);
+}
+
+.ea-card__desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 20px 0;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.ea-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 60px;
+    background: linear-gradient(135deg, var(--color-verde-brillante) 0%, #22c55e 100%);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 5px 20px rgba(74, 222, 128, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+
+.ea-card__btn svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.ea-card__btn:hover {
+    background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 30px rgba(74, 222, 128, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.ea-card__btn:hover svg {
+    transform: translateX(5px);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.box__content {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px var(--color-sombra);
+}
+
+.box__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px) brightness(0.7);
+    transition: all 0.5s ease;
+}
+
+.box__content:hover .box__img {
+    filter: blur(0px) brightness(0.9);
+    transform: scale(1.1);
+}
+
+.box__btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, var(--color-oscuro-transparente) 0%, rgba(0, 0, 0, 0.6) 100%);
+    transition: all 0.4s ease;
+}
+
+.box__btn span {
+    transition: all 0.3s ease;
+}
+
+.box__btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian-oscuro));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.box__content:hover .box__btn::before {
+    transform: scaleX(1);
+}
+
+.box__btn:hover {
+    background: linear-gradient(0deg, rgba(74, 222, 128, 0.9) 0%, var(--color-cian-medio-transparente) 100%);
+    color: var(--color-texto-oscuro);
+}
+
+.text__default {
+    opacity: 1;
+}
+
+.text__hover {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.box__btn:hover .text__default {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.box__btn:hover .text__hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CARACTERISTICAS SECCION */
+
+.section__features {
+    padding: 50px 40px;
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-azulOscuro-transparente) 100%);
+    border-radius: 24px;
+    border: 1px solid var(--color-blanco-muy-poco-transparente);
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid var(--color-blanco-muy-poco-transparente);
+    transition: all 0.4s ease;
+}
+
+.feature__item:hover {
+    background: rgba(74, 222, 128, 0.08);
+    border-color: rgba(74, 222, 128, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.15);
+}
+
+.feature__icon {
+    height: 4rem;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 12px var(--color-sombra2));
+    transition: all 0.4s ease;
+}
+
+.feature__item:hover .feature__icon {
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 8px 20px var(--color-sombra-verde));
+}
+
+.feature__item h4 {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+}
+
+.feature__item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.futdraft {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: linear-gradient(180deg, var(--color-fondo-oscuro) 0%, var(--color-fondo-cards) 50%, var(--color-fondo-oscuro) 100%);
+    min-height: calc(100vh - 150px);
+}
+
+/* Seleccionar jugadores */
+
+.formation__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.formation__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.formation__option {
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border-radius: 20px;
+    padding: 25px 15px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.formation__option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian-oscuro));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.formation__option:hover {
+    transform: translateY(-8px);
+    border-color: rgba(74, 222, 128, 0.5);
+    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.2);
+}
+
+.formation__option:hover::before {
+    opacity: 1;
+}
+
+.formation__option img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.formation__option span {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* CAMPO DE FUTBOL*/
+
+.field-view {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to { 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.field-view__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    max-width: 1200px;
+    margin: 0 auto 25px auto;
+}
+
+.field-view__back-btn {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    color: var(--color-texto);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.field-view__back-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(-5px);
+}
+
+.field-view__formation-name {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.field-view__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.field {
+    width: 100%;
+    aspect-ratio: 68/105;
+    max-height: 650px;
+    background: 
+        linear-gradient(180deg, #1e6b2e 0%, #2d8a3e 50%, #1e6b2e 100%);
+    border: 4px solid rgba(255,255,255,0.9);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 0 0 8px rgba(255,255,255,0.1),
+        0 20px 60px rgba(0,0,0,0.5);
+}
+
+.field::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent calc(100% / 18 - 1px),
+            rgba(255,255,255,0.15) calc(100% / 18 - 1px),
+            rgba(255,255,255,0.15) calc(100% / 18)
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent calc(100% / 23 - 1px),
+            rgba(255,255,255,0.15) calc(100% / 23 - 1px),
+            rgba(255,255,255,0.15) calc(100% / 23)
+        );
+    pointer-events: none;
+}
+
+.field__penalty-area--top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 16%;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-top: none;
+}
+
+.field__penalty-area--top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18%;
+    height: 6%;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-top: none;
+}
+
+.field__penalty-area--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 16%;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-bottom: none;
+}
+
+.field__penalty-area-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18%;
+    height: 6%;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-bottom: none;
+}
+
+.field__center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    aspect-ratio: 1;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+}
+
+.field__center-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.8);
+    transform: translateY(-50%);
+}
+
+/* POSICION JUGADORES*/
+
+.field__positions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 127px;
+    background-image: url('Imagenes/carta.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 5px 5px 5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.position:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.pos-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--color-texto);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+.position.__occupied {
+    background-image: none;
+    background-color: transparent;
+}
+
+.position.__occupied::before {
+    display: none;
+}
+
+.position.__occupied .pos-label {
+    display: none;
+}
+
+.player__card-field {
+    width: 100px;
+    height: 127px;
+    pointer-events: none;
+}
+
+/* PANEL SELECCIONAR JUGADORES*/
+
+.player-selector {
+    max-width: 450px;
+    margin: 25px auto;
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.95), rgba(10, 10, 18, 0.95));
+    border-radius: 20px;
+    padding: 25px;
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.player-selector h3 {
+    color: var(--color-texto);
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.player-selector__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.player-option {
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-option:hover {
+    background: linear-gradient(145deg, rgba(74, 222, 128, 0.15), rgba(74, 222, 128, 0.05));
+    border-color: var(--color-verde-medio-transparente);
+    transform: translateX(5px);
+}
+
+.player-card-img {
+    height: 120px;
+    width: 100%;
+    pointer-events: none;
+}
+
+/*LISTADO CARTAS*/
+
+.jugadores-page {
+    flex: 1 0 auto;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+    min-height: calc(100vh - 150px);
+}
+
+.jugadores__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.jugadores__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.jugadores__subtitle {
+    color: var(--color-blanco-medio-transparente);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+}
+
+.jugadores__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.jugadores__group {
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-blanco-muy-poco-transparente);
+}
+
+.jugadores__group-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-verde-medio-transparente);
+}
+
+.jugadores__group-title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.jugadores__group-count {
+    background: linear-gradient(135deg, var(--color-verde-brillante), var(--color-cian-oscuro));
+    color: var(--color-texto-oscuro);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.jugadores__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 25px;
+    padding: 25px;
+}
+
+/* TARJETAS DE JUGADORES */
+
+.card {
+    position: relative;
+    background: linear-gradient(145deg, var(--color-fondo-cards) 0%, #0f0f1a 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid var(--color-borde-oscuro);
+    box-shadow: 0 10px 30px var(--color-sombra2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(145deg, var(--color-verde-medio-transparente), rgba(34, 211, 238, 0.3));
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: var(--color-verde-medio-transparente);
+    box-shadow: 0 25px 50px rgba(74, 222, 128, 0.25);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card__image-container {
+    aspect-ratio: 3 / 4;
+    background: radial-gradient(circle at 50% 30%, #222 0%, #111 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card__image {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card:hover .card__image {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    transition: all 0.3s ease;
+}
+
+.card__badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, var(--color-verde-brillante), var(--color-cian));
+    color: var(--color-texto-oscuro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-sombra-verde);
+}
+
+.card__info {
+    padding: 20px 15px;
+    height: 78.4px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, var(--color-oscuro-transparente) 100%);
+    position: relative;
+}
+
+.card__info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(74, 222, 128, 0.5), transparent);
+}
+
+.card__name {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px var(--color-sombra-oscura);
+}
+
+.card__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__position {
+    background: rgba(74, 222, 128, 0.15);
+    color: var(--color-verde-brillante);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.card__rating--diamond {
+    color: #B9F2FF;
+    text-shadow: 0 0 25px rgba(185, 242, 255, 0.6);
+}
+
+.card__rating--platinum {
+    color: #E5E4E2;
+    text-shadow: 0 0 20px rgba(229, 228, 226, 0.6);
+}
+
+.card__rating--gold {
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.card__rating--silver {
+    color: #c0c0c0;
+    text-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
+}
+
+.card__rating--bronze {
+    color: #cd7f32;
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+.card__rating--iron {
+    color: #4B4B4B;
+    text-shadow: 0 0 10px rgba(75, 75, 75, 0.4);
+}
+
+.card__stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-blanco-poco-transparente);
+}
+
+.card__stat {
+    text-align: center;
+}
+
+.card__stat-value {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.card__stat-label {
+    color: var(--color-blanco-medio-transparente);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+/* LIGAS */
+
+.ligas-page {
+    flex: 1 0 auto;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+    min-height: calc(100vh - 150px);
+}
+
+.ligas {
+    margin: 0 auto;
+}
+
+.ligas__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ligas__title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ligas__subtitle {
+    color: var(--color-blanco-medio-transparente);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+}
+
+.ligas__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ligas__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ESTILOS DE LAS LIGAS */
+
+.laliga {
+    background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);  
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.ligueone {
+    background: linear-gradient(145deg, #1f3c88 0%, #0b1d4d 100%);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.bundesliga {
+    background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.premierleague {
+    background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.seriea {
+    background: linear-gradient(145deg, #059669 0%, #022c22 100%);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* BORDES ILUMINADOS*/
+.laliga:hover {
+    border-color: #ff6b6b;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 107, 107, 0.4);
+    transform: translateY(-8px);
+}
+
+.ligueone:hover {
+    border-color: #4dabf7;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(77, 171, 247, 0.4);
+    transform: translateY(-8px);
+}
+
+.bundesliga:hover {
+    border-color: #ff8787;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 135, 135, 0.4);
+    transform: translateY(-8px);
+}
+
+.premierleague:hover {
+    border-color: #9775fa;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(151, 117, 250, 0.4);
+    transform: translateY(-8px);
+}
+
+.seriea:hover {
+    border-color: #38d9a9;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(56, 217, 169, 0.4);
+    transform: translateY(-8px);
+}
+
+.laliga a {
+    text-decoration: none;
+}
+
+.ligueone a {
+    text-decoration: none;
+}
+
+.bundesliga a {
+    text-decoration: none;
+}
+
+.premierleague a {
+    text-decoration: none;
+}
+
+.seriea a {
+    text-decoration: none;
+}
+
+.liga-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+.liga-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.liga-item:hover .liga-image {
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
+}
+
+.liga-title {
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.liga-item:hover .liga-title {
+    transform: translateY(5px);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.laliga::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.ligueone::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.bundesliga::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.premierleague::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.seriea::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.laliga:hover::after {
+    left: 100%;
+}
+
+.ligueone:hover::after {
+    left: 100%;
+}
+
+.bundesliga:hover::after {
+    left: 100%;
+}
+
+.premierleague:hover::after {
+    left: 100%;
+}
+
+.seriea:hover::after {
+    left: 100%;
+}
+
+.laliga::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.ligueone::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.bundesliga::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.premierleague::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.seriea::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease;
+    z-index: 3;
+}
+
+.laliga:hover::before {
+    width: 80%;
+}
+
+.ligueone:hover::before {
+    width: 80%;
+}
+
+.bundesliga:hover::before {
+    width: 80%;
+}
+
+.premierleague:hover::before {
+    width: 80%;
+}
+
+.seriea:hover::before {
+    width: 80%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .header__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .index__title {
+        font-size: 2.2rem;
+    }
+    .index__slogan {
+        font-size: 1.4rem;
+    }
+    .index__description {
+        font-size: 1rem;
+    }
+    .text__item {
+        padding: 15px;
+    }
+    .section__title--mode,
+    .section__title--features {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    .box__content {
+        height: 250px;
+        border-radius: 16px;
+    }
+    .box__btn {
+        height: 60px;
+        font-size: 0.9rem;
+    }
+    .feature__item {
+        padding: 25px 15px;
+    }
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__text {
+        justify-content: center;
+    }
+    .social__links {
+        justify-content: center;
+    }
+    .box {
+        grid-template-columns: 1fr;
+    }
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+    .formations-grid-futdraft {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .position {
+        width: 45px;
+        height: 45px;
+    }   
+    .field {
+        max-height: 500px;
+    }
+    .pos-label {
+        font-size: 0.6rem;
+    }
+    .jugadores__title {
+        font-size: 1.8rem;
+    }
+    .jugadores__grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+    .card__image-container {
+        height: 170px;
+    }
+    .card__name {
+        font-size: 0.85rem;
+    }
+    .jugadores__group-title {
+        font-size: 1.2rem;
+    }
+    .section__title--mode {
+        font-size: 1.5rem;
+    }
+    .ea-card {
+        height: 340px;
+    }
+    .ea-card__content {
+        padding: 20px;
+    }
+    .ea-card__title {
+        font-size: 1.8rem;
+    }
+    .ea-card__desc {
+        font-size: 0.85rem;
+    }
+    .ea-card__btn {
+        padding: 14px 40px;
+        font-size: 0.8rem;
+        left: 20px;
+        bottom: 20px;
+    }
+    .ea-card__nav {
+        bottom: 15px;
+        right: 15px;
+    }
+    .ligas__title {
+        font-size: 2rem;
+    }
+    .ligas__subtitle {
+        font-size: 1rem;
+    }
+    .ligas__grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    .liga-item {
+        padding: 40px 20px;
+    }
+    .liga-item::before {
+        width: 130px;
+        height: 130px;
+    }
+    .liga-image {
+        width: 100px;
+        height: 100px;
+    }
+    .liga-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .jugadores__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+    .card__image-container {
+        height: 150px;
+    }
+    .card__badge {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+    }
+    .card__name {
+        font-size: 0.75rem;
+    }
+    .card__position {
+        font-size: 0.6rem;
+        padding: 4px 6px;
+    }
+    .ligas-page {
+        padding: 25px 15px;
+    }
+    .ligas__title {
+        font-size: 1.8rem;
+    }
+    .ligas__subtitle {
+        font-size: 0.9rem;
+    }
+    .ligas__grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .liga-item {
+        padding: 35px 15px;
+    }
+    .liga-item::before {
+        width: 110px;
+        height: 110px;
+    }
+    .liga-image {
+        width: 85px;
+        height: 85px;
+    }
+    .liga-title {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutDraft</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__logo">
+    <img class="header__img" src="Imagenes/logo.png" alt="Logo FutDraft">
+    <h1 class="header__title">FutDraft</h1>
+  </div>
+
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item"><a href="Index.html">Inicio</a></li>
+      <li class="header__item"><a href="#">Acerca de</a></li>
+      <li class="header__item"><a href="#">Contacto</a></li>
+      <li class="desplegable">
+        <a href="#" class="desplegable__btn">Juego</a>
+        <div class="desplegable__content">
+          <a href="#">Jugadores</a>
+          <a href="#">Equipos</a>
+          <a href="#">Ligas</a>
+          <a href="#">Actualizaciones</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="index__main">
+  <section class="index__section">
+    <div class="hero__content">
+      <h2 class="index__title">CONTACTO</h2>
+      <p>Completa el formulario con lo que necesites y nos pondremos en contacto contigo lo antes posible.</p>
+
+      <form class="formulario">
+        <input 
+          type="email" 
+          class="formulario__input" 
+          placeholder="Correo electrónico" 
+          required
+        >
+
+        <textarea 
+          class="formulario__input formulario__textarea"
+          placeholder="¿Qué necesita?"
+          required
+        ></textarea>
+
+        <button type="submit" class="formulario__btn">
+          Enviar
+        </button>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__content">
+
+    <div class="footer__section">
+      <p class="footer__list">
+        Developed by:
+        <a href="#">Javier Vega</a>
+        <a href="#">Javier Clemente</a>
+        <a href="#">Berme</a>
+        <a href="#">Helen</a>
+      </p>
+    </div>
+
+    <div class="footer__section">
+      <p class="footer__text">Síguenos en redes sociales</p>
+      <div class="social__links">
+        <a href="#" class="social__link">F</a>
+        <a href="#" class="social__link">X</a>
+        <a href="#" class="social__link">I</a>
+        <a href="#" class="social__link">YT</a>
+      </div>
+    </div>
+
+    <div class="footer__section">
+      <p class="footer__text">© 2026 FutDraft. All rights reserved.</p>
+      <p class="footer__text">Version 1.0.0</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

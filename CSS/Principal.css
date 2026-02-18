@@ -122,7 +122,7 @@
     transform: translateY(-2px);
 }
 
-.fd__desplegable__btn {
+.fd__header__desplegable__btn {
     background-color: transparent;
     color: var(--color-futdraft-texto);
     text-decoration: none;
@@ -132,16 +132,16 @@
     transition: all 0.3s ease;
 }
 
-.fd__desplegable__btn:hover {
+.fd__header__desplegable__btn:hover {
     background-color: var(--color-futdraft-acento);
     transform: translateX(2px);
 }
 
-.fd__desplegable {
+.fd__header__desplegable {
     position: relative;
 }
 
-.fd__desplegable__content {
+.fd__header__desplegable__content {
     display: none;
     position: absolute;
     top: 100%;
@@ -156,7 +156,7 @@
     transition: all 0.3s ease;
 }
 
-.fd__desplegable__content a {
+.fd__header__desplegable__content a {
     color: var(--color-futdraft-texto);
     padding: 12px 20px;
     display: block;
@@ -164,11 +164,11 @@
     transition: background-color 0.3s ease;
 }
 
-.fd__desplegable__content a:hover {
+.fd__header__desplegable__content a:hover {
     background-color: var(--color-futdraft-acento);
 }
 
-.fd__desplegable:hover .fd__desplegable__content{
+.fd__header__desplegable:hover .fd__header__desplegable__content{
     display: block;
     opacity: 1;
     transform: translateY(0);
@@ -1548,12 +1548,12 @@
     text-shadow: none;
 }
 
-.ligas__container {
+.fd__ligas__container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.ligas__grid {
+.fd__ligas__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -1562,7 +1562,7 @@
 
 /* ESTILOS DE LAS LIGAS */
 
-.laliga {
+.fd__laliga {
     background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);  
     position: relative;
     border-radius: 20px;
@@ -1572,7 +1572,7 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.ligueone {
+.fd__ligueone {
     background: linear-gradient(145deg, #1f3c88 0%, #0b1d4d 100%);
     position: relative;
     border-radius: 20px;
@@ -1582,7 +1582,7 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.bundesliga {
+.fd__bundesliga {
     background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
     position: relative;
     border-radius: 20px;
@@ -1592,7 +1592,7 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.premierleague {
+.fd__premierleague {
     background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
     position: relative;
     border-radius: 20px;
@@ -1602,7 +1602,7 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.seriea {
+.fd__seriea {
     background: linear-gradient(145deg, #059669 0%, #022c22 100%);
     position: relative;
     border-radius: 20px;
@@ -1613,57 +1613,57 @@
 }
 
 /* BORDES ILUMINADOS*/
-.laliga:hover {
+.fd__laliga:hover {
     border-color: #ff6b6b;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 107, 107, 0.4);
     transform: translateY(-8px);
 }
 
-.ligueone:hover {
+.fd__ligueone:hover {
     border-color: #4dabf7;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(77, 171, 247, 0.4);
     transform: translateY(-8px);
 }
 
-.bundesliga:hover {
+.fd__bundesliga:hover {
     border-color: #ff8787;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 135, 135, 0.4);
     transform: translateY(-8px);
 }
 
-.premierleague:hover {
+.fd__premierleague:hover {
     border-color: #9775fa;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(151, 117, 250, 0.4);
     transform: translateY(-8px);
 }
 
-.seriea:hover {
+.fd__seriea:hover {
     border-color: #38d9a9;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(56, 217, 169, 0.4);
     transform: translateY(-8px);
 }
 
-.laliga a {
+.fd__laliga a {
     text-decoration: none;
 }
 
-.ligueone a {
+.fd__ligueone a {
     text-decoration: none;
 }
 
-.bundesliga a {
+.fd__bundesliga a {
     text-decoration: none;
 }
 
-.premierleague a {
+.fd__premierleague a {
     text-decoration: none;
 }
 
-.seriea a {
+.fd__seriea a {
     text-decoration: none;
 }
 
-.liga-item {
+.fd__liga-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1672,7 +1672,7 @@
     position: relative;
 }
 
-.liga-image {
+.fd__liga-image {
     width: 120px;
     height: 120px;
     object-fit: contain;
@@ -1681,12 +1681,12 @@
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.liga-item:hover .liga-image {
+.fd__liga-item:hover .fd__liga-image {
     transform: scale(1.15) rotate(5deg);
     filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
 }
 
-.liga-title {
+.fd__liga-title {
     color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
@@ -1698,12 +1698,12 @@
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.liga-item:hover .liga-title {
+.fd__liga-item:hover .fd__liga-title {
     transform: translateY(5px);
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.laliga::after {
+.fd__laliga::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1747,7 +1747,7 @@
     transition: left 0.6s ease;
 }
 
-.seriea::after {
+.fd__seriea::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1758,27 +1758,27 @@
     transition: left 0.6s ease;
 }
 
-.laliga:hover::after {
+.fd__laliga:hover::after {
     left: 100%;
 }
 
-.ligueone:hover::after {
+.fd__ligueone:hover::after {
     left: 100%;
 }
 
-.bundesliga:hover::after {
+.fd__bundesliga:hover::after {
     left: 100%;
 }
 
-.premierleague:hover::after {
+.fd__premierleague:hover::after {
     left: 100%;
 }
 
-.seriea:hover::after {
+.fd__seriea:hover::after {
     left: 100%;
 }
 
-.laliga::before {
+.fd__laliga::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1791,7 +1791,7 @@
     z-index: 3;
 }
 
-.ligueone::before {
+.fd__ligueone::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1804,7 +1804,7 @@
     z-index: 3;
 }
 
-.bundesliga::before {
+.fd__bundesliga::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1817,7 +1817,7 @@
     z-index: 3;
 }
 
-.premierleague::before {
+.fd__premierleague::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1830,7 +1830,7 @@
     z-index: 3;
 }
 
-.seriea::before {
+.fd__seriea::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1843,46 +1843,46 @@
     z-index: 3;
 }
 
-.laliga:hover::before {
+.fd__laliga:hover::before {
     width: 80%;
 }
 
-.ligueone:hover::before {
+.fd__ligueone:hover::before {
     width: 80%;
 }
 
-.bundesliga:hover::before {
+.fd__bundesliga:hover::before {
     width: 80%;
 }
 
-.premierleague:hover::before {
+.fd__premierleague:hover::before {
     width: 80%;
 }
 
-.seriea:hover::before {
+.fd__seriea:hover::before {
     width: 80%;
 }
 
 /* EQUIPOS PAGE */
 
-.equipos-page {
+.fd__equipos-page {
     flex: 1 0 auto;
     padding: 30px 20px;
     background: linear-gradient(180deg, #0a0a12 0%, #0f1419 50%, #0a0a12 100%);
     min-height: calc(100vh - 150px);
 }
 
-.equipos {
+.fd__equipos {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.equipos__header {
+.fd__equipos__header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.equipos__title {
+.fd__equipos__title {
     color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
@@ -1895,7 +1895,7 @@
     background-clip: text;
 }
 
-.equipos__subtitle {
+.fd__equipos__subtitle {
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
@@ -1903,13 +1903,13 @@
     margin: 0;
 }
 
-.equipos__container {
+.fd__equipos__container {
     width: 100%;
 }
 
 /*PARTE RANKED*/
 
-.leaderboard {
+.fd__leaderboard {
     background: linear-gradient(180deg, rgba(20, 20, 30, 0.9) 0%, rgba(10, 10, 18, 0.95) 100%);
     border-radius: 20px;
     overflow: hidden;
@@ -1917,7 +1917,7 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.leaderboard__header {
+.fd__leaderboard__header {
     display: grid;
     grid-template-columns: 80px 1fr 150px 120px;
     gap: 20px;
@@ -1926,7 +1926,7 @@
     border-bottom: 2px solid rgba(255, 215, 0, 0.3);
 }
 
-.leaderboard__header span {
+.fd__leaderboard__header span {
     color: #FFD700;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
@@ -1935,7 +1935,7 @@
     letter-spacing: 1px;
 }
 
-.leaderboard__row {
+.fd__leaderboard__row {
     display: grid;
     grid-template-columns: 80px 1fr 150px 120px;
     gap: 20px;
@@ -1946,7 +1946,7 @@
     position: relative;
 }
 
-.leaderboard__row::after {
+.fd__leaderboard__row::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1956,105 +1956,105 @@
     transition: left 0.4s ease;
 }
 
-.leaderboard__row:hover::after {
+.fd__leaderboard__row:hover::after {
     left: -100%;
 }
 
-.leaderboard__row:last-child {
+.fd__leaderboard__row:last-child {
     border-bottom: none;
 }
 
-.leaderboard__row:hover {
+.fd__leaderboard__row:hover {
     background: linear-gradient(90deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 165, 0, 0.04) 100%);
     transform: scale(1.01);
 }
 
-.leaderboard__row--gold {
+.fd__leaderboard__row--gold {
     background: linear-gradient(90deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.08));
 }
 
-.leaderboard__row--gold:hover {
+.fd__leaderboard__row--gold:hover {
     background: linear-gradient(90deg, rgba(255, 215, 0, 0.5), rgba(255, 215, 0, 0.25));
     box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.4);
 }
 
-.leaderboard__row--gold::after {
+.fd__leaderboard__row--gold::after {
     background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.75), transparent);
 }
 
-.leaderboard__row--gold:hover::after {
+.fd__leaderboard__row--gold:hover::after {
     left: -100%;
 }
 
-.leaderboard__row--silver {
+.fd__leaderboard__row--silver {
     background: linear-gradient(90deg, rgba(192, 192, 192, 0.25), rgba(192, 192, 192, 0.08));
 }
 
-.leaderboard__row--silver:hover {
+.fd__leaderboard__row--silver:hover {
     background: linear-gradient(90deg, rgba(192, 192, 192, 0.5), rgba(192, 192, 192, 0.25));
     box-shadow: 0 0 20px 5px rgba(192, 192, 192, 0.4);
 }
 
-.leaderboard__row--silver::after {
+.fd__leaderboard__row--silver::after {
     background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.75), transparent);
 }
 
-.leaderboard__row--silver:hover::after {
+.fd__leaderboard__row--silver:hover::after {
     left: -100%;
 }
 
-.leaderboard__row--bronze {
+.fd__leaderboard__row--bronze {
     background: linear-gradient(90deg, rgba(205, 127, 50, 0.25), rgba(205, 127, 50, 0.08));
 }
 
-.leaderboard__row--bronze:hover {
+.fd__leaderboard__row--bronze:hover {
     background: linear-gradient(90deg, rgba(205, 127, 50, 0.5), rgba(205, 127, 50, 0.25));
     box-shadow: 0 0 20px 5px rgba(205, 127, 50, 0.4);
 }
 
-.leaderboard__row--bronze::after {
+.fd__leaderboard__row--bronze::after {
     background: linear-gradient(90deg, transparent, rgba(205, 127, 50, 0.75), transparent);
 }
 
-.leaderboard__row--bronze:hover::after {
+.fd__leaderboard__row--bronze:hover::after {
     left: -100%;
 }
 
-.leaderboard__row--iron {
+.fd__leaderboard__row--iron {
     background: linear-gradient(90deg, rgba(120, 120, 120, 0.25), rgba(80, 80, 80, 0.08));
 }
 
-.leaderboard__row--iron:hover {
+.fd__leaderboard__row--iron:hover {
     background: linear-gradient(90deg, rgba(120, 120, 120, 0.5), rgba(80, 80, 80, 0.25));
     box-shadow: 0 0 20px 5px rgba(200, 200, 220, 0.3);
 }
 
-.leaderboard__row--iron::after {
+.fd__leaderboard__row--iron::after {
     background: linear-gradient(90deg, transparent, rgba(200, 200, 220, 0.15), transparent);
 }
 
-.leaderboard__row--iron:hover::after {
+.fd__leaderboard__row--iron:hover::after {
     left: -100%;
 }
 
-.leaderboard__row--wood {
+.fd__leaderboard__row--wood {
     background: linear-gradient(90deg, rgba(139, 69, 19, 0.25), rgba(205, 133, 63, 0.08));
 }
 
-.leaderboard__row--wood:hover {
+.fd__leaderboard__row--wood:hover {
     background: linear-gradient(90deg, rgba(139, 69, 19, 0.5), rgba(205, 133, 63, 0.25));
     box-shadow: 0 0 20px 5px rgba(255, 230, 180, 0.3);
 }
 
-.leaderboard__row--wood::after {
+.fd__leaderboard__row--wood::after {
     background: linear-gradient(90deg, transparent, rgba(255, 230, 180, 0.15), transparent);
 }
 
-.leaderboard__row--wood:hover::after {
+.fd__leaderboard__row--wood:hover::after {
     left: -100%;
 }
 
-.leaderboard__pos {
+.fd__leaderboard__pos {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
@@ -2062,18 +2062,18 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.leaderboard__pos img {
+.fd__leaderboard__pos img {
     width: 75px;
     height: auto;
 }
 
-.leaderboard__team {
+.fd__leaderboard__team {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.leaderboard__logo {
+.fd__leaderboard__logo {
     width: 45px;
     height: 45px;
     object-fit: contain;
@@ -2082,19 +2082,19 @@
     padding: 5px;
 }
 
-.leaderboard__name {
+.fd__leaderboard__name {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-futdraft-texto);
 }
 
-.leaderboard__liga {
+.fd__leaderboard__liga {
     display: flex;
     align-items: center;
 }
 
-.leaderboard__liga-badge {
+.fd__leaderboard__liga-badge {
     font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
@@ -2105,13 +2105,13 @@
     letter-spacing: 0.5px;
 }
 
-.leaderboard__titles {
+.fd__leaderboard__titles {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.leaderboard__trophy-count {
+.fd__leaderboard__trophy-count {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 800;
@@ -2119,7 +2119,7 @@
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-.equipos__title {
+.fd__equipos__title {
     color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
@@ -2132,7 +2132,7 @@
     background-clip: text;
 }
 
-.equipos__subtitle {
+.fd__equipos__subtitle {
     color: var(--color-futdraft-blanco-medio-transparente);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -2146,15 +2146,15 @@
 /* MEDIA QUERYS */
 /* MEDIA QUERY (Tablet) */
 @media (max-width: 768px) {
-    .header__nav {
+    .fd__header__nav {
         position: relative;
     }
 
-    .header__menu-btn {
+    .fd__header__menu-btn {
         display: block;
     }
 
-    .header__list {
+    .fd__header__list {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -2167,17 +2167,17 @@
         box-shadow: 0 8px 20px var(--color-futdraft-sombra);
     }
 
-    .header__list.show {
+    .fd__header__list.show {
         display: flex;
     }
 
-    .header__item {
+    .fd__header__item {
         width: 100%;
         text-align: right;
         padding: 10px 20px;
     }
 
-    .desplegable__content {
+    .fd__header__desplegable__content {
         position: relative;
         top: 0;
         left: 0;
@@ -2190,187 +2190,187 @@
         margin-top: 5px;
     }
 
-    .desplegable__content.show {
+    .fd__header__desplegable__content.show {
         display: flex;
     }
 
-    .index__title {
+    .fd__index__title {
         font-size: 2.2rem;
     }
-    .index__slogan {
+    .fd__index__slogan {
         font-size: 1.4rem;
     }
-    .index__description {
+    .fd__index__description {
         font-size: 1rem;
     }
-    .text__item {
+    .fd__text__item {
         padding: 15px;
     }
-    .section__title--mode,
-    .section__title--features {
+    .fd__section__title--mode,
+    .fd__section__title--features {
         font-size: 1.6rem;
         margin-bottom: 25px;
     }
-    .box__content {
+    .fd__box__content {
         height: 250px;
         border-radius: 16px;
     }
-    .box__btn {
+    .fd__box__btn {
         height: 60px;
         font-size: 0.9rem;
     }
-    .feature__item {
+    .fd__feature__item {
         padding: 25px 15px;
     }
-    .footer__content {
+    .fd__footer__content {
         flex-direction: column;
         text-align: center;
     }
-    .footer__text {
+    .fd__footer__text {
         justify-content: center;
     }
-    .social__links {
+    .fd__social__links {
         justify-content: center;
     }
-    .box {
+    .fd__box {
         grid-template-columns: 1fr;
     }
-    .features__grid {
+    .fd__features__grid {
         grid-template-columns: 1fr;
     }
-    .formations-grid-futdraft {
+    .fd__formations-grid-futdraft {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    .position {
+    .fd__position {
         width: 45px;
         height: 45px;
     }   
-    .field {
+    .fd__field {
         max-height: 500px;
     }
-    .pos-label {
+    .fd__pos-label {
         font-size: 0.6rem;
     }
-    .jugadores__title {
+    .fd__jugadores__title {
         font-size: 1.8rem;
     }
-    .jugadores__grid {
+    .fd__jugadores__grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         gap: 15px;
         padding: 10px;
     }
-    .card__image-container {
+    .fd__card__image-container {
         height: 170px;
     }
-    .card__name {
+    .fd__card__name {
         font-size: 0.85rem;
     }
-    .jugadores__group-title {
+    .fd__jugadores__group-title {
         font-size: 1.2rem;
     }
-    .section__title--mode {
+    .fd__section__title--mode {
         font-size: 1.5rem;
     }
-    .ea-card {
+    .fd__card {
         height: 340px;
     }
-    .ea-card__content {
+    .fd__card__content {
         padding: 20px;
     }
-    .ea-card__title {
+    .fd__card__title {
         font-size: 1.8rem;
     }
-    .ea-card__desc {
+    .fd__card__desc {
         font-size: 0.85rem;
     }
-    .ea-card__btn {
+    .fd__card__btn {
         padding: 14px 40px;
         font-size: 0.8rem;
         left: 20px;
         bottom: 20px;
     }
-    .ea-card__nav {
+    .fd__card__nav {
         bottom: 15px;
         right: 15px;
     }
-    .ligas__title {
+    .fd__ligas__title {
         font-size: 2rem;
     }
-    .ligas__subtitle {
+    .fd__ligas__subtitle {
         font-size: 1rem;
     }
-    .ligas__grid {
+    .fd__ligas__grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
     }
-    .liga-item {
+    .fd__liga-item {
         padding: 40px 20px;
     }
-    .liga-item::before {
+    .fd__liga-item::before {
         width: 130px;
         height: 130px;
     }
-    .liga-image {
+    .fd__liga-image {
         width: 100px;
         height: 100px;
     }
-    .liga-title {
+    .fd__liga-title {
         font-size: 1.3rem;
     }
-    .equipos__title {
+    .fd__equipos__title {
         font-size: 2rem;
     }
     
-    .equipos__subtitle {
+    .fd__equipos__subtitle {
         font-size: 1rem;
     }
     
-    .equipos__grid {
+    .fd__equipos__grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 15px;
         padding: 15px;
     }
 
-    .leaderboard {
+    .fd__leaderboard {
         border-radius: 15px;
     }
 
-    .leaderboard__header {
+    .fd__leaderboard__header {
         grid-template-columns: 60px 1fr 120px 80px;
         gap: 15px;
         padding: 15px 20px;
     }
 
-    .leaderboard__header span {
+    .fd__leaderboard__header span {
         font-size: 0.75rem;
     }
 
-    .leaderboard__row {
+    .fd__leaderboard__row {
         grid-template-columns: 60px 1fr 120px 80px;
         gap: 15px;
         padding: 14px 20px;
     }
 
-    .leaderboard__pos img {
+    .fd__leaderboard__pos img {
         width: 50px;
     }
 
-    .leaderboard__logo {
+    .fd__leaderboard__logo {
         width: 35px;
         height: 35px;
     }
 
-    .leaderboard__name {
+    .fd__leaderboard__name {
         font-size: 0.9rem;
     }
 
-    .leaderboard__liga-badge {
+    .fd__leaderboard__liga-badge {
         font-size: 0.7rem;
         padding: 4px 8px;
     }
 
-    .leaderboard__trophy-count {
+    .fd__leaderboard__trophy-count {
         font-size: 1rem;
     }
 }
@@ -2378,143 +2378,143 @@
 /* MEDIA QUERY (Movil grande) */
 
 @media (max-width: 480px) {
-    .header {
+    .fd__header {
         padding: 12px;
         gap: 10px;
     }
 
-    .header__logo {
+    .fd__header__logo {
         gap: 8px;
     }
 
-    .header__img {
+    .fd__header__img {
         width: 35px;
         height: 35px;
     }
 
-    .header__title {
+    .fd__header__title {
         font-size: 1.3rem;
     }
     
-    .header {
+    .fd__header {
         padding: 10px 8px;
     }
 
-    .header__img {
+    .fd__header__img {
         width: 30px;
         height: 30px;
     }
 
-    .header__title {
+    .fd__header__title {
         font-size: 1.1rem;
     }
 
-    .header__list {
+    .fd__header__list {
         width: 200px;
     }
 
-    .header__list.show {
+    .fd__header__list.show {
         display: flex;
     }
 
-    .header__list li {
+    .fd__header__list li {
         margin: 10px 0;
     }
 
-    .desplegable__content {
+    .fd__header__desplegable__content {
         position: static;
         display: none;
     }
 
-    .equipos-page {
+    .fd__equipos-page {
         padding: 15px 10px;
     }
 
-    .equipos__header {
+    .fd__equipos__header {
         padding: 20px 15px;
     }
 
-    .equipos__title {
+    .fd__equipos__title {
         font-size: 1.5rem;
     }
 
-    .equipos__subtitle {
+    .fd__equipos__subtitle {
         font-size: 0.85rem;
     }
 
-    .leaderboard {
+    .fd__leaderboard {
         border-radius: 12px;
         border-width: 1px;
     }
 
-    .leaderboard__header {
+    .fd__leaderboard__header {
         display: none;
     }
 
-    .leaderboard__row {
+    .fd__leaderboard__row {
         grid-template-columns: 50px 1fr 60px;
         gap: 10px;
         padding: 12px 15px;
     }
 
-    .leaderboard__pos {
+    .fd__leaderboard__pos {
         font-size: 0.9rem;
     }
 
-    .leaderboard__pos img {
+    .fd__leaderboard__pos img {
         width: 40px;
     }
 
-    .leaderboard__team {
+    .fd__leaderboard__team {
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
     }
 
-    .leaderboard__logo {
+    .fd__leaderboard__logo {
         width: 28px;
         height: 28px;
     }
 
-    .leaderboard__name {
+    .fd__leaderboard__name {
         font-size: 0.8rem;
     }
 
-    .leaderboard__liga {
+    .fd__leaderboard__liga {
         display: none;
     }
 
-    .leaderboard__titles {
+    .fd__leaderboard__titles {
         justify-content: flex-end;
     }
 
-    .leaderboard__trophy-count {
+    .fd__leaderboard__trophy-count {
         font-size: 0.9rem;
     }
 
-    .footer__content {
+    .fd__footer__content {
         padding: 20px 15px;
         gap: 15px;
     }
 
-    .footer__section {
+    .fd__footer__section {
         padding: 10px 0;
     }
 
-    .footer__list,
-    .footer__text {
+    .fd__footer__list,
+    .fd__footer__text {
         font-size: 0.75rem;
     }
 
-    .footer__list a {
+    .fd__footer__list a {
         font-size: 0.7rem;
     }
 
-    .social__links {
+    .fd__social__links {
         gap: 10px;
     }
 
-    .social__link {
+    .fd__social__link {
         width: 30px;
         height: 30px;
         font-size: 0.7rem;
@@ -2524,95 +2524,95 @@
 /* MEDIA QUERY (Movil) */
 
 @media (max-width: 365px) {
-    .header {
+    .fd__header {
         padding: 10px 8px;
     }
 
-    .header__img {
+    .fd__header__img {
         width: 30px;
         height: 30px;
     }
 
-    .header__title {
+    .fd__header__title {
         font-size: 1.1rem;
     }
 
-    .header__list {
+    .fd__header__list {
         width: 180px;
     }
 
-    .header__list.show {
+    .fd__header__list.show {
         display: flex;
     }
 
-    .header__item {
+    .fd__header__item {
         padding: 10px 15px;
     }
-    .desplegable__content {
+    .fd__header__desplegable__content {
         display: none;
     }
 
-    .equipos-page {
+    .fd__equipos-page {
         padding: 10px 8px;
     }
 
-    .equipos__header {
+    .fd__equipos__header {
         padding: 15px 10px;
     }
 
-    .equipos__title {
+    .fd__equipos__title {
         font-size: 1.3rem;
     }
 
-    .equipos__subtitle {
+    .fd__equipos__subtitle {
         font-size: 0.75rem;
     }
 
-    .leaderboard {
+    .fd__leaderboard {
         border-radius: 10px;
     }
 
-    .leaderboard__row {
+    .fd__leaderboard__row {
         grid-template-columns: 40px 1fr 50px;
         gap: 8px;
         padding: 10px 12px;
     }
 
-    .leaderboard__pos {
+    .fd__leaderboard__pos {
         font-size: 0.8rem;
     }
 
-    .leaderboard__pos img {
+    .fd__leaderboard__pos img {
         width: 32px;
     }
 
-    .leaderboard__logo {
+    .fd__leaderboard__logo {
         width: 24px;
         height: 24px;
     }
 
-    .leaderboard__name {
+    .fd__leaderboard__name {
         font-size: 0.7rem;
     }
 
-    .leaderboard__trophy-count {
+    .fd__leaderboard__trophy-count {
         font-size: 0.8rem;
     }
 
-    .footer__content {
+    .fd__footer__content {
         padding: 15px 10px;
     }
 
-    .footer__list,
-    .footer__text {
+    .fd__footer__list,
+    .fd__footer__text {
         font-size: 0.65rem;
     }
 
-    .footer__list a {
+    .fd__footer__list a {
         font-size: 0.6rem;
     }
 
-    .social__link {
+    .fd__social__link {
         width: 26px;
         height: 26px;
         font-size: 0.6rem;

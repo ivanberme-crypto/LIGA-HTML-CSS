@@ -164,7 +164,7 @@
     padding: 20px;
   }
   
-  /* Título y texto (los que pasaste) */
+
 .serie-card__titulo{
     margin: 0 0 10px;
     font-size: 18px;
@@ -178,7 +178,7 @@
     color: #dfe7ff;
   }
   
-  /* Contenedor general (fondo oscuro) */
+
   .serie-partidos{
     margin: 2rem 0;
     padding: 1.5rem;
@@ -187,12 +187,12 @@
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
   }
   
-  /* Para que el título se vea sobre el fondo oscuro */
+  
   .serie-partidos .serie-card__titulo{
     color: #dfe7ff;
   }
   
-  /* Grid de 3 partidos */
+  
   .serie-partidos__grid{
     margin-top: 1rem;
     display: grid;
@@ -200,7 +200,7 @@
     gap: 1rem;
   }
   
-  /* Card de cada partido */
+ 
   .serie-partidos__card{
     display: flex;
     align-items: center;
@@ -212,7 +212,7 @@
     border: 1px solid rgba(0,0,0,.10);
   }
   
-  /* Reuso el estilo que ya tenías, pero adaptado a colores */
+
   .seriea-box-partido__equipo{
     flex: 1;
     display: flex;
@@ -257,7 +257,7 @@
     color: #dfe7ff;
   }
   
-  /* Responsive */
+ 
   @media (max-width: 980px){
     .serie-partidos__grid{
       grid-template-columns: 1fr;
@@ -282,6 +282,92 @@
     .seriea-box-partido__equipo{
       width: 100%;
       justify-content: center;
+    }
+  }
+  .seriea-box-promo{
+    width: 100%;
+    padding: 70px 0;
+    background:  #1ea7ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .seriea-container-promo{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  
+  .seriea-box-promo--reverse .seriea-container-promo{
+    flex-direction: row-reverse;
+  }
+  
+  .seriea-box-promo__img{
+    flex: 1;
+  }
+  
+  .seriea-box-promo__imgFile{
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  
+  .seriea-box-promo__contenido{
+    flex: 1;
+  }
+  
+  .seriea-box-promo__titulo{
+    font-size: 42px;
+    margin-bottom: 18px;
+    color: #000000;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  
+  .seriea-box-promo__texto{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2b2b2b;
+    margin-bottom: 35px;
+  }
+  
+  .seriea-box-promo__btn{
+    display: inline-block;
+    padding: 15px 30px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: all .25s ease;
+  }
+  
+  .seriea-box-promo__btn:hover{
+    background: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  }
+  
+  @media(max-width: 900px){
+    .seriea-container-promo{
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .seriea-box-promo--reverse .seriea-container-promo{
+      flex-direction: column;
+    }
+  
+    .seriea-box-promo__titulo{
+      font-size: 32px;
+    }
+  
+    .seriea-box-promo__texto{
+      font-size: 17px;
     }
   }
   

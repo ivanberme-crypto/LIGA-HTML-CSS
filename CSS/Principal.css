@@ -1714,7 +1714,7 @@
     transition: left 0.6s ease;
 }
 
-.ligueone::after {
+.fd__ligueone::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1725,7 +1725,7 @@
     transition: left 0.6s ease;
 }
 
-.bundesliga::after {
+.fd__bundesliga::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1736,7 +1736,7 @@
     transition: left 0.6s ease;
 }
 
-.premierleague::after {
+.fd__premierleague::after {
     content: '';
     position: absolute;
     top: 0;

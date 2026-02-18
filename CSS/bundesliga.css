@@ -1,24 +1,28 @@
-:root{
+:root {
   --bg: #0b0b10;
   --text: #f4f4f6;
-  --line: rgba(255,255,255,.08);
+  --line: rgba(255, 255, 255, .08);
   --bundes-acento: #e10600;
   --premier-morado: #37003c;
   --premier-verde: #00ff85;
 }
 
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body{
+body-bun {
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
-img{ display: block; }
+img {
+  display: block;
+}
 
-.bundes-box-cabecera{
+.bundes-box-cabecera {
   position: sticky;
   top: 0;
   z-index: 50;
@@ -27,26 +31,26 @@ img{ display: block; }
   backdrop-filter: blur(8px);
 }
 
-.bundes-container-cabecera{
+.bundes-container-cabecera {
   padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.bundes-box-cabecera__marca{
+.bundes-box-cabecera__marca {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.bundes-box-cabecera__logo{
+.bundes-box-cabecera__logo {
   width: 36px;
   height: 36px;
   object-fit: contain;
 }
 
-.bundes-box-cabecera__titulo{
+.bundes-box-cabecera__titulo {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -54,7 +58,7 @@ img{ display: block; }
   font-size: 20px;
 }
 
-.bundes-box-cabecera__lista{
+.bundes-box-cabecera__lista {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -63,7 +67,7 @@ img{ display: block; }
   align-items: center;
 }
 
-.bundes-box-cabecera__enlace{
+.bundes-box-cabecera__enlace {
   color: var(--text);
   text-decoration: none;
   font-size: 14px;
@@ -74,22 +78,22 @@ img{ display: block; }
   display: inline-block;
 }
 
-.bundes-box-cabecera__enlace:hover{
+.bundes-box-cabecera__enlace:hover {
   background: rgba(255, 255, 255, .08);
   opacity: 1;
 }
 
-.bundes-box-cabecera__item--cta .bundes-box-cabecera__enlace{
+.bundes-box-cabecera__item--cta .bundes-box-cabecera__enlace {
   background: var(--bundes-acento);
   color: #fff;
   font-weight: 700;
 }
 
-.bundes-box-cabecera__item--cta .bundes-box-cabecera__enlace:hover{
+.bundes-box-cabecera__item--cta .bundes-box-cabecera__enlace:hover {
   background: #ff1b15;
 }
 
-.bundes-box-portada{
+.bundes-box-portada {
   position: relative;
   height: 500px;
   background-image: url("Imagenes/d2272de4-65ca-4804-a345-b3ed159a4d85.png");
@@ -102,20 +106,20 @@ img{ display: block; }
   overflow: hidden;
 }
 
-.bundes-box-portada__overlay{
+.bundes-box-portada__overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .6);
 }
 
-.bundes-container-portada{
+.bundes-container-portada {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 0 20px;
 }
 
-.bundes-box-portada__contenido{
+.bundes-box-portada__contenido {
   position: relative;
   background: rgba(11, 11, 16, .95);
   padding: 50px;
@@ -125,19 +129,19 @@ img{ display: block; }
   border: 1px solid var(--line);
 }
 
-.bundes-box-portada__titulo{
+.bundes-box-portada__titulo {
   font-size: 42px;
   margin: 0 0 20px;
   font-family: "Montserrat", sans-serif;
 }
 
-.bundes-box-portada__subtitulo{
+.bundes-box-portada__subtitulo {
   margin: 0;
   font-size: 15px;
   opacity: .85;
 }
 
-.bundes-box-tarjetas{
+.bundes-box-tarjetas {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -145,7 +149,7 @@ img{ display: block; }
   flex-wrap: wrap;
 }
 
-.bundes-card{
+.bundes-card {
   background: #111117;
   width: 300px;
   border-radius: 12px;
@@ -154,46 +158,46 @@ img{ display: block; }
   transition: transform .25s ease, border-color .25s ease, background .25s ease;
 }
 
-.bundes-card:hover{
+.bundes-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(225,6,0,.6);
-  background: rgba(255,255,255,.03);
+  border-color: rgba(225, 6, 0, .6);
+  background: rgba(255, 255, 255, .03);
 }
 
-.bundes-card__img{
+.bundes-card__img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.bundes-card__contenido{
+.bundes-card__contenido {
   padding: 20px;
 }
 
-.bundes-card__titulo{
+.bundes-card__titulo {
   margin: 0 0 10px;
   font-size: 18px;
   color: #fff;
 }
 
-.bundes-card__texto{
+.bundes-card__texto {
   font-size: 14px;
   opacity: .8;
   margin: 0;
 }
 
-.bundes-box-carrusel{
+.bundes-box-carrusel {
   padding: 70px 20px 110px;
 }
 
-.bundes-box-carrusel__titulo{
+.bundes-box-carrusel__titulo {
   max-width: 1100px;
   margin: 0 auto 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
 }
 
-.bundes-box-carrusel__pista--logos{
+.bundes-box-carrusel__pista--logos {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -205,44 +209,44 @@ img{ display: block; }
   scrollbar-width: none;
 }
 
-.bundes-box-carrusel__pista--logos::-webkit-scrollbar{
+.bundes-box-carrusel__pista--logos::-webkit-scrollbar {
   display: none;
 }
 
-.bundes-logoCard{
+.bundes-logoCard {
   flex: 0 0 auto;
   width: 170px;
   height: 270px;
-  background: rgba(11,11,16,.95);
+  background: rgba(11, 11, 16, .95);
   border: 1px solid var(--line);
   border-radius: 999px;
   display: grid;
   place-items: center;
   scroll-snap-align: start;
   text-decoration: none;
-  transition: transform .25s ease, border-color .25s ease,  .25s ease;
+  transition: transform .25s ease, border-color .25s ease, .25s ease;
 }
 
-.bundes-logoCard__img{
+.bundes-logoCard__img {
   width: 125px;
   height: 125px;
   object-fit: contain;
-  filter: drop-shadow(0 12px 22px rgba(0,0,0,.6));
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, .6));
 }
 
-.bundes-logoCard:hover{
+.bundes-logoCard:hover {
   transform: translateY(-8px);
   border-color: var(--bundes-acento);
-  background: rgba(255,255,255,.05);
+  background: rgba(255, 255, 255, .05);
 }
 
-.bundes-box-promo{
+.bundes-box-promo {
   background: var(--bundes-acento);
   padding: 80px 20px;
   color: #fff;
 }
 
-.bundes-container-promo{
+.bundes-container-promo {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -250,33 +254,33 @@ img{ display: block; }
   gap: 60px;
 }
 
-.bundes-box-promo__img{
+.bundes-box-promo__img {
   flex: 1;
 }
 
-.bundes-box-promo__imgFile{
+.bundes-box-promo__imgFile {
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
-.bundes-box-promo__contenido{
+.bundes-box-promo__contenido {
   flex: 1;
 }
 
-.bundes-box-promo__titulo{
+.bundes-box-promo__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
   margin: 0 0 20px;
 }
 
-.bundes-box-promo__texto{
+.bundes-box-promo__texto {
   font-size: 16px;
   margin: 0 0 25px;
   line-height: 1.6;
 }
 
-.bundes-box-promo__btn{
+.bundes-box-promo__btn {
   display: inline-block;
   background: #fff;
   color: var(--bundes-acento);
@@ -287,37 +291,37 @@ img{ display: block; }
   transition: transform .25s ease, background .25s ease;
 }
 
-.bundes-box-promo__btn:hover{
+.bundes-box-promo__btn:hover {
   background: #f4f4f4;
   transform: translateY(-3px);
 }
 
-.bundes-container-promo--reverse{
+.bundes-container-promo--reverse {
   flex-direction: row-reverse;
 }
 
-.bundes-box-ranking{
+.bundes-box-ranking {
   padding: 70px 20px 110px;
 }
 
-.bundes-box-ranking__head{
+.bundes-box-ranking__head {
   max-width: 1200px;
   margin: 0 auto 22px;
 }
 
-.bundes-box-ranking__titulo{
+.bundes-box-ranking__titulo {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
 }
 
-.bundes-box-ranking__sub{
+.bundes-box-ranking__sub {
   margin: 6px 0 0;
   font-size: 14px;
   opacity: .8;
 }
 
-.bundes-box-ranking__pista{
+.bundes-box-ranking__pista {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -329,14 +333,14 @@ img{ display: block; }
   scrollbar-width: none;
 }
 
-.bundes-box-ranking__pista::-webkit-scrollbar{
+.bundes-box-ranking__pista::-webkit-scrollbar {
   display: none;
 }
 
-.bundes-playerCard{
+.bundes-playerCard {
   flex: 0 0 auto;
   width: 230px;
-  background: rgba(11,11,16,.95);
+  background: rgba(11, 11, 16, .95);
   border: 1px solid var(--line);
   border-radius: 18px;
   overflow: hidden;
@@ -344,29 +348,29 @@ img{ display: block; }
   transition: transform .25s ease, border-color .25s ease, background .25s ease;
 }
 
-.bundes-playerCard:hover{
+.bundes-playerCard:hover {
   transform: translateY(-8px);
-  border-color: rgba(225,6,0,.6);
-  background: rgba(255,255,255,.03);
+  border-color: rgba(225, 6, 0, .6);
+  background: rgba(255, 255, 255, .03);
 }
 
-.bundes-playerCard__img{
+.bundes-playerCard__img {
   height: 260px;
   background: #0e0e14;
 }
 
-.bundes-playerCard__imgFile{
+.bundes-playerCard__imgFile {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.bundes-playerCard__info{
+.bundes-playerCard__info {
   padding: 14px 14px 16px;
   position: relative;
 }
 
-.bundes-playerCard__tag{
+.bundes-playerCard__tag {
   position: absolute;
   top: 10px;
   right: 14px;
@@ -376,22 +380,22 @@ img{ display: block; }
   font-size: 12px;
   padding: 7px 10px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, .18);
 }
 
-.bundes-playerCard__name{
+.bundes-playerCard__name {
   margin: 34px 0 6px;
   font-size: 16px;
   font-weight: 700;
 }
 
-.bundes-playerCard__meta{
+.bundes-playerCard__meta {
   margin: 0 0 12px;
   font-size: 13px;
   opacity: .78;
 }
 
-.bundes-playerCard__stat{
+.bundes-playerCard__stat {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -399,28 +403,28 @@ img{ display: block; }
   border-top: 1px solid var(--line);
 }
 
-.bundes-playerCard__statLabel{
+.bundes-playerCard__statLabel {
   font-size: 13px;
   opacity: .8;
 }
 
-.bundes-playerCard__statValue{
+.bundes-playerCard__statValue {
   font-size: 20px;
   letter-spacing: .5px;
 }
 
-.bundes-box-partido{
+.bundes-box-partido {
   padding: 90px 20px;
   text-align: center;
 }
 
-.bundes-box-partido__titulo{
+.bundes-box-partido__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   margin: 0 0 40px;
 }
 
-.bundes-box-partido__card{
+.bundes-box-partido__card {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -432,65 +436,65 @@ img{ display: block; }
   padding: 40px 60px;
 }
 
-.bundes-box-partido__equipo{
+.bundes-box-partido__equipo {
   text-align: center;
 }
 
-.bundes-box-partido__logo{
+.bundes-box-partido__logo {
   width: 100px;
   height: 100px;
   object-fit: contain;
   margin: 0 auto 15px;
 }
 
-.bundes-box-partido__nombre{
+.bundes-box-partido__nombre {
   margin: 0;
   font-size: 18px;
   color: #fff;
 }
 
-.bundes-box-partido__vsTexto{
+.bundes-box-partido__vsTexto {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 900;
   color: #0b0b10;
 }
 
-.bundes-box-partido__fecha{
+.bundes-box-partido__fecha {
   margin: 25px 0 0;
   font-size: 14px;
   opacity: .8;
 }
 
-.premier-box-cabecera{
+.premier-box-cabecera {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
   background: rgba(55, 0, 60, .95);
   backdrop-filter: blur(8px);
 }
 
-.premier-container-cabecera{
+.premier-container-cabecera {
   padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.premier-box-cabecera__marca{
+.premier-box-cabecera__marca {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.premier-box-cabecera__logo{
+.premier-box-cabecera__logo {
   width: 36px;
   height: 36px;
   object-fit: contain;
 }
 
-.premier-box-cabecera__titulo{
+.premier-box-cabecera__titulo {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -499,7 +503,7 @@ img{ display: block; }
   color: #fff;
 }
 
-.premier-box-cabecera__lista{
+.premier-box-cabecera__lista {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -508,7 +512,7 @@ img{ display: block; }
   align-items: center;
 }
 
-.premier-box-cabecera__enlace{
+.premier-box-cabecera__enlace {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -519,22 +523,22 @@ img{ display: block; }
   display: inline-block;
 }
 
-.premier-box-cabecera__enlace:hover{
-  background: rgba(255,255,255,.10);
+.premier-box-cabecera__enlace:hover {
+  background: rgba(255, 255, 255, .10);
   opacity: 1;
 }
 
-.premier-box-cabecera__item--cta .premier-box-cabecera__enlace{
+.premier-box-cabecera__item--cta .premier-box-cabecera__enlace {
   background: var(--premier-verde);
   color: #111;
   font-weight: 800;
 }
 
-.premier-box-cabecera__item--cta .premier-box-cabecera__enlace:hover{
+.premier-box-cabecera__item--cta .premier-box-cabecera__enlace:hover {
   background: #00e676;
 }
 
-.premier-box-tarjetas{
+.premier-box-tarjetas {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -542,50 +546,50 @@ img{ display: block; }
   flex-wrap: wrap;
 }
 
-.premier-card{
+.premier-card {
   background: #16001a;
   width: 300px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,.12);
-  transition: transform .25s ease, border-color .25s ease,  .25s ease;
+  border: 1px solid rgba(255, 255, 255, .12);
+  transition: transform .25s ease, border-color .25s ease, .25s ease;
 }
 
-.premier-card:hover{
+.premier-card:hover {
   transform: translateY(-6px);
   border-color: var(--premier-verde);
-  background: rgba(255,255,255,.03);
+  background: rgba(255, 255, 255, .03);
 }
 
-.premier-card__img{
+.premier-card__img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.premier-card__contenido{
+.premier-card__contenido {
   padding: 20px;
 }
 
-.premier-card__titulo{
+.premier-card__titulo {
   margin: 0 0 10px;
   font-size: 18px;
   color: #fff;
 }
 
-.premier-card__texto{
+.premier-card__texto {
   margin: 0;
   font-size: 14px;
   opacity: .85;
 }
 
-.premier-box-promo{
+.premier-box-promo {
   padding: 80px 20px;
   color: #fff;
   background: rgba(55, 0, 60, .95);
 }
 
-.premier-container-promo{
+.premier-container-promo {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -593,33 +597,33 @@ img{ display: block; }
   gap: 60px;
 }
 
-.premier-box-promo__img{
+.premier-box-promo__img {
   flex: 1;
 }
 
-.premier-box-promo__imgFile{
+.premier-box-promo__imgFile {
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
-.premier-box-promo__contenido{
+.premier-box-promo__contenido {
   flex: 1;
 }
 
-.premier-box-promo__titulo{
+.premier-box-promo__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
   margin: 0 0 20px;
 }
 
-.premier-box-promo__texto{
+.premier-box-promo__texto {
   font-size: 16px;
   margin: 0 0 25px;
   line-height: 1.6;
 }
 
-.premier-box-promo__btn{
+.premier-box-promo__btn {
   display: inline-block;
   background: var(--premier-verde);
   color: #111;
@@ -630,24 +634,24 @@ img{ display: block; }
   transition: transform .25s ease, background .25s ease;
 }
 
-.premier-box-promo__btn:hover{
+.premier-box-promo__btn:hover {
   background: #00e676;
   transform: translateY(-3px);
 }
 
-.premier-container-promo--reverse{
+.premier-container-promo--reverse {
   flex-direction: row-reverse;
 }
 
-.premier-box-patrocinador{
+.premier-box-patrocinador {
   padding: 90px 20px;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,.08);
-  border-bottom: 1px solid rgba(255,255,255,.08);
-  background: rgba(255,255,255,.02);
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .02);
 }
 
-.premier-box-patrocinador__titulo{
+.premier-box-patrocinador__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   margin: 0 0 50px;
@@ -655,7 +659,7 @@ img{ display: block; }
   color: #fff;
 }
 
-.premier-box-patrocinador__grid{
+.premier-box-patrocinador__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
@@ -664,7 +668,7 @@ img{ display: block; }
   align-items: center;
 }
 
-.premier-box-patrocinador__logo{
+.premier-box-patrocinador__logo {
   width: 100%;
   max-width: 160px;
   margin: 0 auto;
@@ -673,17 +677,17 @@ img{ display: block; }
   transition: transform .25s ease, filter .25s ease;
 }
 
-.premier-box-patrocinador__logo:hover{
+.premier-box-patrocinador__logo:hover {
   filter: brightness(0) invert(1) opacity(1);
   transform: scale(1.08);
 }
 
-.premier-box-pie{
-  border-top: 1px solid rgba(255,255,255,.12);
+.premier-box-pie {
+  border-top: 1px solid rgba(255, 255, 255, .12);
   background: rgba(11, 11, 16, .95);
 }
 
-.premier-container-pie{
+.premier-container-pie {
   padding: 18px 24px;
   display: flex;
   align-items: center;
@@ -691,14 +695,14 @@ img{ display: block; }
   gap: 14px;
 }
 
-.premier-box-pie__texto{
+.premier-box-pie__texto {
   margin: 0;
   opacity: .85;
   font-size: 14px;
   color: #fff;
 }
 
-.premier-box-pie__enlace{
+.premier-box-pie__enlace {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -709,56 +713,58 @@ img{ display: block; }
   display: inline-block;
 }
 
-.premier-box-pie__enlace:hover{
-  background: rgba(255,255,255,.08);
+.premier-box-pie__enlace:hover {
+  background: rgba(255, 255, 255, .08);
   opacity: 1;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
+
   .bundes-container-promo,
-  .premier-container-promo{
+  .premier-container-promo {
     flex-direction: column;
     text-align: center;
   }
 
   .bundes-container-promo--reverse,
-  .premier-container-promo--reverse{
+  .premier-container-promo--reverse {
     flex-direction: column;
   }
 
   .bundes-box-promo__titulo,
-  .premier-box-promo__titulo{
+  .premier-box-promo__titulo {
     font-size: 26px;
   }
 }
 
-@media (max-width: 700px){
-  .bundes-box-partido__card{
+@media (max-width: 700px) {
+  .bundes-box-partido__card {
     flex-direction: column;
     gap: 25px;
   }
 
-  .bundes-box-partido__vsTexto{
+  .bundes-box-partido__vsTexto {
     font-size: 26px;
   }
 
-  .premier-box-patrocinador__grid{
+  .premier-box-patrocinador__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
   }
 
-  .premier-container-pie{
+  .premier-container-pie {
     flex-direction: column;
     text-align: center;
   }
 }
-.premier-jdm{
+
+.premier-jdm {
   padding: 80px 20px;
   color: #fff;
   background: rgba(55, 0, 60, .95);
 }
 
-.premier-jdm__container{
+.premier-jdm__container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -766,41 +772,41 @@ img{ display: block; }
   gap: 60px;
 }
 
-.premier-jdm__container--reverse{
+.premier-jdm__container--reverse {
   flex-direction: row-reverse;
 }
 
-.premier-jdm__media{
+.premier-jdm__media {
   flex: 1;
 }
 
-.premier-jdm__img{
+.premier-jdm__img {
   width: 100%;
   max-width: 520px;
   height: 340px;
   object-fit: cover;
   border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
-.premier-jdm__content{
+.premier-jdm__content {
   flex: 1;
 }
 
-.premier-jdm__title{
+.premier-jdm__title {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
   margin: 0 0 20px;
 }
 
-.premier-jdm__text{
+.premier-jdm__text {
   font-size: 16px;
   margin: 0 0 25px;
   line-height: 1.6;
   opacity: .95;
 }
 
-.premier-jdm__btn{
+.premier-jdm__btn {
   display: inline-block;
   background: var(--premier-verde);
   color: #111;
@@ -808,30 +814,30 @@ img{ display: block; }
   border-radius: 8px;
   font-weight: 800;
   text-decoration: none;
-  transition: transform .25s ease,  .25s ease;
+  transition: transform .25s ease, .25s ease;
 }
 
-.premier-jdm__btn:hover{
+.premier-jdm__btn:hover {
   background: #00e676;
   transform: translateY(-3px);
 }
 
-@media (max-width: 900px){
-  .premier-jdm__container{
+@media (max-width: 900px) {
+  .premier-jdm__container {
     flex-direction: column;
     text-align: center;
   }
 
-  .premier-jdm__container--reverse{
+  .premier-jdm__container--reverse {
     flex-direction: column;
   }
 
-  .premier-jdm__img{
+  .premier-jdm__img {
     max-width: 100%;
     height: 260px;
   }
 
-  .premier-jdm__title{
+  .premier-jdm__title {
     font-size: 26px;
   }
 }

@@ -107,25 +107,25 @@ function renderSortedCards(container, players) {
             if (!groups[type]) return;
 
             const groupDiv = document.createElement('div');
-            groupDiv.className = 'jugadores__group';
+            groupDiv.className = 'fd__jugadores__group';
 
             groupDiv.innerHTML = `
-                <div class="jugadores__group-header">
-                    <h3 class="jugadores__group-title">${config.display}</h3>
-                    <span class="jugadores__group-count">${groups[type].length}</span>
+                <div class="fd__jugadores__group-header">
+                    <h3 class="fd__jugadores__group-title">${config.display}</h3>
+                    <span class="fd__jugadores__group-count">${groups[type].length}</span>
                 </div>
-                <div class="jugadores__grid">
+                <div class="fd__jugadores__grid">
                     ${groups[type].map((player, index)=> `
-                        <div class="card">
-                            <div class="card__image-container">
-                                <img src="${player.image}" alt="" class="card__image">
-                                ${index === 0 ? '<span class="card__badge">★ TOP</span>' : ''}
+                        <div class="fd__card">
+                            <div class="fd__card__image-container">
+                                <img src="${player.image}" alt="" class="fd__card__image">
+                                ${index === 0 ? '<span class="fd__card__badge">★ TOP</span>' : ''}
                             </div>
-                            <div class="card__info">
-                                <h4 class="card__name">${player.name}</h4>
-                                <div class="card__details">
-                                    <span class="card__position">${player.position}</span>
-                                    <span class="card__rating card__rating--${getRatingClass(player.rating)}">
+                            <div class="fd__card__info">
+                                <h4 class="fd__card__name">${player.name}</h4>
+                                <div class="fd__card__details">
+                                    <span class="fd__card__position">${player.position}</span>
+                                    <span class="fd__card__rating fd__card__rating--${getRatingClass(player.rating)}">
                                         ${player.rating}
                                     </span>
                                 </div>

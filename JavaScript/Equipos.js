@@ -35,6 +35,8 @@ function getRankStyle(rank) {
     if (rank === 1) return 'gold';
     if (rank === 2) return 'silver';
     if (rank === 3) return 'bronze';
+    if (rank === 4) return 'iron';
+    if (rank === 5) return 'wood';
     return 'default';
 }
 
@@ -79,6 +81,7 @@ function renderLeaderboard(container, teams) {
         const teamImage = team.image || '../Imagenes/logo.png';
         
         const row = document.createElement('div');
+        row.style.animationDelay = `${index * 0.07}s`;
         row.className = `leaderboard__row leaderboard__row--${rankStyle}`;
         row.innerHTML = `
             <span class="leaderboard__pos leaderboard__pos--${rankStyle}">${getRankIcon(rank)}</span>

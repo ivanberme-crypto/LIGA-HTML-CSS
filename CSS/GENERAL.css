@@ -58,10 +58,6 @@
     --color-futdraft-oscuro-transparente: rgba(0, 0, 0, 0.9);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -3942,491 +3938,112 @@ body {
 }
 
 /* MEDIA QUERYS */
-/* MEDIA QUERY (Tablet) */
-@media (max-width:900px) {
-  .lg1-container-promo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .lg1-box-promo__titulo {
-    font-size: 26px;
-  }
-
-  .lg1-box-promo--invertida .lg1-container-promo {
-    flex-direction: column;
-  }
-  .fd__header__nav {
-      position: relative;
-  }
-
-  .fd__header__menu-btn {
-      display: block;
-  }
-
-  .fd__header__list {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: var(--color-futdraft-secundario);
-      width: 250px;
-      border-radius: 8px;
-      padding: 10px 0;
-      box-shadow: 0 8px 20px var(--color-futdraft-sombra);
-  }
-
-  .fd__header__list.show {
-      display: flex;
-  }
-
-  .fd__header__item {
-      width: 100%;
-      text-align: right;
-      padding: 10px 20px;
-  }
-
-  .fd__header__desplegable__content {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
-      opacity: 1;
-      display: none;
-      flex-direction: column;
-      background: var(--color-futdraft-secundario);
-      border-radius: 8px;
-      margin-top: 5px;
-  }
-
-  .fd__header__desplegable__content.show {
-      display: flex;
-  }
-
-  .fd__index__title {
-      font-size: 2.2rem;
-  }
-  .fd__index__slogan {
-      font-size: 1.4rem;
-  }
-  .fd__index__description {
-      font-size: 1rem;
-  }
-  .fd__text__item {
-      padding: 15px;
-  }
-  .fd__section__title--mode,
-  .fd__section__title--features {
-      font-size: 1.6rem;
-      margin-bottom: 25px;
-  }
-  .fd__box__content {
-      height: 250px;
-      border-radius: 16px;
-  }
-  .fd__box__btn {
-      height: 60px;
-      font-size: 0.9rem;
-  }
-  .fd__feature__item {
-      padding: 25px 15px;
-  }
-  .fd__footer__content {
-      flex-direction: column;
-      text-align: center;
-  }
-  .fd__footer__text {
-      justify-content: center;
-  }
-  .fd__social__links {
-      justify-content: center;
-  }
-  .fd__box {
-      grid-template-columns: 1fr;
-  }
-  .fd__features__grid {
-      grid-template-columns: 1fr;
-  }
-  .fd__formations-grid-futdraft {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-  }
-  .fd__position {
-      width: 45px;
-      height: 45px;
-  }   
-  .fd__field {
-      max-height: 500px;
-  }
-  .fd__pos-label {
-      font-size: 0.6rem;
-  }
-  .fd__jugadores__title {
-      font-size: 1.8rem;
-  }
-  .fd__jugadores__grid {
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 15px;
-      padding: 10px;
-  }
-  .fd__card__image-container {
-      height: 170px;
-  }
-  .fd__card__name {
-      font-size: 0.85rem;
-  }
-  .fd__jugadores__group-title {
-      font-size: 1.2rem;
-  }
-  .fd__section__title--mode {
-      font-size: 1.5rem;
-  }
-  .fd__card {
-      height: 340px;
-  }
-  .fd__card__content {
-      padding: 20px;
-  }
-  .fd__card__title {
-      font-size: 1.8rem;
-  }
-  .fd__card__desc {
-      font-size: 0.85rem;
-  }
-  .fd__card__btn {
-      padding: 14px 40px;
-      font-size: 0.8rem;
-      left: 20px;
-      bottom: 20px;
-  }
-  .fd__card__nav {
-      bottom: 15px;
-      right: 15px;
-  }
-  .fd__ligas__title {
-      font-size: 2rem;
-  }
-  .fd__ligas__subtitle {
-      font-size: 1rem;
-  }
-  .fd__ligas__grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-  }
-  .fd__liga-item {
-      padding: 40px 20px;
-  }
-  .fd__liga-item::before {
-      width: 130px;
-      height: 130px;
-  }
-  .fd__liga-image {
-      width: 100px;
-      height: 100px;
-  }
-  .fd__liga-title {
-      font-size: 1.3rem;
-  }
-  .fd__equipos__title {
-      font-size: 2rem;
-  }
-  
-  .fd__equipos__subtitle {
-      font-size: 1rem;
-  }
-  
-  .fd__equipos__grid {
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 15px;
-      padding: 15px;
-  }
-
-  .fd__leaderboard {
-      border-radius: 15px;
-  }
-
-  .fd__leaderboard__header {
-      grid-template-columns: 60px 1fr 120px 80px;
-      gap: 15px;
-      padding: 15px 20px;
-  }
-
-  .fd__leaderboard__header span {
-      font-size: 0.75rem;
-  }
-
-  .fd__leaderboard__row {
-      grid-template-columns: 60px 1fr 120px 80px;
-      gap: 15px;
-      padding: 14px 20px;
-  }
-
-  .fd__leaderboard__pos img {
-      width: 50px;
-  }
-
-  .fd__leaderboard__logo {
-      width: 35px;
-      height: 35px;
-  }
-
-  .fd__leaderboard__name {
-      font-size: 0.9rem;
-  }
-
-  .fd__leaderboard__liga-badge {
-      font-size: 0.7rem;
-      padding: 4px 8px;
-  }
-
-  .fd__leaderboard__trophy-count {
-      font-size: 1rem;
-  }
-}
-
-/* MEDIA QUERY (Movil grande) */
+/* MEDIA QUERY (Movil pequeño) */
 
 @media (max-width: 480px) {
+
     .fd__header {
-        padding: 12px;
-        gap: 10px;
-    }
-
-    .fd__header__logo {
-        gap: 8px;
-    }
-
-    .fd__header__img {
-        width: 35px;
-        height: 35px;
+        padding: 10px 15px;
     }
 
     .fd__header__title {
-        font-size: 1.3rem;
-    }
-    
-    .fd__header {
-        padding: 10px 8px;
+        font-size: 1.4rem;
     }
 
     .fd__header__img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .fd__header__title {
-        font-size: 1.1rem;
+        width: 50px;
+        height: 50px;
     }
 
     .fd__header__list {
-        width: 200px;
-    }
-
-    .fd__header__list.show {
-        display: flex;
-    }
-
-    .fd__header__list li {
-        margin: 10px 0;
-    }
-
-    .fd__header__desplegable__content {
-        position: static;
         display: none;
     }
 
-    .fd__equipos-page {
-        padding: 15px 10px;
+    .fd__header__menu-btn {
+        display: block;
     }
 
-    .fd__equipos__header {
-        padding: 20px 15px;
+    .fd__index__section {
+        padding: 30px 20px;
     }
 
-    .fd__equipos__title {
+    .fd__index__title {
+        font-size: 1.8rem;
+    }
+
+    .fd__cards {
+        height: 300px;
+    }
+
+    .fd__cards__title {
         font-size: 1.5rem;
     }
 
-    .fd__equipos__subtitle {
-        font-size: 0.85rem;
-    }
-
-    .fd__leaderboard {
-        border-radius: 12px;
-        border-width: 1px;
-    }
-
-    .fd__leaderboard__header {
-        display: none;
-    }
-
-    .fd__leaderboard__row {
-        grid-template-columns: 50px 1fr 60px;
-        gap: 10px;
-        padding: 12px 15px;
-    }
-
-    .fd__leaderboard__pos {
-        font-size: 0.9rem;
-    }
-
-    .fd__leaderboard__pos img {
-        width: 40px;
-    }
-
-    .fd__leaderboard__team {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    .fd__leaderboard__logo {
-        width: 28px;
-        height: 28px;
-    }
-
-    .fd__leaderboard__name {
-        font-size: 0.8rem;
-    }
-
-    .fd__leaderboard__liga {
-        display: none;
-    }
-
-    .fd__leaderboard__titles {
-        justify-content: flex-end;
-    }
-
-    .fd__leaderboard__trophy-count {
-        font-size: 0.9rem;
-    }
-
-    .fd__footer__content {
-        padding: 20px 15px;
-        gap: 15px;
-    }
-
-    .fd__footer__section {
-        padding: 10px 0;
-    }
-
-    .fd__footer__list,
-    .fd__footer__text {
+    .fd__cards__btn {
+        padding: 12px 30px;
         font-size: 0.75rem;
     }
 
-    .fd__footer__list a {
-        font-size: 0.7rem;
+    .fd__jugadores__grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+        padding: 10px;
     }
 
-    .fd__social__links {
-        gap: 10px;
-    }
-
-    .fd__social__link {
-        width: 30px;
-        height: 30px;
-        font-size: 0.7rem;
+    .fd__position {
+        width: 70px;
+        height: 95px;
     }
 }
 
-/* MEDIA QUERY (Movil) */
+/* MEDIA QUERY (Movil grande / Tablet pequeña) */
 
-@media (max-width: 365px) {
-  .fd__header {
-      padding: 10px 8px;
-  }
+@media (min-width: 481px) and (max-width: 768px) {
 
-  .fd__header__img {
-      width: 30px;
-      height: 30px;
-  }
+    .fd__index__title {
+        font-size: 2.2rem;
+    }
 
-  .fd__header__title {
-      font-size: 1.1rem;
-  }
+    .fd__cards {
+        height: 340px;
+    }
 
-  .fd__header__list {
-      width: 180px;
-  }
+    .fd__cards__title {
+        font-size: 1.8rem;
+    }
 
-  .fd__header__list.show {
-      display: flex;
-  }
+    .fd__formation__grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
 
-  .fd__header__item {
-      padding: 10px 15px;
-  }
-  .fd__header__desplegable__content {
-      display: none;
-  }
+    .fd__jugadores__grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
 
-  .fd__equipos-page {
-      padding: 10px 8px;
-  }
+/* MEDIA QUERY (Tablet / Portatil) */
 
-  .fd__equipos__header {
-      padding: 15px 10px;
-  }
+@media (min-width: 769px) and (max-width: 1024px) {
 
-  .fd__equipos__title {
-      font-size: 1.3rem;
-  }
+    .fd__index__title {
+        font-size: 2.6rem;
+    }
 
-  .fd__equipos__subtitle {
-      font-size: 0.75rem;
-  }
+    .fd__cards {
+        height: 360px;
+    }
 
-  .fd__leaderboard {
-      border-radius: 10px;
-  }
+    .fd__cards__title {
+        font-size: 2.1rem;
+    }
 
-  .fd__leaderboard__row {
-      grid-template-columns: 40px 1fr 50px;
-      gap: 8px;
-      padding: 10px 12px;
-  }
+    .fd__index__section {
+        padding: 50px 35px;
+    }
 
-  .fd__leaderboard__pos {
-      font-size: 0.8rem;
-  }
-
-  .fd__leaderboard__pos img {
-      width: 32px;
-  }
-
-  .fd__leaderboard__logo {
-      width: 24px;
-      height: 24px;
-  }
-
-  .fd__leaderboard__name {
-      font-size: 0.7rem;
-  }
-
-  .fd__leaderboard__trophy-count {
-      font-size: 0.8rem;
-  }
-
-  .fd__footer__content {
-      padding: 15px 10px;
-  }
-
-  .fd__footer__list,
-  .fd__footer__text {
-      font-size: 0.65rem;
-  }
-
-  .fd__footer__list a {
-      font-size: 0.6rem;
-  }
-
-  .fd__social__link {
-      width: 26px;
-      height: 26px;
-      font-size: 0.6rem;
-  }
+    .fd__box {
+        gap: 20px;
+    }
 }
 
   /*@media (max-width:700px) {

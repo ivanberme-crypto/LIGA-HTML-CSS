@@ -152,10 +152,10 @@ function renderPositions(formation) {
             const player = assignedPlayers[pos.id];
             positionDiv.classList.add('__occupied');
             positionDiv.innerHTML = `
-            <img src="${player.image}" class="player__card-field">
+            <img src="${player.image}" class="fd__player__card-field">
             `;
         } else {
-            positionDiv.innerHTML = '<span class="pos-label">' + pos.name + '</span>';
+            positionDiv.innerHTML = '<span class="fd__pos-label">' + pos.name + '</span>';
         }
         container.appendChild(positionDiv);
     });
@@ -181,10 +181,10 @@ function openPlayerSelector(position) {
     playerList.innerHTML = '';
     randomPlayers.forEach(player => {
     const playerDiv = document.createElement('div');
-    playerDiv.className = 'player-option card-option';
+    playerDiv.className = 'fd__player-option fd__card-option';
 
     playerDiv.innerHTML = `
-        <img src="${player.image}" class="player-card-img" alt="${player.name}">
+        <img src="${player.image}" class="fd__player-card-img" alt="${player.name}">
     `;
 
     playerDiv.onclick = () => assignPlayer(player);

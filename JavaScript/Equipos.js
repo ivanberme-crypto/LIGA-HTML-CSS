@@ -62,15 +62,15 @@ function renderLeaderboard(container, teams) {
     container.innerHTML = '';
     
     const leaderboard = document.createElement('div');
-    leaderboard.className = 'leaderboard';
+    leaderboard.className = 'fd__leaderboard';
     
     const title = document.createElement('div');
-    title.className = 'leaderboard__header';
+    title.className = 'fd__leaderboard__header';
     title.innerHTML = `
-        <span class="leaderboard__pos">#</span>
-        <span class="leaderboard__team">Equipo</span>
-        <span class="leaderboard__liga">Liga</span>
-        <span class="leaderboard__titles">Títulos</span>
+        <span class="fd__leaderboard__pos">#</span>
+        <span class="fd__leaderboard__team">Equipo</span>
+        <span class="fd__leaderboard__liga">Liga</span>
+        <span class="fd__leaderboard__titles">Títulos</span>
     `;
     leaderboard.appendChild(title);
     
@@ -82,18 +82,18 @@ function renderLeaderboard(container, teams) {
         
         const row = document.createElement('div');
         row.style.animationDelay = `${index * 0.07}s`;
-        row.className = `leaderboard__row leaderboard__row--${rankStyle}`;
+        row.className = `fd__leaderboard__row fd__leaderboard__row--${rankStyle}`;
         row.innerHTML = `
-            <span class="leaderboard__pos leaderboard__pos--${rankStyle}">${getRankIcon(rank)}</span>
-            <span class="leaderboard__team">
-                <img src="${teamImage}" alt="${team.name}" class="leaderboard__logo">
-                <span class="leaderboard__name">${team.name}</span>
+            <span class="fd__leaderboard__pos fd__leaderboard__pos--${rankStyle}">${getRankIcon(rank)}</span>
+            <span class="fd__leaderboard__team">
+                <img src="${teamImage}" alt="${team.name}" class="fd__leaderboard__logo">
+                <span class="fd__leaderboard__name">${team.name}</span>
             </span>
-            <span class="leaderboard__liga">
-                <span class="leaderboard__liga-badge" style="background: ${leagueConfig.color}">${leagueConfig.display}</span>
+            <span class="fd__leaderboard__liga">
+                <span class="fd__leaderboard__liga-badge" style="background: ${leagueConfig.color}">${leagueConfig.display}</span>
             </span>
-            <span class="leaderboard__titles">
-                <span class="leaderboard__trophy-count">${team.titles}</span>
+            <span class="fd__leaderboard__titles">
+                <span class="fd__leaderboard__trophy-count">${team.titles}</span>
             </span>
         `;
         leaderboard.appendChild(row);

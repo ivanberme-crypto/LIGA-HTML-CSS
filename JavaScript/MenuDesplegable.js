@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector(".header__menu-btn");
-    const menuList = document.querySelector(".header__list");
-    const desplegableBtn = document.querySelector(".desplegable__btn");
-    const desplegableContent = document.querySelector(".desplegable__content");
+    const menuBtn = document.querySelector(".fd__header__menu-btn");
+    const menuList = document.querySelector(".fd__header__list");
+    const desplegableBtn = document.querySelector(".fd__header__desplegable__btn");
+    const desplegableContent = document.querySelector(".fd__header__desplegable__content");
 
     menuBtn.addEventListener("click", () => {
         menuList.classList.toggle("show");

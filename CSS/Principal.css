@@ -46,7 +46,7 @@
     --color-futdraft-oscuro-transparente: rgba(0, 0, 0, 0.9);
 }
 
-/* FONDO */
+/* FONDO FUTDRAFT */
 
 .fd__html {
     scroll-behavior: smooth;
@@ -65,7 +65,7 @@
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* HEADER */
+/* HEADER FUTDRAFT*/
 
 .fd__header {
     display: flex;
@@ -183,7 +183,7 @@
     color: var(--color-futdraft-texto);
 }
 
-/* FOOTER */
+/* FOOTER FUTDRAFT*/
 
 .fd__footer {
     display: flex;
@@ -268,7 +268,7 @@
     gap: 40px;
 }
 
-/* INDEX SECCION */
+/* INDEX SECCION FUTDRAFT*/
 
 .fd__index__section {
     display: flex;
@@ -330,7 +330,7 @@
     line-height: 1.7;
 }
 
-/* LISTA INDEX */
+/* LISTA INDEX FUTDRAFT */
 
 .fd__text__list {
     display: flex;
@@ -412,7 +412,7 @@
     text-transform: uppercase;
 }
 
-/* CARRUSEL */
+/* CARRUSEL FUTDRAFT */
 
 .fd__carousel {
     position: relative;
@@ -771,7 +771,7 @@
     transform: translateY(0);
 }
 
-/* CARACTERISTICAS SECCION */
+/* CARACTERISTICAS SECCION FUTDRAFT */
 
 .fd__section__features {
     padding: 50px 40px;
@@ -841,7 +841,7 @@
     min-height: calc(100vh - 150px);
 }
 
-/* Seleccionar jugadores */
+/* SELECCIONAR JUGADORES FUTDRAFT */
 
 .fd__formation__title {
     color: var(--color-futdraft-texto);
@@ -914,7 +914,7 @@
     text-transform: uppercase;
 }
 
-/* CAMPO DE FUTBOL*/
+/* CAMPO DE FUTBOL FUTDRAFT */
 
 .fd__field-view {
     animation: fadeIn 0.5s ease;
@@ -1085,7 +1085,7 @@
     transform: translateY(-50%);
 }
 
-/* POSICION JUGADORES*/
+/* POSICION JUGADORES FUTDRAFT */
 
 .fd__field__positions {
     position: absolute;
@@ -1148,7 +1148,7 @@
     pointer-events: none;
 }
 
-/* PANEL SELECCIONAR JUGADORES*/
+/* PANEL SELECCIONAR JUGADORES FUTDRAFT */
 
 .fd__player-selector {
     max-width: 450px;
@@ -1217,7 +1217,7 @@
     pointer-events: none;
 }
 
-/*LISTADO CARTAS*/
+/* LISTADO CARTAS FUTDRAFT */
 
 .fd__jugadores-page {
     flex: 1 0 auto;
@@ -1301,7 +1301,7 @@
     padding: 25px;
 }
 
-/* TARJETAS DE JUGADORES */
+/* TARJETAS DE JUGADORES FUTDRAFT */
 
 .fd__card {
     position: relative;
@@ -1508,7 +1508,7 @@
     text-transform: uppercase;
 }
 
-/* LIGAS */
+/* LIGAS FUTDRAFT */
 
 .fd__ligas-page {
     flex: 1 0 auto;
@@ -1560,7 +1560,7 @@
     margin-top: 40px;
 }
 
-/* ESTILOS DE LAS LIGAS */
+/* ESTILOS DE LAS LIGAS FUTDRAFT */
 
 .fd__laliga {
     background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);  
@@ -1612,7 +1612,7 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* BORDES ILUMINADOS*/
+/* BORDES ILUMINADOS FUTDRAFT */
 .fd__laliga:hover {
     border-color: #ff6b6b;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 107, 107, 0.4);
@@ -1863,7 +1863,7 @@
     width: 80%;
 }
 
-/* EQUIPOS PAGE */
+/* EQUIPOS PAGE FUTDRAFT */
 
 .fd__equipos-page {
     flex: 1 0 auto;
@@ -1907,7 +1907,7 @@
     width: 100%;
 }
 
-/*PARTE RANKED*/
+/* PARTE RANKED FUTDRAFT */
 
 .fd__leaderboard {
     background: linear-gradient(180deg, rgba(20, 20, 30, 0.9) 0%, rgba(10, 10, 18, 0.95) 100%);
@@ -2145,7 +2145,7 @@
 
 /* MEDIA QUERYS */
 /* MEDIA QUERY (Tablet) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .fd__header__nav {
         position: relative;
     }

@@ -22,41 +22,48 @@
   --xt-container: 1140px;
   --xt-gap: 18px;
 
-    --color-futdraft-principal: #4CAF50;
-    --color-futdraft-secundario: #333;
-    --color-futdraft-terciario: #555;
-    --color-futdraft-cuaternario: #f1f1f1;
-    
-    --color-futdraft-texto: #fff;
-    --color-futdraft-texto-oscuro: #000;
-    
-    --color-futdraft-acento: #ff9800;
-    --color-futdraft-verde-brillante: #4ade80;
-    --color-futdraft-cian: #22d3ee;
-    --color-futdraft-cian-oscuro: #06b6d4;
-    
-    --color-futdraft-fondo-oscuro: #0a0a12;
-    --color-futdraft-fondo-cards: #1a1a2e;
+  --color-futdraft-principal: #4CAF50;
+  --color-futdraft-secundario: #333;
+  --color-futdraft-terciario: #555;
+  --color-futdraft-cuaternario: #f1f1f1;
+  
+  --color-futdraft-texto: #fff;
+  --color-futdraft-texto-oscuro: #000;
+  
+  --color-futdraft-acento: #ff9800;
+  --color-futdraft-verde-brillante: #4ade80;
+  --color-futdraft-cian: #22d3ee;
+  --color-futdraft-cian-oscuro: #06b6d4;
+  
+  --color-futdraft-fondo-oscuro: #0a0a12;
+  --color-futdraft-fondo-cards: #1a1a2e;
 
-    --color-futdraft-borde-oscuro: rgba(255, 255, 255, 0.08);
-    
-    --color-futdraft-sombra: rgba(0, 0, 0, 0.3);
-    --color-futdraft-sombra2: rgba(0, 0, 0, 0.4);
-    --color-futdraft-sombra-oscura: rgba(0, 0, 0, 0.5);
-    --color-futdraft-sombra-verde: rgba(74, 222, 128, 0.4);
-    
-    --color-futdraft-blanco-transparente: rgba(255, 255, 255, 0.8);
-    --color-futdraft-blanco-medio-transparente: rgba(255, 255, 255, 0.5);
-    --color-futdraft-blanco-poco-transparente: rgba(255, 255, 255, 0.1);
-    --color-futdraft-blanco-muy-poco-transparente: rgba(255, 255, 255, 0.05);
-    
-    --color-futdraft-verde-poco-transparente: rgba(74, 222, 128, 0.1);
-    --color-futdraft-verde-medio-transparente: rgba(74, 222, 128, 0.3);
-    
-    --color-futdraft-cian-medio-transparente: rgba(34, 211, 238, 0.8);
+  --color-futdraft-borde-oscuro: rgba(255, 255, 255, 0.08);
+  
+  --color-futdraft-sombra: rgba(0, 0, 0, 0.3);
+  --color-futdraft-sombra2: rgba(0, 0, 0, 0.4);
+  --color-futdraft-sombra-oscura: rgba(0, 0, 0, 0.5);
+  --color-futdraft-sombra-verde: rgba(74, 222, 128, 0.4);
+  
+  --color-futdraft-blanco-transparente: rgba(255, 255, 255, 0.8);
+  --color-futdraft-blanco-medio-transparente: rgba(255, 255, 255, 0.5);
+  --color-futdraft-blanco-poco-transparente: rgba(255, 255, 255, 0.1);
+  --color-futdraft-blanco-muy-poco-transparente: rgba(255, 255, 255, 0.05);
+  
+  --color-futdraft-verde-poco-transparente: rgba(74, 222, 128, 0.1);
+  --color-futdraft-verde-medio-transparente: rgba(74, 222, 128, 0.3);
+  
+  --color-futdraft-cian-medio-transparente: rgba(34, 211, 238, 0.8);
 
-    --color-futdraft-azulOscuro-transparente: rgba(15, 20, 25, 0.9);
-    --color-futdraft-oscuro-transparente: rgba(0, 0, 0, 0.9);
+  --color-futdraft-azulOscuro-transparente: rgba(15, 20, 25, 0.9);
+  --color-futdraft-oscuro-transparente: rgba(0, 0, 0, 0.9);
+
+  --bundes-premier-bg: #0b0b10;
+  --bundes-premier-text: #f4f4f6;
+  --bundes-premier-line: rgba(255, 255, 255, .08);
+  --bundes-acento: #e10600;
+  --premier-morado: #37003c;
+  --premier-verde: #00ff85;
 }
 
 html {
@@ -4068,10 +4075,6 @@ a {
     .lg1-layout-ranking .lg1-box-ranking {
       width: 100%;
     }
-<<<<<<< HEAD
-  }*/
-=======
-  }
 }
 
 
@@ -4319,35 +4322,13 @@ a {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* PAGINA PREMIER Y BUNDESLIGA */
-
-:root {
-  --bg: #0b0b10;
-  --text: #f4f4f6;
-  --line: rgba(255, 255, 255, .08);
-  --bundes-acento: #e10600;
-  --premier-morado: #37003c;
-  --premier-verde: #00ff85;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 .bundes-bck {
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bundes-premier-bg);
+  color: var(--bundes-premier-text);
 }
 
 img {
@@ -4358,7 +4339,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--bundes-premier-line);
   background: rgba(11, 11, 16, .95);
   backdrop-filter: blur(8px);
 }
@@ -4400,7 +4381,7 @@ img {
 }
 
 .bundes-box-cabecera__enlace {
-  color: var(--text);
+  color: var(--bundes-premier-text);
   text-decoration: none;
   font-size: 14px;
   padding: 10px 12px;
@@ -4458,7 +4439,7 @@ img {
   width: min(550px, 100%);
   border-radius: 14px;
   text-align: center;
-  border: 1px solid var(--line);
+  border: 1px solid var(--bundes-premier-line);
 }
 
 .bundes-box-portada__titulo {
@@ -4486,7 +4467,7 @@ img {
   width: 300px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--bundes-premier-line);
   transition: transform .25s ease, border-color .25s ease, background .25s ease;
 }
 
@@ -4550,7 +4531,7 @@ img {
   width: 170px;
   height: 270px;
   background: rgba(11, 11, 16, .95);
-  border: 1px solid var(--line);
+  border: 1px solid var(--bundes-premier-line);
   border-radius: 999px;
   display: grid;
   place-items: center;
@@ -4673,7 +4654,7 @@ img {
   flex: 0 0 auto;
   width: 230px;
   background: rgba(11, 11, 16, .95);
-  border: 1px solid var(--line);
+  border: 1px solid var(--bundes-premier-line);
   border-radius: 18px;
   overflow: hidden;
   scroll-snap-align: start;
@@ -4732,7 +4713,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--bundes-premier-line);
 }
 
 .bundes-playerCard__statLabel {
@@ -4763,7 +4744,7 @@ img {
   align-items: center;
   justify-content: space-between;
   background: rgba(225, 6, 0, .95);
-  border: 1px solid var(--line);
+  border: 1px solid var(--bundes-premier-line);
   border-radius: 18px;
   padding: 40px 60px;
 }
@@ -5173,4 +5154,3 @@ img {
     font-size: 26px;
   }
 }
->>>>>>> 3533fddcc07b800292e6e4bc9ac6d85f2571fa63

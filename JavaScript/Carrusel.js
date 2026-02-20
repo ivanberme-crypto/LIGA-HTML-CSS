@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const track = document.querySelector('.ea-carousel__track');
-    const slides = document.querySelectorAll('.ea-slide');
+    const track = document.querySelector('.fd__carousel__track');
+    const slides = document.querySelectorAll('.fd__slide');
     
     let currentSlide = 0;
     const totalSlides = slides.length;
@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function goToSlide(index) {
         slides.forEach(slide => {
-            slide.classList.remove('ea-slide--active');
-            slide.querySelectorAll('.ea-dot').forEach(dot => {
-                dot.classList.remove('ea-dot--active');
+            slide.classList.remove('fd__slide--active');
+            slide.querySelectorAll('.fd__dot').forEach(dot => {
+                dot.classList.remove('fd__dot--active');
             });
         });
 
@@ -29,18 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSlide = 0;
         }
 
-        slides[currentSlide].classList.add('ea-slide--active');
+        slides[currentSlide].classList.add('fd__slide--active');
         
-        const currentDots = slides[currentSlide].querySelectorAll('.ea-dot');
+        const currentDots = slides[currentSlide].querySelectorAll('.fd__dot');
         if (currentDots[currentSlide]) {
-            currentDots[currentSlide].classList.add('ea-dot--active');
+            currentDots[currentSlide].classList.add('fd__dot--active');
         }
 
         updateTrackPosition();
     }
 
     function updateTrackPosition() {
-        const container = document.querySelector('.ea-carousel__track-container');
+        const container = document.querySelector('.fd__carousel__track-container');
         const slideWidth = container.offsetWidth;
         track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
     }
@@ -64,15 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    document.querySelectorAll('.ea-dot').forEach((dot) => {
-        dot.addEventListener('click', function() {
-            const slideIndex = parseInt(dot.getAttribute('data-slide'));
-            goToSlide(slideIndex);
-            startAutoplay();
-        });
-    });
+    document.querySelectorAll('.fd__dot').forEach(dot => {
+    if (parseInt(dot.dataset.slide) === currentSlide) {
+        dot.classList.add('fd__dot--active');
+    }
+});
     
-    document.querySelectorAll('.ea-card__arrow--prev').forEach((btn) => {
+    document.querySelectorAll('.fd__cards__arrow--prev').forEach((btn) => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             prevSlide();
@@ -80,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    document.querySelectorAll('.ea-card__arrow--next').forEach((btn) => {
+    document.querySelectorAll('.fd__cards__arrow--next').forEach((btn) => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             nextSlide();
@@ -88,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const carousel = document.querySelector('.ea-carousel');
+    const carousel = document.querySelector('.fd__carousel');
     if (carousel) {
         carousel.addEventListener('mouseenter', stopAutoplay);
         carousel.addEventListener('mouseleave', startAutoplay);
@@ -107,6 +105,5 @@ document.addEventListener('DOMContentLoaded', function() {
             startAutoplay();
         }
     });
-    
     initCarousel();
 });

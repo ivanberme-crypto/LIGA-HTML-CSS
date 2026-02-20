@@ -1,108 +1,106 @@
 :root {
     /* Colores principales */
-    --color-principal: #4CAF50;
-    --color-secundario: #333;
-    --color-terciario: #555;
-    --color-cuaternario: #f1f1f1;
+    --color-futdraft-principal: #4CAF50;
+    --color-futdraft-secundario: #333;
+    --color-futdraft-terciario: #555;
+    --color-futdraft-cuaternario: #f1f1f1;
     
     /* Colores de texto */
-    --color-texto: #fff;
-    --color-texto-oscuro: #000;
+    --color-futdraft-texto: #fff;
+    --color-futdraft-texto-oscuro: #000;
     
     /* Colores de acento */
-    --color-acento: #ff9800;
-    --color-verde-brillante: #4ade80;
-    --color-cian: #22d3ee;
-    --color-cian-oscuro: #06b6d4;
+    --color-futdraft-acento: #ff9800;
+    --color-futdraft-verde-brillante: #4ade80;
+    --color-futdraft-cian: #22d3ee;
+    --color-futdraft-cian-oscuro: #06b6d4;
     
     /* Colores de fondo */
-    --color-fondo-oscuro: #0a0a12;
-    --color-fondo-cards: #1a1a2e;
+    --color-futdraft-fondo-oscuro: #0a0a12;
+    --color-futdraft-fondo-cards: #1a1a2e;
 
     /* Colores de bordes */
-    --color-borde-oscuro: rgba(255, 255, 255, 0.08);
+    --color-futdraft-borde-oscuro: rgba(255, 255, 255, 0.08);
     
     /* Sombras */
-    --color-sombra: rgba(0, 0, 0, 0.3);
-    --color-sombra2: rgba(0, 0, 0, 0.4);
-    --color-sombra-oscura: rgba(0, 0, 0, 0.5);
-    --color-sombra-verde: rgba(74, 222, 128, 0.4);
+    --color-futdraft-sombra: rgba(0, 0, 0, 0.3);
+    --color-futdraft-sombra2: rgba(0, 0, 0, 0.4);
+    --color-futdraft-sombra-oscura: rgba(0, 0, 0, 0.5);
+    --color-futdraft-sombra-verde: rgba(74, 222, 128, 0.4);
     
     /* Transparencias - Blanco */
-    --color-blanco-transparente: rgba(255, 255, 255, 0.8);
-    --color-blanco-medio-transparente: rgba(255, 255, 255, 0.5);
-    --color-blanco-poco-transparente: rgba(255, 255, 255, 0.1);
-    --color-blanco-muy-poco-transparente: rgba(255, 255, 255, 0.05);
+    --color-futdraft-blanco-transparente: rgba(255, 255, 255, 0.8);
+    --color-futdraft-blanco-medio-transparente: rgba(255, 255, 255, 0.5);
+    --color-futdraft-blanco-poco-transparente: rgba(255, 255, 255, 0.1);
+    --color-futdraft-blanco-muy-poco-transparente: rgba(255, 255, 255, 0.05);
     
     /* Transparencias - Verde */
-    --color-verde-poco-transparente: rgba(74, 222, 128, 0.1);
-    --color-verde-medio-transparente: rgba(74, 222, 128, 0.3);
+    --color-futdraft-verde-poco-transparente: rgba(74, 222, 128, 0.1);
+    --color-futdraft-verde-medio-transparente: rgba(74, 222, 128, 0.3);
     
     /* Transparencias - Cian */
-    --color-cian-medio-transparente: rgba(34, 211, 238, 0.8);
+    --color-futdraft-cian-medio-transparente: rgba(34, 211, 238, 0.8);
 
     /* Transparencias - Oscuro */
-    --color-azulOscuro-transparente: rgba(15, 20, 25, 0.9);
-    --color-oscuro-transparente: rgba(0, 0, 0, 0.9);
+    --color-futdraft-azulOscuro-transparente: rgba(15, 20, 25, 0.9);
+    --color-futdraft-oscuro-transparente: rgba(0, 0, 0, 0.9);
 }
 
-html {
+/* FONDO FUTDRAFT */
+
+.fd__html {
     scroll-behavior: smooth;
-    scrollbar-color: var(--color-principal) var(--color-secundario);
+    scrollbar-color: var(--color-futdraft-principal) var(--color-futdraft-secundario);
 }
 
-html, body {
+.fd__body, .fd__html {
     height: 100%;
     margin: 0;
 }
 
-body {
+.fd__body {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-principal);
+    background-color: var(--color-futdraft-principal);
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-main {
-    flex: 1 0 auto;
-}
+/* HEADER FUTDRAFT*/
 
-/* HEADER */
-
-.header {
+.fd__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-secundario);
+    background-color: var(--color-futdraft-secundario);
     padding: 15px 30px;
-    box-shadow: 0 4px 15px var(--color-sombra);
+    box-shadow: 0 4px 15px var(--color-futdraft-sombra);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.header__logo {
+.fd__header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.header__img {
+.fd__header__img {
     width: 75px;
     height: 75px;
 }
 
-.header__title {
-    color: var(--color-texto);
+.fd__header__title {
+    color: var(--color-futdraft-texto);
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px var(--color-sombra);
+    text-shadow: 2px 2px 4px var(--color-futdraft-sombra);
 }
 
-.header__list {
+.fd__header__list {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -111,22 +109,22 @@ main {
     padding: 0;
 }
 
-.header__item a {
-    color: var(--color-texto);
+.fd__header__item a {
+    color: var(--color-futdraft-texto);
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.header__item a:hover {
-    background-color: var(--color-acento);
+.fd__header__item a:hover {
+    background-color: var(--color-futdraft-acento);
     transform: translateY(-2px);
 }
 
-.desplegable__btn {
+.fd__header__desplegable__btn {
     background-color: transparent;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     text-decoration: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -134,23 +132,23 @@ main {
     transition: all 0.3s ease;
 }
 
-.desplegable__btn:hover {
-    background-color: var(--color-acento);
+.fd__header__desplegable__btn:hover {
+    background-color: var(--color-futdraft-acento);
     transform: translateX(2px);
 }
 
-.desplegable {
+.fd__header__desplegable {
     position: relative;
 }
 
-.desplegable__content {
+.fd__header__desplegable__content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--color-secundario);
+    background-color: var(--color-futdraft-secundario);
     min-width: 180px;
-    box-shadow: 0 8px 20px var(--color-sombra);
+    box-shadow: 0 8px 20px var(--color-futdraft-sombra);
     border-radius: 8px;
     overflow: hidden;
     opacity: 0;
@@ -158,38 +156,47 @@ main {
     transition: all 0.3s ease;
 }
 
-.desplegable__content a {
-    color: var(--color-texto);
+.fd__header__desplegable__content a {
+    color: var(--color-futdraft-texto);
     padding: 12px 20px;
     display: block;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.desplegable__content a:hover {
-    background-color: var(--color-acento);
+.fd__header__desplegable__content a:hover {
+    background-color: var(--color-futdraft-acento);
 }
 
-.desplegable:hover .desplegable__content{
+.fd__header__desplegable:hover .fd__header__desplegable__content{
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
-/* FOOTER */
+.fd__header__menu-btn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-futdraft-texto);
+}
 
-.footer {
+/* FOOTER FUTDRAFT*/
+
+.fd__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: var(--color-secundario);
+    background-color: var(--color-futdraft-secundario);
     padding: 20px 30px;
     flex-shrink: 0;
-    box-shadow: 0 -4px 15px var(--color-sombra);
+    box-shadow: 0 -4px 15px var(--color-futdraft-sombra);
 }
 
-.footer__content {
+.fd__footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,88 +204,89 @@ main {
     gap: 30px;
 }
 
-.footer__section {
+.fd__footer__section {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.footer__text {
+.fd__footer__text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     margin: 0;
     font-size: 0.9rem;
 }
 
-.footer__list {
+.fd__footer__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
 }
 
-.footer__text a {
-    color: var(--color-texto);
+.fd__footer__text a {
+    color: var(--color-futdraft-texto);
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-.footer__text a:hover {
-    background-color: var(--color-acento);
+.fd__footer__text a:hover {
+    background-color: var(--color-futdraft-acento);
     transform: translateY(-2px);
 }
 
-.social__links {
+.fd__social__links {
     display: flex;
     gap: 15px;
 }
 
-.social__link {
+.fd__social__link {
     font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.social__link:hover {
+.fd__social__link:hover {
     transform: scale(1.2);
 }
 
 /* INDEX MAIN */
 
-.index__main {
+.fd__index__main {
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
     padding: 30px 40px;
     gap: 40px;
 }
 
-/* INDEX SECCION */
+/* INDEX SECCION FUTDRAFT*/
 
-.index__section {
+.fd__index__section {
     display: flex;
     flex-direction: column;
     padding: 60px 50px;
     background-image: 
-        linear-gradient(135deg, var(--color-azulOscuro-transparente) 0%, rgba(26, 26, 46, 0.85) 50%, var(--color-azulOscuro-transparente) 100%),
-        url(Imagenes/campo-futbol2.jpg);
+        linear-gradient(135deg, var(--color-futdraft-azulOscuro-transparente) 0%, rgba(26, 26, 46, 0.85) 50%, var(--color-futdraft-azulOscuro-transparente) 100%),
+        url(../Imagenes/campo-futbol2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 24px;
     margin: 0;
-    box-shadow: 0 20px 60px var(--color-sombra2);
+    box-shadow: 0 20px 60px var(--color-futdraft-sombra2);
     position: relative;
     overflow: hidden;
 }
 
-.hero__content {
+.fd__hero__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -287,34 +295,34 @@ main {
     z-index: 1;
 }
 
-.index__title {
-    color: var(--color-texto);
+.fd__index__title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
-    text-shadow: 0 4px 20px var(--color-sombra-oscura);
-    background: linear-gradient(135deg, var(--color-texto) 0%, var(--color-verde-brillante) 100%);
+    text-shadow: 0 4px 20px var(--color-futdraft-sombra-oscura);
+    background: linear-gradient(135deg, var(--color-futdraft-texto) 0%, var(--color-futdraft-verde-brillante) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.index__text {
+.fd__index__text {
     margin: 0;
-    color: var(--color-blanco-transparente);
+    color: var(--color-futdraft-blanco-transparente);
 }
 
-.index__slogan {
+.fd__index__slogan {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--color-verde-brillante);
+    color: var(--color-futdraft-verde-brillante);
     margin: 0;
-    text-shadow: 0 0 30px var(--color-sombra-verde);
+    text-shadow: 0 0 30px var(--color-futdraft-sombra-verde);
 }
 
-.index__description {
+.fd__index__description {
     color: rgba(255, 255, 255, 0.9);
     margin: 0;
     font-size: 1.2rem;
@@ -322,9 +330,9 @@ main {
     line-height: 1.7;
 }
 
-/* LISTA INDEX */
+/* LISTA INDEX FUTDRAFT */
 
-.text__list {
+.fd__text__list {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -333,50 +341,51 @@ main {
     list-style: none;
 }
 
-.text__item {
+.fd__text__item {
     display: flex;
     align-items: center;
     gap: 20px;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     padding: 20px 25px;
-    background: var(--color-blanco-muy-poco-transparente);
+    background: var(--color-futdraft-blanco-muy-poco-transparente);
     border-radius: 16px;
-    border: 1px solid var(--color-borde-oscuro);
+    border: 1px solid var(--color-futdraft-borde-oscuro);
     transition: all 0.3s ease;
 }
 
-.text__item:hover {
-    background: var(--color-verde-poco-transparente);
-    border-color: var(--color-verde-medio-transparente);
+.fd__text__item:hover {
+    background: var(--color-futdraft-verde-poco-transparente);
+    border-color: var(--color-futdraft-verde-medio-transparente);
     transform: translateX(15px);
 }
 
-.text__icon {
+.fd__text__icon {
     width: 2.5rem;
     height: 2.5rem;
-    filter: drop-shadow(0 4px 8px var(--color-sombra));
+    filter: drop-shadow(0 4px 8px var(--color-futdraft-sombra));
 }
 
-.item__content {
+.fd__item__content {
     font-size: 1.1rem;
     line-height: 1.5;
 }
 
-.item__content strong {
-    color: var(--color-verde-brillante);
+.fd__item__content strong {
+    color: var(--color-futdraft-verde-brillante);
     font-weight: 700;
 }
 
 /* MODOS DE JUEGOS SECCION */
 
-.section__mode {
+.fd__section__mode {
+    position: relative;
     padding: 50px 40px;
-    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-azulOscuro-transparente) 100%);
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-futdraft-azulOscuro-transparente) 100%);
     border-radius: 24px;
-    border: 1px solid var(--color-blanco-muy-poco-transparente);
+    border: 1px solid var(--color-futdraft-blanco-muy-poco-transparente);
 }
 
-.section__mode::before {
+.fd__section__mode::before {
     content: '';
     position: absolute;
     top: 0;
@@ -388,11 +397,11 @@ main {
         #4ade80 30%, 
         #4ade80 70%, 
         transparent 100%);
-    box-shadow: 0 0 20px var(--color-verde-brillante);
+    box-shadow: 0 0 20px var(--color-futdraft-verde-brillante);
 }
 
-.section__title {
-    color: var(--color-texto);
+.fd__section__title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 800;
@@ -403,42 +412,42 @@ main {
     text-transform: uppercase;
 }
 
-/* CARRUSEL */
+/* CARRUSEL FUTDRAFT */
 
-.ea-carousel {
+.fd__carousel {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.ea-carousel__track-container {
+.fd__carousel__track-container {
     position: relative;
     overflow: hidden;
 }
 
-.ea-carousel__track {
+.fd__carousel__track {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    transition: transform 0.6s cubic-bezier(.77,0,.18,1);
+    transition: transform 0.6s cubic-bezier(.77, 0, .18, 1);
 }
 
-.ea-slide {
+.fd__slide {
     flex: 0 0 100%;
     width: 100%;
 }
 
-.ea-carousel__track-container {
+.fd__carousel__track-container {
     overflow: hidden;
     position: relative;
 }
 
-.ea-carousel__track {
+.fd__carousel__track {
     will-change: transform;
 }
 
-.ea-card__nav {
+.fd__cards__nav {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -447,7 +456,7 @@ main {
     z-index: 15;
 }
 
-.ea-dot {
+.fd__dot {
     width: 10px;
     height: 10px;
     border: none;
@@ -457,14 +466,14 @@ main {
     transition: all 0.3s ease;
 }
 
-.ea-dot--active,
-.ea-dot:hover {
-    background: var(--color-verde-brillante);
+.fd__dot--active,
+.fd__dot:hover {
+    background: var(--color-futdraft-verde-brillante);
     box-shadow: 0 0 10px rgba(74, 222, 128, 0.8);
     transform: scale(1.2);
 }
 
-.ea-card {
+.fd__cards {
     position: relative;
     width: 100%;
     max-width: 750px;
@@ -472,16 +481,16 @@ main {
     margin: 0 auto;
     border-radius: 16px;
     overflow: hidden;
-    background: linear-gradient(145deg, 
-        rgba(20, 25, 35, 0.95) 0%, 
-        rgba(10, 12, 18, 0.98) 100%);
-    box-shadow: 
+    background: linear-gradient(145deg,
+            rgba(20, 25, 35, 0.95) 0%,
+            rgba(10, 12, 18, 0.98) 100%);
+    box-shadow:
         0 25px 50px rgba(0, 0, 0, 0.5),
         0 0 0 1px rgba(74, 222, 128, 0.1),
         0 0 30px rgba(74, 222, 128, 0.1);
 }
 
-.ea-card__arrow {
+.fd__cards__arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -489,7 +498,7 @@ main {
     height: 45px;
     border: none;
     background: rgba(0, 0, 0, 0.5);
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     cursor: pointer;
     z-index: 20;
     display: flex;
@@ -499,57 +508,57 @@ main {
     backdrop-filter: blur(5px);
 }
 
-.ea-card__arrow svg {
+.fd__cards__arrow svg {
     width: 20px;
     height: 20px;
 }
 
-.ea-card__arrow--prev {
+.fd__cards__arrow--prev {
     left: 15px;
 }
 
-.ea-card__arrow--next {
+.fd__cards__arrow--next {
     right: 15px;
 }
 
-.ea-card__arrow:hover {
-    background: var(--color-verde-brillante);
-    color: var(--color-texto);
+.fd__cards__arrow:hover {
+    background: var(--color-futdraft-verde-brillante);
+    color: var(--color-futdraft-texto);
     box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
     transform: translateY(-50%) scale(1.1);
 }
 
-.ea-card::before {
+.fd__cards::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        #4ade80 20%, 
-        #4ade80 80%, 
-        transparent 100%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #4ade80 20%,
+            #4ade80 80%,
+            transparent 100%);
     z-index: 10;
 }
 
-.ea-card::after {
+.fd__cards::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, 
-        rgba(74, 222, 128, 0.03) 0%, 
-        transparent 30%,
-        transparent 70%,
-        rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(180deg,
+            rgba(74, 222, 128, 0.03) 0%,
+            transparent 30%,
+            transparent 70%,
+            rgba(0, 0, 0, 0.4) 100%);
     pointer-events: none;
 }
 
-.ea-card__image-wrapper {
+.fd__cards__image-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -558,7 +567,7 @@ main {
     z-index: 1;
 }
 
-.ea-card__image {
+.fd__cards__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -566,25 +575,25 @@ main {
     transition: all 0.5s ease;
 }
 
-.ea-card:hover .ea-card__image {
+.fd__cards:hover .fd__cards__image {
     filter: brightness(0.65) saturate(1.4);
     transform: scale(1.05);
 }
 
-.ea-card__overlay {
+.fd__cards__overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, 
-        rgba(74, 222, 128, 0.05) 0%, 
-        transparent 25%,
-        rgba(0, 0, 0, 0.5) 70%,
-        rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(180deg,
+            rgba(74, 222, 128, 0.05) 0%,
+            transparent 25%,
+            rgba(0, 0, 0, 0.5) 70%,
+            rgba(0, 0, 0, 0.8) 100%);
 }
 
-.ea-card__content {
+.fd__cards__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -598,29 +607,29 @@ main {
     align-items: flex-start;
 }
 
-.ea-card__label {
+.fd__cards__label {
     font-family: 'Orbitron', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
-    color: var(--color-verde-brillante);
+    color: var(--color-futdraft-verde-brillante);
     text-transform: uppercase;
     margin-bottom: 10px;
     text-shadow: 0 0 15px rgba(74, 222, 128, 0.8);
 }
 
-.ea-card__title {
+.fd__cards__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    text-shadow: 
+    text-shadow:
         0 2px 10px rgba(0, 0, 0, 0.8),
         0 0 30px rgba(74, 222, 128, 0.4);
 }
 
-.ea-card__desc {
+.fd__cards__desc {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
@@ -629,14 +638,14 @@ main {
     line-height: 1.6;
 }
 
-.ea-card__btn {
+.fd__cards__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     padding: 16px 60px;
-    background: linear-gradient(135deg, var(--color-verde-brillante) 0%, #22c55e 100%);
-    color: var(--color-texto);
+    background: linear-gradient(135deg, var(--color-futdraft-verde-brillante) 0%, #22c55e 100%);
+    color: var(--color-futdraft-texto);
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
@@ -644,7 +653,7 @@ main {
     text-transform: uppercase;
     border-radius: 8px;
     transition: all 0.3s ease;
-    box-shadow: 
+    box-shadow:
         0 5px 20px rgba(74, 222, 128, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     position: absolute;
@@ -652,41 +661,41 @@ main {
     left: 30px;
 }
 
-.ea-card__btn svg {
+.fd__cards__btn svg {
     width: 14px;
     height: 14px;
     transition: transform 0.3s ease;
 }
 
-.ea-card__btn:hover {
+.fd__cards__btn:hover {
     background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
     transform: translateY(-3px);
-    box-shadow: 
+    box-shadow:
         0 8px 30px rgba(74, 222, 128, 0.5),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.ea-card__btn:hover svg {
+.fd__cards__btn:hover svg {
     transform: translateX(5px);
 }
 
-.box {
+.fd__box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-content: center;
 }
 
-.box__content {
+.fd__box__content {
     position: relative;
     width: 100%;
     height: 320px;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 20px 40px var(--color-sombra);
+    box-shadow: 0 20px 40px var(--color-futdraft-sombra);
 }
 
-.box__img {
+.fd__box__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -694,12 +703,12 @@ main {
     transition: all 0.5s ease;
 }
 
-.box__content:hover .box__img {
+.fd__box__content:hover .fd__box__img {
     filter: blur(0px) brightness(0.9);
     transform: scale(1.1);
 }
 
-.box__btn {
+.fd__box__btn {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -709,76 +718,76 @@ main {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
-    background: linear-gradient(0deg, var(--color-oscuro-transparente) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(0deg, var(--color-futdraft-oscuro-transparente) 0%, rgba(0, 0, 0, 0.6) 100%);
     transition: all 0.4s ease;
 }
 
-.box__btn span {
+.fd__box__btn span {
     transition: all 0.3s ease;
 }
 
-.box__btn::before {
+.fd__box__btn::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian-oscuro));
+    background: linear-gradient(90deg, var(--color-futdraft-verde-brillante), var(--color-futdraft-cian-oscuro));
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
 
-.box__content:hover .box__btn::before {
+.fd__box__content:hover .fd__box__btn::before {
     transform: scaleX(1);
 }
 
-.box__btn:hover {
-    background: linear-gradient(0deg, rgba(74, 222, 128, 0.9) 0%, var(--color-cian-medio-transparente) 100%);
-    color: var(--color-texto-oscuro);
+.fd__box__btn:hover {
+    background: linear-gradient(0deg, rgba(74, 222, 128, 0.9) 0%, var(--color-futdraft-cian-medio-transparente) 100%);
+    color: var(--color-futdraft-texto-oscuro);
 }
 
-.text__default {
+.fd__text__default {
     opacity: 1;
 }
 
-.text__hover {
+.fd__text__hover {
     position: absolute;
     opacity: 0;
     transform: translateY(20px);
 }
 
-.box__btn:hover .text__default {
+.fd__box__btn:hover .fd__text__default {
     opacity: 0;
     transform: translateY(-20px);
 }
 
-.box__btn:hover .text__hover {
+.fd__box__btn:hover .fd__text__hover {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* CARACTERISTICAS SECCION */
+/* CARACTERISTICAS SECCION FUTDRAFT */
 
-.section__features {
+.fd__section__features {
     padding: 50px 40px;
-    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-azulOscuro-transparente) 100%);
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, var(--color-futdraft-azulOscuro-transparente) 100%);
     border-radius: 24px;
-    border: 1px solid var(--color-blanco-muy-poco-transparente);
+    border: 1px solid var(--color-futdraft-blanco-muy-poco-transparente);
 }
 
-.features__grid {
+.fd__features__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     justify-content: center;
 }
 
-.feature__item {
+.fd__feature__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -786,31 +795,31 @@ main {
     padding: 35px 25px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 20px;
-    border: 1px solid var(--color-blanco-muy-poco-transparente);
+    border: 1px solid var(--color-futdraft-blanco-muy-poco-transparente);
     transition: all 0.4s ease;
 }
 
-.feature__item:hover {
+.fd__feature__item:hover {
     background: rgba(74, 222, 128, 0.08);
     border-color: rgba(74, 222, 128, 0.2);
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(74, 222, 128, 0.15);
 }
 
-.feature__icon {
+.fd__feature__icon {
     height: 4rem;
     margin-bottom: 20px;
-    filter: drop-shadow(0 4px 12px var(--color-sombra2));
+    filter: drop-shadow(0 4px 12px var(--color-futdraft-sombra2));
     transition: all 0.4s ease;
 }
 
-.feature__item:hover .feature__icon {
+.fd__feature__item:hover .fd__feature__icon {
     transform: scale(1.15) rotate(5deg);
-    filter: drop-shadow(0 8px 20px var(--color-sombra-verde));
+    filter: drop-shadow(0 8px 20px var(--color-futdraft-sombra-verde));
 }
 
-.feature__item h4 {
-    color: var(--color-texto);
+.fd__feature__item h4 {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
@@ -818,36 +827,36 @@ main {
     text-transform: uppercase;
 }
 
-.feature__item p {
+.fd__feature__item p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
     margin: 0;
     line-height: 1.6;
 }
 
-.futdraft {
+.fd__futdraft {
     flex: 1 0 auto;
     padding: 20px;
-    background: linear-gradient(180deg, var(--color-fondo-oscuro) 0%, var(--color-fondo-cards) 50%, var(--color-fondo-oscuro) 100%);
+    background: linear-gradient(180deg, var(--color-futdraft-fondo-oscuro) 0%, var(--color-futdraft-fondo-cards) 50%, var(--color-futdraft-fondo-oscuro) 100%);
     min-height: calc(100vh - 150px);
 }
 
-/* Seleccionar jugadores */
+/* SELECCIONAR JUGADORES FUTDRAFT */
 
-.formation__title {
-    color: var(--color-texto);
+.fd__formation__title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    background: linear-gradient(135deg, #fff, var(--color-futdraft-verde-brillante));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.formation__grid {
+.fd__formation__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
@@ -855,79 +864,80 @@ main {
     margin: 0 auto;
 }
 
-.formation__option {
+.fd__formation__option {
     background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
     border-radius: 20px;
     padding: 25px 15px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
 }
 
-.formation__option::before {
+.fd__formation__option::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian-oscuro));
+    background: linear-gradient(90deg, var(--color-futdraft-verde-brillante), var(--color-futdraft-cian-oscuro));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.formation__option:hover {
+.fd__formation__option:hover {
     transform: translateY(-8px);
     border-color: rgba(74, 222, 128, 0.5);
     box-shadow: 0 20px 40px rgba(74, 222, 128, 0.2);
 }
 
-.formation__option:hover::before {
+.fd__formation__option:hover::before {
     opacity: 1;
 }
 
-.formation__option img {
+.fd__formation__option img {
     width: 100%;
     max-width: 120px;
     height: auto;
     margin-bottom: 15px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.formation__option span {
-    color: var(--color-texto);
+.fd__formation__option span {
+    color: var(--color-futdraft-texto);
     font-size: 1.1rem;
     font-weight: 600;
     display: block;
     text-transform: uppercase;
 }
 
-/* CAMPO DE FUTBOL*/
+/* CAMPO DE FUTBOL FUTDRAFT */
 
-.field-view {
+.fd__field-view {
     animation: fadeIn 0.5s ease;
 }
 
 @keyframes fadeIn {
-    from { 
+    from {
         opacity: 0;
         transform: scale(0.95);
     }
-    to { 
+
+    to {
         opacity: 1;
         transform: scale(1);
     }
 }
 
-.field-view__header {
+.fd__field-view__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     margin-bottom: 25px;
@@ -935,9 +945,9 @@ main {
     margin: 0 auto 25px auto;
 }
 
-.field-view__back-btn {
+.fd__field-view__back-btn {
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     border: 1px solid rgba(255,255,255,0.2);
     padding: 12px 25px;
     border-radius: 25px;
@@ -950,77 +960,73 @@ main {
     gap: 8px;
 }
 
-.field-view__back-btn:hover {
+.fd__field-view__back-btn:hover {
     background: rgba(255,255,255,0.2);
     transform: translateX(-5px);
 }
 
-.field-view__formation-name {
-    color: var(--color-texto);
+.fd__field-view__formation-name {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.field-view__container {
+.fd__field-view__container {
     max-width: 700px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.field {
+.fd__field {
     width: 100%;
     aspect-ratio: 68/105;
     max-height: 650px;
-    background: 
+    background:
         linear-gradient(180deg, #1e6b2e 0%, #2d8a3e 50%, #1e6b2e 100%);
-    border: 4px solid rgba(255,255,255,0.9);
+    border: 4px solid rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    box-shadow: 
-        0 0 0 8px rgba(255,255,255,0.1),
-        0 20px 60px rgba(0,0,0,0.5);
+    box-shadow:
+        0 0 0 8px rgba(255, 255, 255, 0.1),
+        0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.field::before {
+.fd__field::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        repeating-linear-gradient(
-            0deg,
+    background:
+        repeating-linear-gradient(0deg,
             transparent,
             transparent calc(100% / 18 - 1px),
-            rgba(255,255,255,0.15) calc(100% / 18 - 1px),
-            rgba(255,255,255,0.15) calc(100% / 18)
-        ),
-        repeating-linear-gradient(
-            90deg,
+            rgba(255, 255, 255, 0.15) calc(100% / 18 - 1px),
+            rgba(255, 255, 255, 0.15) calc(100% / 18)),
+        repeating-linear-gradient(90deg,
             transparent,
             transparent calc(100% / 23 - 1px),
-            rgba(255,255,255,0.15) calc(100% / 23 - 1px),
-            rgba(255,255,255,0.15) calc(100% / 23)
-        );
+            rgba(255, 255, 255, 0.15) calc(100% / 23 - 1px),
+            rgba(255, 255, 255, 0.15) calc(100% / 23));
     pointer-events: none;
 }
 
-.field__penalty-area--top {
+.fd__field__penalty-area--top {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 40%;
     height: 16%;
-    border: 3px solid rgba(255,255,255,0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-top: none;
 }
 
-.field__penalty-area--top::after {
+.fd__field__penalty-area--top::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1028,22 +1034,22 @@ main {
     transform: translateX(-50%);
     width: 18%;
     height: 6%;
-    border: 3px solid rgba(255,255,255,0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-top: none;
 }
 
-.field__penalty-area--bottom {
+.fd__field__penalty-area--bottom {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 40%;
     height: 16%;
-    border: 3px solid rgba(255,255,255,0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-bottom: none;
 }
 
-.field__penalty-area-bottom::after {
+.fd__field__penalty-area-bottom::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1051,34 +1057,34 @@ main {
     transform: translateX(-50%);
     width: 18%;
     height: 6%;
-    border: 3px solid rgba(255,255,255,0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-bottom: none;
 }
 
-.field__center-circle {
+.fd__field__center-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 15%;
     aspect-ratio: 1;
-    border: 3px solid rgba(255,255,255,0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-radius: 50%;
 }
 
-.field__center-line {
+.fd__field__center-line {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
     height: 3px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     transform: translateY(-50%);
 }
 
-/* POSICION JUGADORES*/
+/* POSICION JUGADORES FUTDRAFT */
 
-.field__positions {
+.fd__field__positions {
     position: absolute;
     top: 0;
     left: 0;
@@ -1086,12 +1092,12 @@ main {
     height: 100%;
 }
 
-.position {
+.fd__position {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 127px;
-    background-image: url('Imagenes/carta.png');
+    background-image: url('../Imagenes/carta.png');
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -1106,50 +1112,50 @@ main {
     overflow: hidden;
 }
 
-.position:hover {
+.fd__position:hover {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.pos-label {
+.fd__pos-label {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--color-texto);
+    color: var(--color-futdraft-texto);
     text-shadow: 0 2px 4px rgba(0,0,0,0.8);
     font-family: 'Montserrat', sans-serif;
     margin-top: 5px;
     z-index: 2;
 }
 
-.position.__occupied {
+.fd__position.__occupied {
     background-image: none;
     background-color: transparent;
 }
 
-.position.__occupied::before {
+.fd__position.__occupied::before {
     display: none;
 }
 
-.position.__occupied .pos-label {
+.fd__position.__occupied .fd__pos-label {
     display: none;
 }
 
-.player__card-field {
+.fd__player__card-field {
     width: 100px;
     height: 127px;
     pointer-events: none;
 }
 
-/* PANEL SELECCIONAR JUGADORES*/
+/* PANEL SELECCIONAR JUGADORES FUTDRAFT */
 
-.player-selector {
+.fd__player-selector {
     max-width: 450px;
     margin: 25px auto;
     background: linear-gradient(145deg, rgba(26, 26, 46, 0.95), rgba(10, 10, 18, 0.95));
     border-radius: 20px;
     padding: 25px;
     animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes slideUp {
@@ -1157,14 +1163,15 @@ main {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.player-selector h3 {
-    color: var(--color-texto);
+.fd__player-selector h3 {
+    color: var(--color-futdraft-texto);
     margin: 0 0 20px 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -1173,7 +1180,7 @@ main {
     text-transform: uppercase;
 }
 
-.player-selector__list {
+.fd__player-selector__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1183,7 +1190,7 @@ main {
     padding-right: 10px;
 }
 
-.player-option {
+.fd__player-option {
     background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
     padding: 15px;
     border-radius: 12px;
@@ -1196,47 +1203,47 @@ main {
     align-items: center;
 }
 
-.player-option:hover {
+.fd__player-option:hover {
     background: linear-gradient(145deg, rgba(74, 222, 128, 0.15), rgba(74, 222, 128, 0.05));
-    border-color: var(--color-verde-medio-transparente);
+    border-color: var(--color-futdraft-verde-medio-transparente);
     transform: translateX(5px);
 }
 
-.player-card-img {
+.fd__player-card-img {
     height: 120px;
     width: 100%;
     pointer-events: none;
 }
 
-/*LISTADO CARTAS*/
+/* LISTADO CARTAS FUTDRAFT */
 
-.jugadores-page {
+.fd__jugadores-page {
     flex: 1 0 auto;
     padding: 30px 20px;
-    background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+    background: linear-gradient(180deg, #0f1419 0%, var(--color-futdraft-fondo-cards) 50%, #0f1419 100%);
     min-height: calc(100vh - 150px);
 }
 
-.jugadores__header {
+.fd__jugadores__header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.jugadores__title {
-    color: var(--color-texto);
+.fd__jugadores__title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    background: linear-gradient(135deg, #fff, var(--color-futdraft-verde-brillante));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.jugadores__subtitle {
-    color: var(--color-blanco-medio-transparente);
+.fd__jugadores__subtitle {
+    color: var(--color-futdraft-blanco-medio-transparente);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1244,31 +1251,31 @@ main {
     text-shadow: none;
 }
 
-.jugadores__groups {
+.fd__jugadores__groups {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.jugadores__group {
+.fd__jugadores__group {
     margin-bottom: 40px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 16px;
     padding: 20px;
-    border: 1px solid var(--color-blanco-muy-poco-transparente);
+    border: 1px solid var(--color-futdraft-blanco-muy-poco-transparente);
 }
 
-.jugadores__group-header {
+.fd__jugadores__group-header {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--color-verde-medio-transparente);
+    border-bottom: 2px solid var(--color-futdraft-verde-medio-transparente);
 }
 
-.jugadores__group-title {
-    color: var(--color-texto);
+.fd__jugadores__group-title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
@@ -1276,60 +1283,60 @@ main {
     text-transform: uppercase;
 }
 
-.jugadores__group-count {
-    background: linear-gradient(135deg, var(--color-verde-brillante), var(--color-cian-oscuro));
-    color: var(--color-texto-oscuro);
+.fd__jugadores__group-count {
+    background: linear-gradient(135deg, var(--color-futdraft-verde-brillante), var(--color-futdraft-cian-oscuro));
+    color: var(--color-futdraft-texto-oscuro);
     font-size: 0.8rem;
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 20px;
 }
 
-.jugadores__grid {
+.fd__jugadores__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 25px;
     padding: 25px;
 }
 
-/* TARJETAS DE JUGADORES */
+/* TARJETAS DE JUGADORES FUTDRAFT */
 
-.card {
+.fd__card {
     position: relative;
-    background: linear-gradient(145deg, var(--color-fondo-cards) 0%, #0f0f1a 100%);
+    background: linear-gradient(145deg, var(--color-futdraft-fondo-cards) 0%, #0f0f1a 100%);
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--color-borde-oscuro);
-    box-shadow: 0 10px 30px var(--color-sombra2);
+    border: 2px solid var(--color-futdraft-borde-oscuro);
+    box-shadow: 0 10px 30px var(--color-futdraft-sombra2);
 }
 
-.card::before {
+.fd__card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-verde-brillante), var(--color-cian));
+    background: linear-gradient(90deg, var(--color-futdraft-verde-brillante), var(--color-futdraft-cian));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.card::after {
+.fd__card::after {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: 20px;
     padding: 2px;
-    background: linear-gradient(145deg, var(--color-verde-medio-transparente), rgba(34, 211, 238, 0.3));
+    background: linear-gradient(145deg, var(--color-futdraft-verde-medio-transparente), rgba(34, 211, 238, 0.3));
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     mask-composite: exclude;
     mask-composite: xor;
@@ -1338,21 +1345,21 @@ main {
     pointer-events: none;
 }
 
-.card:hover {
+.fd__card:hover {
     transform: translateY(-12px) scale(1.02);
-    border-color: var(--color-verde-medio-transparente);
+    border-color: var(--color-futdraft-verde-medio-transparente);
     box-shadow: 0 25px 50px rgba(74, 222, 128, 0.25);
 }
 
-.card:hover::before {
+.fd__card:hover::before {
     opacity: 1;
 }
 
-.card:hover::after {
+.fd__card:hover::after {
     opacity: 1;
 }
 
-.card__image-container {
+.fd__card__image-container {
     aspect-ratio: 3 / 4;
     background: radial-gradient(circle at 50% 30%, #222 0%, #111 100%);
     display: flex;
@@ -1360,40 +1367,40 @@ main {
     justify-content: center;
 }
 
-.card__image {
+.fd__card__image {
     width: 90%;
     height: auto;
     object-fit: contain;
 }
 
-.card:hover .card__image {
+.fd__card:hover .fd__card__image {
     transform: scale(1.1);
     filter: brightness(1.1);
     transition: all 0.3s ease;
 }
 
-.card__badge {
+.fd__card__badge {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: linear-gradient(135deg, var(--color-verde-brillante), var(--color-cian));
-    color: var(--color-texto-oscuro);
+    background: linear-gradient(135deg, var(--color-futdraft-verde-brillante), var(--color-futdraft-cian));
+    color: var(--color-futdraft-texto-oscuro);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
     font-weight: 800;
     padding: 6px 12px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px var(--color-sombra-verde);
+    box-shadow: 0 4px 15px var(--color-futdraft-sombra-verde);
 }
 
-.card__info {
+.fd__card__info {
     padding: 20px 15px;
     height: 78.4px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, var(--color-oscuro-transparente) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, var(--color-futdraft-oscuro-transparente) 100%);
     position: relative;
 }
 
-.card__info::before {
+.fd__card__info::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1404,27 +1411,27 @@ main {
     background: linear-gradient(90deg, transparent, rgba(74, 222, 128, 0.5), transparent);
 }
 
-.card__name {
-    color: var(--color-texto);
+.fd__card__name {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     margin: 0 0 12px 0;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 2px 10px var(--color-sombra-oscura);
+    text-shadow: 0 2px 10px var(--color-futdraft-sombra-oscura);
 }
 
-.card__details {
+.fd__card__details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.card__position {
+.fd__card__position {
     background: rgba(74, 222, 128, 0.15);
-    color: var(--color-verde-brillante);
+    color: var(--color-futdraft-verde-brillante);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     font-weight: 700;
@@ -1434,7 +1441,7 @@ main {
     border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
-.card__rating {
+.fd__card__rating {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -1443,95 +1450,95 @@ main {
     font-weight: 800;
 }
 
-.card__rating--diamond {
+.fd__card__rating--diamond {
     color: #B9F2FF;
     text-shadow: 0 0 25px rgba(185, 242, 255, 0.6);
 }
 
-.card__rating--platinum {
+.fd__card__rating--platinum {
     color: #E5E4E2;
     text-shadow: 0 0 20px rgba(229, 228, 226, 0.6);
 }
 
-.card__rating--gold {
+.fd__card__rating--gold {
     color: #ffd700;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
-.card__rating--silver {
+.fd__card__rating--silver {
     color: #c0c0c0;
     text-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
 }
 
-.card__rating--bronze {
+.fd__card__rating--bronze {
     color: #cd7f32;
     text-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
 }
 
-.card__rating--iron {
+.fd__card__rating--iron {
     color: #4B4B4B;
     text-shadow: 0 0 10px rgba(75, 75, 75, 0.4);
 }
 
-.card__stats {
+.fd__card__stats {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 12px;
     padding-top: 12px;
-    border-top: 1px solid var(--color-blanco-poco-transparente);
+    border-top: 1px solid var(--color-futdraft-blanco-poco-transparente);
 }
 
-.card__stat {
+.fd__card__stat {
     text-align: center;
 }
 
-.card__stat-value {
-    color: var(--color-texto);
+.fd__card__stat-value {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-.card__stat-label {
-    color: var(--color-blanco-medio-transparente);
+.fd__card__stat-label {
+    color: var(--color-futdraft-blanco-medio-transparente);
     font-size: 0.65rem;
     text-transform: uppercase;
 }
 
-/* LIGAS */
+/* LIGAS FUTDRAFT */
 
-.ligas-page {
+.fd__ligas-page {
     flex: 1 0 auto;
     padding: 30px 20px;
-    background: linear-gradient(180deg, #0f1419 0%, var(--color-fondo-cards) 50%, #0f1419 100%);
+    background: linear-gradient(180deg, #0f1419 0%, var(--color-futdraft-fondo-cards) 50%, #0f1419 100%);
     min-height: calc(100vh - 150px);
 }
 
-.ligas {
+.fd__ligas {
     margin: 0 auto;
 }
 
-.ligas__header {
+.fd__ligas__header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.ligas__title {
-    color: var(--color-texto);
+.fd__ligas__title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #fff, var(--color-verde-brillante));
+    background: linear-gradient(135deg, #fff, var(--color-futdraft-verde-brillante));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.ligas__subtitle {
-    color: var(--color-blanco-medio-transparente);
+.fd__ligas__subtitle {
+    color: var(--color-futdraft-blanco-medio-transparente);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1539,21 +1546,21 @@ main {
     text-shadow: none;
 }
 
-.ligas__container {
+.fd__ligas__container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.ligas__grid {
+.fd__ligas__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
 
-/* ESTILOS DE LAS LIGAS */
+/* ESTILOS DE LAS LIGAS FUTDRAFT */
 
-.laliga {
+.fd__laliga {
     background: linear-gradient(145deg, #c41e3a 0%, #8b0000 100%);  
     position: relative;
     border-radius: 20px;
@@ -1563,7 +1570,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.ligueone {
+.fd__ligueone {
     background: linear-gradient(145deg, #1f3c88 0%, #0b1d4d 100%);
     position: relative;
     border-radius: 20px;
@@ -1573,7 +1580,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.bundesliga {
+.fd__bundesliga {
     background: linear-gradient(145deg, #b91c1c 0%, #3f0a0a 100%);
     position: relative;
     border-radius: 20px;
@@ -1583,7 +1590,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.premierleague {
+.fd__premierleague {
     background: linear-gradient(145deg, #6d28d9 0%, #1e0a3c 100%);
     position: relative;
     border-radius: 20px;
@@ -1593,7 +1600,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.seriea {
+.fd__seriea {
     background: linear-gradient(145deg, #059669 0%, #022c22 100%);
     position: relative;
     border-radius: 20px;
@@ -1603,58 +1610,58 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* BORDES ILUMINADOS*/
-.laliga:hover {
+/* BORDES ILUMINADOS FUTDRAFT */
+.fd__laliga:hover {
     border-color: #ff6b6b;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 107, 107, 0.4);
     transform: translateY(-8px);
 }
 
-.ligueone:hover {
+.fd__ligueone:hover {
     border-color: #4dabf7;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(77, 171, 247, 0.4);
     transform: translateY(-8px);
 }
 
-.bundesliga:hover {
+.fd__bundesliga:hover {
     border-color: #ff8787;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 135, 135, 0.4);
     transform: translateY(-8px);
 }
 
-.premierleague:hover {
+.fd__premierleague:hover {
     border-color: #9775fa;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(151, 117, 250, 0.4);
     transform: translateY(-8px);
 }
 
-.seriea:hover {
+.fd__seriea:hover {
     border-color: #38d9a9;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(56, 217, 169, 0.4);
     transform: translateY(-8px);
 }
 
-.laliga a {
+.fd__laliga a {
     text-decoration: none;
 }
 
-.ligueone a {
+.fd__ligueone a {
     text-decoration: none;
 }
 
-.bundesliga a {
+.fd__bundesliga a {
     text-decoration: none;
 }
 
-.premierleague a {
+.fd__premierleague a {
     text-decoration: none;
 }
 
-.seriea a {
+.fd__seriea a {
     text-decoration: none;
 }
 
-.liga-item {
+.fd__liga-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1663,7 +1670,7 @@ main {
     position: relative;
 }
 
-.liga-image {
+.fd__liga-image {
     width: 120px;
     height: 120px;
     object-fit: contain;
@@ -1672,13 +1679,13 @@ main {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.liga-item:hover .liga-image {
+.fd__liga-item:hover .fd__liga-image {
     transform: scale(1.15) rotate(5deg);
     filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
 }
 
-.liga-title {
-    color: var(--color-texto);
+.fd__liga-title {
+    color: var(--color-futdraft-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
@@ -1689,12 +1696,12 @@ main {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.liga-item:hover .liga-title {
+.fd__liga-item:hover .fd__liga-title {
     transform: translateY(5px);
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.laliga::after {
+.fd__laliga::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1705,7 +1712,7 @@ main {
     transition: left 0.6s ease;
 }
 
-.ligueone::after {
+.fd__ligueone::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1716,7 +1723,7 @@ main {
     transition: left 0.6s ease;
 }
 
-.bundesliga::after {
+.fd__bundesliga::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1727,7 +1734,7 @@ main {
     transition: left 0.6s ease;
 }
 
-.premierleague::after {
+.fd__premierleague::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1738,7 +1745,7 @@ main {
     transition: left 0.6s ease;
 }
 
-.seriea::after {
+.fd__seriea::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1749,27 +1756,27 @@ main {
     transition: left 0.6s ease;
 }
 
-.laliga:hover::after {
+.fd__laliga:hover::after {
     left: 100%;
 }
 
-.ligueone:hover::after {
+.fd__ligueone:hover::after {
     left: 100%;
 }
 
-.bundesliga:hover::after {
+.fd__bundesliga:hover::after {
     left: 100%;
 }
 
-.premierleague:hover::after {
+.fd__premierleague:hover::after {
     left: 100%;
 }
 
-.seriea:hover::after {
+.fd__seriea:hover::after {
     left: 100%;
 }
 
-.laliga::before {
+.fd__laliga::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1782,7 +1789,7 @@ main {
     z-index: 3;
 }
 
-.ligueone::before {
+.fd__ligueone::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1795,7 +1802,7 @@ main {
     z-index: 3;
 }
 
-.bundesliga::before {
+.fd__bundesliga::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1808,7 +1815,7 @@ main {
     z-index: 3;
 }
 
-.premierleague::before {
+.fd__premierleague::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1821,7 +1828,7 @@ main {
     z-index: 3;
 }
 
-.seriea::before {
+.fd__seriea::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1834,210 +1841,778 @@ main {
     z-index: 3;
 }
 
-.laliga:hover::before {
+.fd__laliga:hover::before {
     width: 80%;
 }
 
-.ligueone:hover::before {
+.fd__ligueone:hover::before {
     width: 80%;
 }
 
-.bundesliga:hover::before {
+.fd__bundesliga:hover::before {
     width: 80%;
 }
 
-.premierleague:hover::before {
+.fd__premierleague:hover::before {
     width: 80%;
 }
 
-.seriea:hover::before {
+.fd__seriea:hover::before {
     width: 80%;
 }
 
-/* MEDIA QUERIES */
+/* EQUIPOS PAGE FUTDRAFT */
 
+.fd__equipos-page {
+    flex: 1 0 auto;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #0a0a12 0%, #0f1419 50%, #0a0a12 100%);
+    min-height: calc(100vh - 150px);
+}
+
+.fd__equipos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fd__equipos__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fd__equipos__title {
+    color: var(--color-futdraft-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff, var(--color-futdraft-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fd__equipos__subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.fd__equipos__container {
+    width: 100%;
+}
+
+/* PARTE RANKED FUTDRAFT */
+
+.fd__leaderboard {
+    background: linear-gradient(180deg, rgba(20, 20, 30, 0.9) 0%, rgba(10, 10, 18, 0.95) 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.fd__leaderboard__header {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 120px;
+    gap: 20px;
+    padding: 20px 30px;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 165, 0, 0.1) 100%);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.fd__leaderboard__header span {
+    color: #FFD700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fd__leaderboard__row {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 120px;
+    gap: 20px;
+    padding: 18px 30px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.fd__leaderboard__row::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s ease;
+}
+
+.fd__leaderboard__row:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__row:last-child {
+    border-bottom: none;
+}
+
+.fd__leaderboard__row:hover {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 165, 0, 0.04) 100%);
+    transform: scale(1.01);
+}
+
+.fd__leaderboard__row--gold {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.08));
+}
+
+.fd__leaderboard__row--gold:hover {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.5), rgba(255, 215, 0, 0.25));
+    box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.4);
+}
+
+.fd__leaderboard__row--gold::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.75), transparent);
+}
+
+.fd__leaderboard__row--gold:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__row--silver {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.25), rgba(192, 192, 192, 0.08));
+}
+
+.fd__leaderboard__row--silver:hover {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.5), rgba(192, 192, 192, 0.25));
+    box-shadow: 0 0 20px 5px rgba(192, 192, 192, 0.4);
+}
+
+.fd__leaderboard__row--silver::after {
+    background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.75), transparent);
+}
+
+.fd__leaderboard__row--silver:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__row--bronze {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.25), rgba(205, 127, 50, 0.08));
+}
+
+.fd__leaderboard__row--bronze:hover {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.5), rgba(205, 127, 50, 0.25));
+    box-shadow: 0 0 20px 5px rgba(205, 127, 50, 0.4);
+}
+
+.fd__leaderboard__row--bronze::after {
+    background: linear-gradient(90deg, transparent, rgba(205, 127, 50, 0.75), transparent);
+}
+
+.fd__leaderboard__row--bronze:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__row--iron {
+    background: linear-gradient(90deg, rgba(120, 120, 120, 0.25), rgba(80, 80, 80, 0.08));
+}
+
+.fd__leaderboard__row--iron:hover {
+    background: linear-gradient(90deg, rgba(120, 120, 120, 0.5), rgba(80, 80, 80, 0.25));
+    box-shadow: 0 0 20px 5px rgba(200, 200, 220, 0.3);
+}
+
+.fd__leaderboard__row--iron::after {
+    background: linear-gradient(90deg, transparent, rgba(200, 200, 220, 0.15), transparent);
+}
+
+.fd__leaderboard__row--iron:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__row--wood {
+    background: linear-gradient(90deg, rgba(139, 69, 19, 0.25), rgba(205, 133, 63, 0.08));
+}
+
+.fd__leaderboard__row--wood:hover {
+    background: linear-gradient(90deg, rgba(139, 69, 19, 0.5), rgba(205, 133, 63, 0.25));
+    box-shadow: 0 0 20px 5px rgba(255, 230, 180, 0.3);
+}
+
+.fd__leaderboard__row--wood::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 230, 180, 0.15), transparent);
+}
+
+.fd__leaderboard__row--wood:hover::after {
+    left: -100%;
+}
+
+.fd__leaderboard__pos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fd__leaderboard__pos img {
+    width: 75px;
+    height: auto;
+}
+
+.fd__leaderboard__team {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fd__leaderboard__logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+}
+
+.fd__leaderboard__name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-futdraft-texto);
+}
+
+.fd__leaderboard__liga {
+    display: flex;
+    align-items: center;
+}
+
+.fd__leaderboard__liga-badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-futdraft-texto);
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fd__leaderboard__titles {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fd__leaderboard__trophy-count {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.fd__equipos__title {
+    color: var(--color-futdraft-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--color-futdraft-texto), var(--color-futdraft-verde-brillante));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fd__equipos__subtitle {
+    color: var(--color-futdraft-blanco-medio-transparente);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* MEDIA QUERYS */
+/* MEDIA QUERY (Tablet) */
 @media (max-width: 900px) {
-    .header {
+    .fd__header__nav {
+        position: relative;
+    }
+
+    .fd__header__menu-btn {
+        display: block;
+    }
+
+    .fd__header__list {
+        display: none;
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--color-futdraft-secundario);
+        width: 250px;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 8px 20px var(--color-futdraft-sombra);
     }
-    .header__list {
-        flex-wrap: wrap;
-        justify-content: center;
+
+    .fd__header__list.show {
+        display: flex;
     }
-    .index__title {
+
+    .fd__header__item {
+        width: 100%;
+        text-align: right;
+        padding: 10px 20px;
+    }
+
+    .fd__header__desplegable__content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        opacity: 1;
+        display: none;
+        flex-direction: column;
+        background: var(--color-futdraft-secundario);
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+
+    .fd__header__desplegable__content.show {
+        display: flex;
+    }
+
+    .fd__index__title {
         font-size: 2.2rem;
     }
-    .index__slogan {
+    .fd__index__slogan {
         font-size: 1.4rem;
     }
-    .index__description {
+    .fd__index__description {
         font-size: 1rem;
     }
-    .text__item {
+    .fd__text__item {
         padding: 15px;
     }
-    .section__title--mode,
-    .section__title--features {
+    .fd__section__title--mode,
+    .fd__section__title--features {
         font-size: 1.6rem;
         margin-bottom: 25px;
     }
-    .box__content {
+    .fd__box__content {
         height: 250px;
         border-radius: 16px;
     }
-    .box__btn {
+    .fd__box__btn {
         height: 60px;
         font-size: 0.9rem;
     }
-    .feature__item {
+    .fd__feature__item {
         padding: 25px 15px;
     }
-    .footer__content {
+    .fd__footer__content {
         flex-direction: column;
         text-align: center;
     }
-    .footer__text {
+    .fd__footer__text {
         justify-content: center;
     }
-    .social__links {
+    .fd__social__links {
         justify-content: center;
     }
-    .box {
+    .fd__box {
         grid-template-columns: 1fr;
     }
-    .features__grid {
+    .fd__features__grid {
         grid-template-columns: 1fr;
     }
-    .formations-grid-futdraft {
+    .fd__formations-grid-futdraft {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    .position {
+    .fd__position {
         width: 45px;
         height: 45px;
     }   
-    .field {
+    .fd__field {
         max-height: 500px;
     }
-    .pos-label {
+    .fd__pos-label {
         font-size: 0.6rem;
     }
-    .jugadores__title {
+    .fd__jugadores__title {
         font-size: 1.8rem;
     }
-    .jugadores__grid {
+    .fd__jugadores__grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         gap: 15px;
         padding: 10px;
     }
-    .card__image-container {
+    .fd__card__image-container {
         height: 170px;
     }
-    .card__name {
+    .fd__card__name {
         font-size: 0.85rem;
     }
-    .jugadores__group-title {
+    .fd__jugadores__group-title {
         font-size: 1.2rem;
     }
-    .section__title--mode {
+    .fd__section__title--mode {
         font-size: 1.5rem;
     }
-    .ea-card {
+    .fd__card {
         height: 340px;
     }
-    .ea-card__content {
+    .fd__card__content {
         padding: 20px;
     }
-    .ea-card__title {
+    .fd__card__title {
         font-size: 1.8rem;
     }
-    .ea-card__desc {
+    .fd__card__desc {
         font-size: 0.85rem;
     }
-    .ea-card__btn {
+    .fd__card__btn {
         padding: 14px 40px;
         font-size: 0.8rem;
         left: 20px;
         bottom: 20px;
     }
-    .ea-card__nav {
+    .fd__card__nav {
         bottom: 15px;
         right: 15px;
     }
-    .ligas__title {
+    .fd__ligas__title {
         font-size: 2rem;
     }
-    .ligas__subtitle {
+    .fd__ligas__subtitle {
         font-size: 1rem;
     }
-    .ligas__grid {
+    .fd__ligas__grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
     }
-    .liga-item {
+    .fd__liga-item {
         padding: 40px 20px;
     }
-    .liga-item::before {
+    .fd__liga-item::before {
         width: 130px;
         height: 130px;
     }
-    .liga-image {
+    .fd__liga-image {
         width: 100px;
         height: 100px;
     }
-    .liga-title {
+    .fd__liga-title {
         font-size: 1.3rem;
     }
-}
-
-@media (max-width: 400px) {
-    .jugadores__grid {
-        grid-template-columns: repeat(2, 1fr);
+    .fd__equipos__title {
+        font-size: 2rem;
+    }
+    
+    .fd__equipos__subtitle {
+        font-size: 1rem;
+    }
+    
+    .fd__equipos__grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 15px;
         padding: 15px;
     }
-    .card__image-container {
-        height: 150px;
+
+    .fd__leaderboard {
+        border-radius: 15px;
     }
-    .card__badge {
-        font-size: 0.65rem;
-        padding: 4px 8px;
+
+    .fd__leaderboard__header {
+        grid-template-columns: 60px 1fr 120px 80px;
+        gap: 15px;
+        padding: 15px 20px;
     }
-    .card__name {
+
+    .fd__leaderboard__header span {
         font-size: 0.75rem;
     }
-    .card__position {
-        font-size: 0.6rem;
-        padding: 4px 6px;
+
+    .fd__leaderboard__row {
+        grid-template-columns: 60px 1fr 120px 80px;
+        gap: 15px;
+        padding: 14px 20px;
     }
-    .ligas-page {
-        padding: 25px 15px;
+
+    .fd__leaderboard__pos img {
+        width: 50px;
     }
-    .ligas__title {
-        font-size: 1.8rem;
+
+    .fd__leaderboard__logo {
+        width: 35px;
+        height: 35px;
     }
-    .ligas__subtitle {
+
+    .fd__leaderboard__name {
         font-size: 0.9rem;
     }
-    .ligas__grid {
-        grid-template-columns: 1fr;
+
+    .fd__leaderboard__liga-badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .fd__leaderboard__trophy-count {
+        font-size: 1rem;
+    }
+}
+
+/* MEDIA QUERY (Movil grande) */
+
+@media (max-width: 480px) {
+    .fd__header {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .fd__header__logo {
+        gap: 8px;
+    }
+
+    .fd__header__img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .fd__header__title {
+        font-size: 1.3rem;
+    }
+    
+    .fd__header {
+        padding: 10px 8px;
+    }
+
+    .fd__header__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fd__header__title {
+        font-size: 1.1rem;
+    }
+
+    .fd__header__list {
+        width: 200px;
+    }
+
+    .fd__header__list.show {
+        display: flex;
+    }
+
+    .fd__header__list li {
+        margin: 10px 0;
+    }
+
+    .fd__header__desplegable__content {
+        position: static;
+        display: none;
+    }
+
+    .fd__equipos-page {
+        padding: 15px 10px;
+    }
+
+    .fd__equipos__header {
+        padding: 20px 15px;
+    }
+
+    .fd__equipos__title {
+        font-size: 1.5rem;
+    }
+
+    .fd__equipos__subtitle {
+        font-size: 0.85rem;
+    }
+
+    .fd__leaderboard {
+        border-radius: 12px;
+        border-width: 1px;
+    }
+
+    .fd__leaderboard__header {
+        display: none;
+    }
+
+    .fd__leaderboard__row {
+        grid-template-columns: 50px 1fr 60px;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .fd__leaderboard__pos {
+        font-size: 0.9rem;
+    }
+
+    .fd__leaderboard__pos img {
+        width: 40px;
+    }
+
+    .fd__leaderboard__team {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .fd__leaderboard__logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .fd__leaderboard__name {
+        font-size: 0.8rem;
+    }
+
+    .fd__leaderboard__liga {
+        display: none;
+    }
+
+    .fd__leaderboard__titles {
+        justify-content: flex-end;
+    }
+
+    .fd__leaderboard__trophy-count {
+        font-size: 0.9rem;
+    }
+
+    .fd__footer__content {
+        padding: 20px 15px;
         gap: 15px;
     }
-    .liga-item {
-        padding: 35px 15px;
+
+    .fd__footer__section {
+        padding: 10px 0;
     }
-    .liga-item::before {
-        width: 110px;
-        height: 110px;
+
+    .fd__footer__list,
+    .fd__footer__text {
+        font-size: 0.75rem;
     }
-    .liga-image {
-        width: 85px;
-        height: 85px;
+
+    .fd__footer__list a {
+        font-size: 0.7rem;
     }
-    .liga-title {
+
+    .fd__social__links {
+        gap: 10px;
+    }
+
+    .fd__social__link {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+/* MEDIA QUERY (Movil) */
+
+@media (max-width: 365px) {
+    .fd__header {
+        padding: 10px 8px;
+    }
+
+    .fd__header__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fd__header__title {
         font-size: 1.1rem;
-        letter-spacing: 1px;
+    }
+
+    .fd__header__list {
+        width: 180px;
+    }
+
+    .fd__header__list.show {
+        display: flex;
+    }
+
+    .fd__header__item {
+        padding: 10px 15px;
+    }
+    .fd__header__desplegable__content {
+        display: none;
+    }
+
+    .fd__equipos-page {
+        padding: 10px 8px;
+    }
+
+    .fd__equipos__header {
+        padding: 15px 10px;
+    }
+
+    .fd__equipos__title {
+        font-size: 1.3rem;
+    }
+
+    .fd__equipos__subtitle {
+        font-size: 0.75rem;
+    }
+
+    .fd__leaderboard {
+        border-radius: 10px;
+    }
+
+    .fd__leaderboard__row {
+        grid-template-columns: 40px 1fr 50px;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .fd__leaderboard__pos {
+        font-size: 0.8rem;
+    }
+
+    .fd__leaderboard__pos img {
+        width: 32px;
+    }
+
+    .fd__leaderboard__logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fd__leaderboard__name {
+        font-size: 0.7rem;
+    }
+
+    .fd__leaderboard__trophy-count {
+        font-size: 0.8rem;
+    }
+
+    .fd__footer__content {
+        padding: 15px 10px;
+    }
+
+    .fd__footer__list,
+    .fd__footer__text {
+        font-size: 0.65rem;
+    }
+
+    .fd__footer__list a {
+        font-size: 0.6rem;
+    }
+
+    .fd__social__link {
+        width: 26px;
+        height: 26px;
+        font-size: 0.6rem;
     }
 }

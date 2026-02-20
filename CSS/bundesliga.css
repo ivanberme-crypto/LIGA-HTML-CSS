@@ -631,7 +631,7 @@ img {
   border-radius: 8px;
   font-weight: 800;
   text-decoration: none;
-  transition: transform .25s ease, background .25s ease;
+  transition: transform .25s ease,  .25s ease;
 }
 
 .premier-box-promo__btn:hover {
